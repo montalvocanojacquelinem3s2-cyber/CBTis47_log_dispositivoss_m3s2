@@ -1,0 +1,38 @@
+{
+  "names":[
+    "Axel", 
+    "Ivan"
+  ], 
+  "secondNames":[
+    "Carrera", 
+    "Quezada"
+  ], 
+  "location":{
+    "street":"10&12",
+    "avenue":24
+  } , 
+  "birthDate":{
+    "day":8,
+    "month":9,
+    "year":2009
+  },
+  "skills":[
+    "programming",
+    "runsFast",
+    "goodAtVideogames"
+  ],
+  "friends":[
+      "Eva", 
+      "Eduardo", 
+      "Ariel", 
+      "Erick", 
+      "Santiago", 
+      "Oliver", 
+      "Emanuel", 
+      "Diana", 
+      "Mia", 
+      "Mauricio"
+    ], 
+  "number":2712567786, 
+ "email":"carrera.quezada.axel.ivan.m3s2@gmail.com "
+}
