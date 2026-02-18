@@ -1,1 +1,32 @@
 
+[
+  {
+    "firstName": "Fatima Yocelin",
+    "lastName": "Ramirez Lopez",
+    "birthDate": "2009-01-05",
+    "address": {
+      "street": "Colony Aguillon",
+      "city": "Cordoba",
+      "state": "Veracruz",
+      "country": "Mexico"
+    },
+    "email": "ramirez.lopez.fatima.yocelin.m3s2@gmail.com",
+    "phone": "+54-238-252-1584",
+    "occupation": "Student",
+    "hobbies": [
+      "Painting",
+      "Watching series and movies",
+      "Listening to music",
+      "Makeup",
+      "Fashion"
+    ]
+    "friends":[
+      "Emanuel",
+      "Camila",
+      "Rosario",
+      "Argel",
+      "Ximena",
+       ]
+    }
+]
+
