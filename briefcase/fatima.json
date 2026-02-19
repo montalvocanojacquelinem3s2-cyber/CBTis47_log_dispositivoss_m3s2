@@ -4,7 +4,7 @@
   "birthDate": "2009-01-05",
   "address": {
     "street": "Colony Aguillon",
-    "city": "Cordoba",
+    "city": "Cordova",
     "state": "Veracruz",
     "country": "Mexico"
   },
@@ -19,10 +19,39 @@
     "Fashion"
   ],
   "friends": [
-    "Emanuel",
-    "Camila",
-    "Rosario",
-    "Argel",
-    "Ximena"
-  ]
+  "firstName": "Emanuel",
+  "lastName": "Sanchez Gonzalez",
+  "birthDate": "2000-12-11",
+  "address": {
+    "street": "Colony Port of Anapra",
+    "city": "Juarez city",
+    "state": "Chihuahua",
+    "country": "Mexico"
+    },
+  "email": "emmasanchez292@gmail.com",
+  "phone": "+52-272-206-7726",
+  "occupation": "Worker",
+  "hobbies": [
+    "Painting",
+    "Cooking",
+    "Going out with friends",
+    "Drawing"
+]
+},
+"friends": [
+  "firstName": "Ximena",
+  "lastName": "Quintero Garcia",
+  "birthDate": "2009-10-2",
+  "address": {
+    "street": "Colony center",
+    "city": "Cordova",
+    "state": "Veracruz",
+    "country": "Mexico"
+  },
+  "email": "ximenaquinterogarcia9@gmail.com",
+  "phone": "+52-272-206-7726",
+  "occupation": "Student",
+  "hobbies": [
+    "Painting",
+ ]
 }
