@@ -1,0 +1,30 @@
+{
+  "nombre": "Juan Irving",
+  "apellido": "De La Cruz Zayas ",
+  "fecha de nacimiento": "2009-03-28",
+  "ubicación": {
+    "ciudad": "Córdoba",
+    "estado": "Veracruz"
+  },
+  "correo electrónico": "delacruz.zayas.juan.irving.m3s2@gmail.com",
+  "teléfono": "271-104-2025",
+  "ocupación": "Estudiante",
+  "pasatiempos": [
+    "jugar futbol",
+    "escuchar musica"
+  ],
+  "amigos": [
+    {
+      "nombre": "Jacqueline",
+      "apellido": "Montalvo Cano",
+      "fecha de nacimiento": "2009-08-12",
+      "pasatiempos": ["dormir", "escuchar musica"]
+    },
+    {
+      "nombre": "Guillermo",
+      "apellido": "Gil Guzman",
+      "fecha de nacimiento": "2009-10-29",
+      "pasatiempos": ["jugar futbol", "video juegos"]
+    }
+  ]
+}
