@@ -1,0 +1,53 @@
+{
+  "Name": "Jacqueline",
+  "lastName": "Montalvo Cano",
+  "birthDate": "2009-08-12",
+  "address": {
+    "street": "Col.Paraiso Av.41 Calles. 19 y 21",
+    "city": "Córdoba",
+    "state": "Veracruz",
+  },
+  "email": "montalvo.cano.jacqueline.m3s2@gmail.com",
+  "phone": "271-414-0235",
+  "occupation": "Student",
+  "hobbies": [
+    "Listening to music",
+    "Sleeping"
+  ],
+  "friends": [
+    {
+      "Name": "Irving",
+      "lastName": "De La Cruz Zayas",
+      "birthDate": "2009-03-28",
+      "address": {
+        "street": "Col.Palomar Av.36 Calles 19 y 21",
+        "city": "Cordoba",
+        "state": "Veracruz",
+      },
+      "email": "delacruz.zayas.juanirving.m3s2@gmail.com",
+      "phone": "271 104 2025",
+      "occupation": "Student",
+      "hobbies": [
+        "Sports",
+        "Video Games"
+      ]
+    },
+    {
+      "Name": "Karime",
+      "lastName": "Jácome López",
+      "birthDate": "2009-12-09",
+      "address": {
+        "street": "Col.Independencia Av.23 Calle 12",
+        "city": "Córdoba",
+        "state": "Veracruz",
+      },
+      "email": "jacome.lopez.klarakarime.m3s2@gmail.com",
+      "phone": "271 263 9371",
+      "occupation": "Student",
+      "hobbies": [
+        "Reading",
+        "Video Games"
+      ]
+    }
+  ]
+}
