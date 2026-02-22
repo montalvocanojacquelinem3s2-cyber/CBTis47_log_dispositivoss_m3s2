@@ -1,0 +1,49 @@
+erDiagram
+
+    DEVICES {
+        string _id
+        string name
+        string type
+        string brand
+        string model
+        string serialNumber
+        string location
+        string ipAddress
+        string macAddress
+        string status
+        int batteryLevel
+        boolean online
+        date installationDate
+        date lastUpdate
+    }
+
+    LIGHT {
+        int brightness
+        string color
+        boolean isOn
+        int powerConsumption
+        string mode
+        int intensityLevel
+    }
+
+    THERMOSTAT {
+        float temperature
+        float humidity
+        float targetTemperature
+        string mode
+        boolean ecoMode
+        boolean isOn
+    }
+
+    LOCK {
+        boolean locked
+        string status
+        string lockType
+        int batteryLevel
+        boolean autoLock
+        string accessCode
+    }
+
+    DEVICES ||--o{ LIGHT : deviceType
+    DEVICES ||--o{ THERMOSTAT : deviceType
+    DEVICES ||--o{ LOCK : deviceType
