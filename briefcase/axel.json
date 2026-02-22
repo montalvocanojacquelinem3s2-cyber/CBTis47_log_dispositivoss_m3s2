@@ -21,18 +21,49 @@
     "runsFast",
     "goodAtVideogames"
   ],
-  "friends":[
-      "Eva", 
-      "Eduardo", 
-      "Ariel", 
-      "Erick", 
-      "Santiago", 
-      "Oliver", 
-      "Emanuel", 
-      "Diana", 
-      "Mia", 
-      "Mauricio"
-    ], 
+  
   "number":2712567786, 
- "email":"carrera.quezada.axel.ivan.m3s2@gmail.com "
+  "email":"carrera.quezada.axel.ivan.m3s2@gmail.com" 
+, 
+  "friends":[
+    {
+    "friendName":"Eva", 
+      "age":16
+      , 
+    "birthDate":{
+    "day":9,
+    "month":3,
+    "year":2009
+    }, 
+    "location":{
+    "street":7,
+    "avenue":19
+    }, 
+    "skills":[
+    "robotics",
+    "goodWriter",
+    "goodAtStudying"
+  ]
+    } 
+    , 
+      {
+        "friendName":"Eduardo",
+        "age":17
+        , 
+    "birthDate":{
+    "day":21,
+    "month":1,
+    "year":2009
+    } , 
+    "location":{
+    "street":6,
+    "avenue":20
+    }, 
+      "skills":[
+    "funny",
+    "exercises",
+    "strong"
+      ] 
+      } 
+  ]  
 }
