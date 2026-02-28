@@ -122,4 +122,5 @@ Responsible for:
 
 ## Author
 
+Ramírez López Fatima Yocelin
 Academic Project – NoSQL Data Modeling
