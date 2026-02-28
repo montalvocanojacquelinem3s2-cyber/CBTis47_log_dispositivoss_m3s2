@@ -1,6 +1,6 @@
 const { MongoClient } = require('mongodb');
 
-const URI = "mongodb+srv://USUARIO:PASSWORD@tu-cluster.mongodb.net/";
+const URI = "mongodb+srv://juanirving9635_db_user:<db_password>@cluster1.kazi8nz.mongodb.net/?appName=Cluster1";
 const DB_NAME = "smart_home_dbmongodb+srv://juanirving9635_db_user:<db_password>@cluster1.kazi8nz.mongodb.net/?appName=Cluster1";
 
 const dispositivos = [
