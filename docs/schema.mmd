@@ -1,7 +1,7 @@
 erDiagram
 
     DEVICES {
-        string _id
+        string deviceId PK
         string name
         string type
         string brand
@@ -10,40 +10,76 @@ erDiagram
         string location
         string ipAddress
         string macAddress
-        string status
         int batteryLevel
         boolean online
+        boolean isOn
+        int powerConsumption
         date installationDate
         date lastUpdate
     }
 
     LIGHT {
+        string deviceId FK
         int brightness
         string color
-        boolean isOn
-        int powerConsumption
         string mode
-        int intensityLevel
     }
 
     THERMOSTAT {
+        string deviceId FK
         float temperature
         float humidity
         float targetTemperature
         string mode
         boolean ecoMode
-        boolean isOn
     }
 
     LOCK {
+        string deviceId FK
         boolean locked
-        string status
         string lockType
-        int batteryLevel
         boolean autoLock
-        string accessCode
     }
 
-    DEVICES ||--o{ LIGHT : deviceType
-    DEVICES ||--o{ THERMOSTAT : deviceType
-    DEVICES ||--o{ LOCK : deviceType
+    LOCK_SECURITY {
+        string deviceId FK
+        string encryptedAccessCode
+        date lastRotation
+    }
+
+    TV {
+        string deviceId FK
+        int volume
+        string resolution
+        string inputSource
+    }
+
+    AIR_CONDITIONER {
+        string deviceId FK
+        float temperature
+        string mode
+        boolean ecoMode
+    }
+
+    COMPUTER {
+        string deviceId FK
+        string operatingSystem
+        int ramGB
+        int storageGB
+    }
+
+    SPEAKER {
+        string deviceId FK
+        int volume
+        boolean muted
+        string connectivity
+    }
+
+    DEVICES ||--o{ LIGHT : es
+    DEVICES ||--o{ THERMOSTAT : es
+    DEVICES ||--o{ LOCK : es
+    DEVICES ||--o{ TV : es
+    DEVICES ||--o{ AIR_CONDITIONER : es
+    DEVICES ||--o{ COMPUTER : es
+    DEVICES ||--o{ SPEAKER : es
+    LOCK ||--|| LOCK_SECURITY : protege
