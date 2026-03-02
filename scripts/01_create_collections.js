@@ -1,12 +1,16 @@
 const { MongoClient } = require('mongodb');
 
 const URI = "mongodb+srv://juanirving9635_db_user:<db_password>@cluster1.kazi8nz.mongodb.net/?appName=Cluster1";
-const DB_NAME = "smart_home_dbmongodb+srv://juanirving9635_db_user:<db_password>@cluster1.kazi8nz.mongodb.net/?appName=Cluster1";
+const DB_NAME = "smart_home_db";
 
-const dispositivos = [
-  { "name": "Luz Sala", "type": "LIGHT", "brand": "Philips" },
-  { "name": "Termostato Hall", "type": "THERMOSTAT", "brand": "Nest" },
-  { "name": "Cerradura Entrada", "type": "LOCK", "brand": "August" }
+const devices = [
+  { "name": "Living Room Light", "type": "LIGHT", "brand": "Philips" },
+  { "name": "Hall Thermostat", "type": "THERMOSTAT", "brand": "Nest" },
+  { "name": "Front Door Lock", "type": "LOCK", "brand": "August", "lock_security": { "status": "active", "level": "high" } },
+  { "name": "Lounge TV", "type": "TV", "brand": "Samsung" },
+  { "name": "Main AC", "type": "AIR_CONDITIONER", "brand": "LG" },
+  { "name": "Office Computer", "type": "COMPUTER", "brand": "Apple" },
+  { "name": "Smart Speaker", "type": "SPEAKER", "brand": "Sonos" }
 ];
 
 async function setup() {
@@ -15,12 +19,11 @@ async function setup() {
         await client.connect();
         const db = client.db(DB_NAME);
 
-        // Colección
-        const result = await db.collection("devices").insertMany(dispositivos);
+        await db.collection("devices").insertMany(devices);
         
-        console.log("Base de datos configurada y dispositivos insertados.");
+        console.log("Done.");
     } catch (err) {
-        console.error("Error:", err.message);
+        console.error(err.message);
     } finally {
         await client.close();
     }
