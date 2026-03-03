@@ -1,0 +1,272 @@
+[
+  {
+    "name": "Lounge TV",
+    "type": "TV",
+    "brand": "Apple"
+  },
+  {
+    "name": "Gaming PC",
+    "type": "COMPUTER",
+    "brand": "Sonos"
+  },
+  {
+    "name": "Lounge TV",
+    "type": "TV",
+    "brand": "Apple"
+  },
+  {
+    "name": "Lounge TV",
+    "type": "TV",
+    "brand": "Xiaomi"
+  },
+  {
+    "name": "Garage Lock",
+    "type": "LOCK",
+    "brand": "Philips",
+    "lock_security": {
+      "status": "active",
+      "level": "low"
+    }
+  },
+  {
+    "name": "Smart Speaker",
+    "type": "SPEAKER",
+    "brand": "Samsung"
+  },
+  {
+    "name": "Lounge TV",
+    "type": "TV",
+    "brand": "August"
+  },
+  {
+    "name": "Main Thermostat",
+    "type": "THERMOSTAT",
+    "brand": "Nest"
+  },
+  {
+    "name": "Main Thermostat",
+    "type": "THERMOSTAT",
+    "brand": "August"
+  },
+  {
+    "name": "Smart Speaker",
+    "type": "SPEAKER",
+    "brand": "LG"
+  },
+  {
+    "name": "Main AC",
+    "type": "AIR_CONDITIONER",
+    "brand": "Philips"
+  },
+  {
+    "name": "Bedroom Light",
+    "type": "LIGHT",
+    "brand": "Xiaomi"
+  },
+  {
+    "name": "Living Room Light",
+    "type": "LIGHT",
+    "brand": "Philips"
+  },
+  {
+    "name": "Kitchen Light",
+    "type": "LIGHT",
+    "brand": "Philips"
+  },
+  {
+    "name": "Main AC",
+    "type": "AIR_CONDITIONER",
+    "brand": "Nest"
+  },
+  {
+    "name": "Kitchen Light",
+    "type": "LIGHT",
+    "brand": "Philips"
+  },
+  {
+    "name": "Gaming PC",
+    "type": "COMPUTER",
+    "brand": "Apple"
+  },
+  {
+    "name": "Lounge TV",
+    "type": "TV",
+    "brand": "Nest"
+  },
+  {
+    "name": "Garage Lock",
+    "type": "LOCK",
+    "brand": "Sonos",
+    "lock_security": {
+      "status": "active",
+      "level": "low"
+    }
+  },
+  {
+    "name": "Kitchen Light",
+    "type": "LIGHT",
+    "brand": "Samsung"
+  },
+  {
+    "name": "Office Computer",
+    "type": "COMPUTER",
+    "brand": "Philips"
+  },
+  {
+    "name": "Garage Lock",
+    "type": "LOCK",
+    "brand": "Apple",
+    "lock_security": {
+      "status": "active",
+      "level": "medium"
+    }
+  },
+  {
+    "name": "Hall Thermostat",
+    "type": "THERMOSTAT",
+    "brand": "Xiaomi"
+  },
+  {
+    "name": "Office AC",
+    "type": "AIR_CONDITIONER",
+    "brand": "LG"
+  },
+  {
+    "name": "Office Computer",
+    "type": "COMPUTER",
+    "brand": "August"
+  },
+  {
+    "name": "Office AC",
+    "type": "AIR_CONDITIONER",
+    "brand": "Sonos"
+  },
+  {
+    "name": "Gaming PC",
+    "type": "COMPUTER",
+    "brand": "August"
+  },
+  {
+    "name": "Office AC",
+    "type": "AIR_CONDITIONER",
+    "brand": "Xiaomi"
+  },
+  {
+    "name": "Garage Lock",
+    "type": "LOCK",
+    "brand": "Sonos",
+    "lock_security": {
+      "status": "inactive",
+      "level": "high"
+    }
+  },
+  {
+    "name": "Main AC",
+    "type": "AIR_CONDITIONER",
+    "brand": "Nest"
+  },
+  {
+    "name": "Main AC",
+    "type": "AIR_CONDITIONER",
+    "brand": "Apple"
+  },
+  {
+    "name": "Kitchen Speaker",
+    "type": "SPEAKER",
+    "brand": "Sonos"
+  },
+  {
+    "name": "Kitchen Speaker",
+    "type": "SPEAKER",
+    "brand": "Samsung"
+  },
+  {
+    "name": "Main Thermostat",
+    "type": "THERMOSTAT",
+    "brand": "Sonos"
+  },
+  {
+    "name": "Hall Thermostat",
+    "type": "THERMOSTAT",
+    "brand": "Xiaomi"
+  },
+  {
+    "name": "Main Thermostat",
+    "type": "THERMOSTAT",
+    "brand": "Apple"
+  },
+  {
+    "name": "Hall Thermostat",
+    "type": "THERMOSTAT",
+    "brand": "Samsung"
+  },
+  {
+    "name": "Smart Speaker",
+    "type": "SPEAKER",
+    "brand": "Xiaomi"
+  },
+  {
+    "name": "Living Room Light",
+    "type": "LIGHT",
+    "brand": "August"
+  },
+  {
+    "name": "Lounge TV",
+    "type": "TV",
+    "brand": "Xiaomi"
+  },
+  {
+    "name": "Hall Thermostat",
+    "type": "THERMOSTAT",
+    "brand": "Samsung"
+  },
+  {
+    "name": "Kitchen Speaker",
+    "type": "SPEAKER",
+    "brand": "Philips"
+  },
+  {
+    "name": "Living Room Light",
+    "type": "LIGHT",
+    "brand": "Xiaomi"
+  },
+  {
+    "name": "Living Room Light",
+    "type": "LIGHT",
+    "brand": "Sonos"
+  },
+  {
+    "name": "Gaming PC",
+    "type": "COMPUTER",
+    "brand": "Apple"
+  },
+  {
+    "name": "Bedroom TV",
+    "type": "TV",
+    "brand": "August"
+  },
+  {
+    "name": "Main Thermostat",
+    "type": "THERMOSTAT",
+    "brand": "August"
+  },
+  {
+    "name": "Smart Speaker",
+    "type": "SPEAKER",
+    "brand": "Philips"
+  },
+  {
+    "name": "Front Door Lock",
+    "type": "LOCK",
+    "brand": "Apple",
+    "lock_security": {
+      "status": "active",
+      "level": "high"
+    }
+  },
+  {
+    "name": "Bedroom Light",
+    "type": "LIGHT",
+    "brand": "LG"
+  }
+]
