@@ -184,4 +184,61 @@ This approach allows the system to retrieve useful information quickly and effic
 - Optimizing queries for better performance  
 - Testing queries with sample data  
 ---
-## Responsible- Montalvo Cano Jacqueline 
+# Responsible- Montalvo Cano Jacqueline 
+
+___
+### Integration Configuration Explanation (Español)
+
+La integración del sistema fue configurada utilizando **MongoDB Atlas** como plataforma principal de base de datos en la nube, permitiendo que el equipo pudiera trabajar de manera colaborativa y acceder a la base de datos desde diferentes entornos.
+
+El rol de **Integration Specialist** se encarga de preparar el entorno técnico necesario para que la base de datos funcione correctamente y pueda ser utilizada por el resto del equipo. Esto incluye la creación y configuración del **Cluster en MongoDB Atlas**, así como la conexión con herramientas de administración como **MongoDB Compass**.
+
+También se configuraron los accesos necesarios para que los miembros del equipo pudieran conectarse de forma segura a la base de datos, utilizando credenciales y configuraciones de red adecuadas.
+
+Además, se gestionó el repositorio del proyecto en **GitHub**, permitiendo que todos los archivos relacionados con el proyecto (consultas, modelos de datos, diagramas y documentación) se mantuvieran organizados y actualizados.
+
+### Decisiones Clave de Integración
+
+- El uso de **MongoDB Atlas** permite trabajar con una base de datos en la nube accesible desde cualquier lugar.  
+- La conexión mediante **MongoDB Compass** facilita la visualización, prueba y administración de los documentos almacenados en la base de datos.  
+- Se configuraron **índices básicos** para mejorar el rendimiento de las consultas realizadas por el equipo.  
+- El repositorio en **GitHub** se utilizó para mantener control de versiones y colaboración entre los integrantes del equipo.
+
+Este enfoque garantiza que el entorno de trabajo sea estable, accesible y organizado, permitiendo que el resto de los roles puedan trabajar correctamente sobre la base de datos.
+
+---
+
+### Integration Configuration Explanation (English)
+
+The system integration was configured using **MongoDB Atlas** as the main cloud database platform, allowing the team to work collaboratively and access the database from different environments.
+
+The **Integration Specialist** role is responsible for preparing the technical environment required for the database to function correctly and be accessible to the rest of the team. This includes creating and configuring the **cluster in MongoDB Atlas**, as well as establishing the connection with administration tools such as **MongoDB Compass**.
+
+Access configurations were also established so that team members could connect securely to the database using proper credentials and network settings.
+
+Additionally, the project repository was managed through **GitHub**, allowing all project files (queries, data models, diagrams, and documentation) to remain organized and up to date.
+
+### Key Integration Decisions
+
+- Using **MongoDB Atlas** allows the database to be hosted in the cloud and accessed from anywhere.  
+- The connection through **MongoDB Compass** simplifies visualization, testing, and management of stored documents.  
+- Basic **indexes** were configured to improve the performance of queries executed by the team.  
+- The **GitHub repository** was used to maintain version control and collaboration among team members.
+
+This approach ensures a stable, accessible, and organized working environment for the entire team.
+
+---
+
+## Role and Responsibility
+
+**Role:** Integration Specialist (Environment Configurator)
+---
+**Responsible for:**
+
+- Creating and configuring the MongoDB Atlas cluster  
+- Connecting the database with MongoDB Compass  
+- Managing database access and security settings  
+- Creating basic indexes to improve query performance  
+- Managing the project repository on GitHub
+---
+# Responsible- De La Cruz Zayas Juan Irving 
