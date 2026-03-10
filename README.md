@@ -184,7 +184,8 @@ This approach allows the system to retrieve useful information quickly and effic
 - Optimizing queries for better performance  
 - Testing queries with sample data  
 ---
-# Responsible- Montalvo Cano Jacqueline 
+### Responsible- 
+  Montalvo Cano Jacqueline 
 
 ___
 ### Integration Configuration Explanation (Español)
@@ -241,4 +242,5 @@ This approach ensures a stable, accessible, and organized working environment fo
 - Creating basic indexes to improve query performance  
 - Managing the project repository on GitHub
 ---
-# Responsible- De La Cruz Zayas Juan Irving 
+### Responsible- 
+ De La Cruz Zayas Juan Irving 
