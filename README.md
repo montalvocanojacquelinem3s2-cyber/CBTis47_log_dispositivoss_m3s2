@@ -117,7 +117,13 @@ Responsible for:
 - Applying polymorphism
 - Creating the Mermaid ER diagram
 - Documenting design decisions
+---
+**Role:** Data seeder (Chaos generator)
 
+Responsible for:
+- Generating a JSON for testing the database
+- Giving feedback to the team
+- Test the database
 ---
 
 ## Author
