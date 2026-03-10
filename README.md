@@ -184,7 +184,7 @@ This approach allows the system to retrieve useful information quickly and effic
 - Optimizing queries for better performance  
 - Testing queries with sample data  
 ---
-### Responsible- 
+### Responsible 
   Montalvo Cano Jacqueline 
 
 ___
@@ -242,5 +242,5 @@ This approach ensures a stable, accessible, and organized working environment fo
 - Creating basic indexes to improve query performance  
 - Managing the project repository on GitHub
 ---
-### Responsible- 
+### Responsible
  De La Cruz Zayas Juan Irving 
