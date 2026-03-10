@@ -131,38 +131,57 @@ Ramírez López Fatima Yocelin
 Academic Project – NoSQL Data Modeling
 
 ---
-Query Development Explanation (Español)
+### Query Development Explanation (Español)
 
 El desarrollo de consultas se realizó utilizando MongoDB Query Language (MQL) con el objetivo de traducir preguntas de negocio en consultas eficientes sobre la base de datos.
-El rol de Query Developer se enfoca en interpretar preguntas como “¿Cuántos dispositivos están activos?”, “¿Qué dispositivos consumen más energía?” o “¿Qué dispositivos pertenecen a cierta categoría?” y convertirlas en consultas de MongoDB utilizando comandos como db.collection.find(), filtros y operadores de agregación.
+
+El rol de Query Developer se enfoca en interpretar preguntas como “¿Cuántos dispositivos están activos?”, “¿Qué dispositivos consumen más energía?” o “¿Qué dispositivos pertenecen a cierta categoría?” y convertirlas en consultas de MongoDB utilizando comandos como `db.collection.find()`, filtros y operadores de agregación.
+
 Las consultas fueron diseñadas para aprovechar la estructura flexible de los documentos en MongoDB, permitiendo filtrar información específica dentro de los dispositivos y sus características.
+
 Además, se priorizó la optimización de consultas mediante el uso adecuado de filtros y proyecciones, reduciendo la cantidad de datos devueltos y mejorando el rendimiento de lectura.
-Decisiones Clave en el Desarrollo de Consultas
-Las consultas se diseñaron utilizando filtros específicos para obtener únicamente la información necesaria.
-Se utilizaron proyecciones para mostrar solo los campos relevantes en los resultados.
-Las consultas fueron estructuradas para funcionar correctamente con la estructura del modelo de datos basado en documentos.
-Se realizaron pruebas constantes con distintos datos para asegurar que las consultas respondieran correctamente a las preguntas de negocio.
+
+## Decisiones Clave en el Desarrollo de Consultas
+
+- Las consultas se diseñaron utilizando **filtros específicos** para obtener únicamente la información necesaria.  
+- Se utilizaron **proyecciones** para mostrar solo los campos relevantes en los resultados.  
+- Las consultas fueron estructuradas para funcionar correctamente con la estructura del modelo de datos basado en documentos.  
+- Se realizaron pruebas con distintos datos para asegurar que las consultas respondieran correctamente a las preguntas de negocio.
+
 Este enfoque permite obtener información útil del sistema de forma rápida y eficiente, aprovechando las capacidades de consulta de MongoDB.
+
 ---
-Query Development Explanation (English)
+
+### Query Development Explanation (English)
+
 Query development was implemented using MongoDB Query Language (MQL) to translate business questions into efficient database queries.
-The Query Developer role focuses on interpreting questions such as “How many devices are active?”, “Which devices consume the most energy?”, or “Which devices belong to a specific category?” and converting them into MongoDB queries using commands such as db.collection.find(), filters, and aggregation operators.
+
+The Query Developer role focuses on interpreting questions such as “How many devices are active?”, “Which devices consume the most energy?”, or “Which devices belong to a specific category?” and converting them into MongoDB queries using commands such as `db.collection.find()`, filters, and aggregation operators.
+
 The queries were designed to take advantage of MongoDB’s flexible document structure, allowing the system to filter specific information within devices and their attributes.
+
 Additionally, query optimization was prioritized through the proper use of filters and projections, reducing the amount of returned data and improving read performance.
-Key Query Design Decisions
-Queries were designed using specific filters to retrieve only the necessary information.
-Projections were used to display only relevant fields in the results.
-Queries were structured to work efficiently with the document-based data model.
-Multiple tests were performed using sample data to ensure the queries correctly answered the business questions.
+
+## Key Query Design Decisions
+
+- Queries were designed using **specific filters** to retrieve only the necessary information.  
+- **Projections** were used to display only relevant fields in the results.  
+- Queries were structured to work efficiently with the document-based data model.  
+- Multiple tests were performed using sample data to ensure the queries correctly answered the business questions.
+
 This approach allows the system to retrieve useful information quickly and efficiently, leveraging MongoDB’s query capabilities.
+
 ---
-Role and Responsibility
-Role: Query Developer (MQL Constructor)
-Responsible for:
-Translating business questions into MongoDB queries
-Writing queries using db.collection.find() and filters
-Optimizing queries for better performance
-Testing queries with sample data
-Assisting the team in retrieving relevant database information
+
+## Role and Responsibility
+
+**Role:** Query Developer (MQL Constructor)
+
+**Responsible for:**
+
+- Translating business questions into MongoDB queries  
+- Writing queries using `db.collection.find()` and filters  
+- Optimizing queries for better performance  
+- Testing queries with sample data  
 ---
-Responsible- Montalvo Cano Jacqueline 
+## Responsible- Montalvo Cano Jacqueline 
