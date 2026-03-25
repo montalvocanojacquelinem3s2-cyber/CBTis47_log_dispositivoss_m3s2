@@ -1,1367 +1,410 @@
-{
-  "DEVICES": [
-    {
-      "deviceId": "DEV-1",
-      "name": "Living Room AC",
-      "type": "AIR_CONDITIONER",
-      "brand": "Nest",
-      "model": "Model-105",
-      "serialNumber": "SN-768498",
-      "location": "Living Room",
-      "ipAddress": "24.100.235.24",
-      "macAddress": "94:78:DD:95:49:07",
-      "batteryLevel": 81,
-      "online": false,
-      "isOn": false,
-      "powerConsumption": 59,
-      "installationDate": "2026-03-07T03:09:10.147Z",
-      "lastUpdate": "2026-03-07T03:09:10.147Z"
-    },
-    {
-      "deviceId": "DEV-2",
-      "name": "Kitchen Speaker",
-      "type": "SPEAKER",
-      "brand": "Xiaomi",
-      "model": "Model-695",
-      "serialNumber": "SN-427995",
-      "location": "Hall",
-      "ipAddress": "233.160.134.179",
-      "macAddress": "3A:B9:58:D3:D2:48",
-      "batteryLevel": 87,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 44,
-      "installationDate": "2026-03-07T03:09:10.147Z",
-      "lastUpdate": "2026-03-07T03:09:10.147Z"
-    },
-    {
-      "deviceId": "DEV-3",
-      "name": "Kitchen Speaker",
-      "type": "SPEAKER",
-      "brand": "Nest",
-      "model": "Model-451",
-      "serialNumber": "SN-501493",
-      "location": "Hall",
-      "ipAddress": "136.203.236.133",
-      "macAddress": "7F:CF:79:73:5F:19",
-      "batteryLevel": 51,
-      "online": false,
-      "isOn": true,
-      "powerConsumption": 91,
-      "installationDate": "2026-03-07T03:09:10.147Z",
-      "lastUpdate": "2026-03-07T03:09:10.147Z"
-    },
-    {
-      "deviceId": "DEV-4",
-      "name": "Gaming Computer",
-      "type": "COMPUTER",
-      "brand": "Philips",
-      "model": "Model-893",
-      "serialNumber": "SN-292040",
-      "location": "Hall",
-      "ipAddress": "85.43.242.228",
-      "macAddress": "8A:F8:20:FA:D3:BC",
-      "batteryLevel": 39,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 41,
-      "installationDate": "2026-03-07T03:09:10.147Z",
-      "lastUpdate": "2026-03-07T03:09:10.147Z"
-    },
-    {
-      "deviceId": "DEV-5",
-      "name": "Living Room Light",
-      "type": "LIGHT",
-      "brand": "Samsung",
-      "model": "Model-912",
-      "serialNumber": "SN-816196",
-      "location": "Garage",
-      "ipAddress": "118.159.240.34",
-      "macAddress": "89:14:14:A7:7C:04",
-      "batteryLevel": 27,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 90,
-      "installationDate": "2026-03-07T03:09:10.147Z",
-      "lastUpdate": "2026-03-07T03:09:10.147Z"
-    },
-    {
-      "deviceId": "DEV-6",
-      "name": "Hall Thermostat",
-      "type": "THERMOSTAT",
-      "brand": "Samsung",
-      "model": "Model-343",
-      "serialNumber": "SN-473815",
-      "location": "Kitchen",
-      "ipAddress": "77.124.41.211",
-      "macAddress": "43:B4:EF:15:0B:C9",
-      "batteryLevel": 66,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 51,
-      "installationDate": "2026-03-07T03:09:10.147Z",
-      "lastUpdate": "2026-03-07T03:09:10.147Z"
-    },
-    {
-      "deviceId": "DEV-7",
-      "name": "Living Room Light",
-      "type": "LIGHT",
-      "brand": "Nest",
-      "model": "Model-453",
-      "serialNumber": "SN-862831",
-      "location": "Office",
-      "ipAddress": "65.117.14.1",
-      "macAddress": "37:89:10:99:CC:37",
-      "batteryLevel": 99,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 20,
-      "installationDate": "2026-03-07T03:09:10.147Z",
-      "lastUpdate": "2026-03-07T03:09:10.147Z"
-    },
-    {
-      "deviceId": "DEV-8",
-      "name": "Garage Lock",
-      "type": "LOCK",
-      "brand": "Nest",
-      "model": "Model-550",
-      "serialNumber": "SN-500101",
-      "location": "Garage",
-      "ipAddress": "130.50.38.142",
-      "macAddress": "70:38:E6:1D:A7:D0",
-      "batteryLevel": 68,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 53,
-      "installationDate": "2026-03-07T03:09:10.147Z",
-      "lastUpdate": "2026-03-07T03:09:10.147Z"
-    },
-    {
-      "deviceId": "DEV-9",
-      "name": "Garage Lock",
-      "type": "LOCK",
-      "brand": "Philips",
-      "model": "Model-124",
-      "serialNumber": "SN-383405",
-      "location": "Bedroom",
-      "ipAddress": "168.144.112.254",
-      "macAddress": "49:86:0B:C0:CA:DA",
-      "batteryLevel": 30,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 90,
-      "installationDate": "2026-03-07T03:09:10.147Z",
-      "lastUpdate": "2026-03-07T03:09:10.147Z"
-    },
-    {
-      "deviceId": "DEV-10",
-      "name": "Kitchen Light",
-      "type": "LIGHT",
-      "brand": "August",
-      "model": "Model-519",
-      "serialNumber": "SN-830009",
-      "location": "Hall",
-      "ipAddress": "250.22.97.201",
-      "macAddress": "AD:10:3D:C8:EC:A8",
-      "batteryLevel": 75,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 80,
-      "installationDate": "2026-03-07T03:09:10.147Z",
-      "lastUpdate": "2026-03-07T03:09:10.147Z"
-    },
-    {
-      "deviceId": "DEV-11",
-      "name": "Front Door Lock",
-      "type": "LOCK",
-      "brand": "Samsung",
-      "model": "Model-198",
-      "serialNumber": "SN-455187",
-      "location": "Garage",
-      "ipAddress": "136.45.186.127",
-      "macAddress": "AD:AD:71:85:9B:BB",
-      "batteryLevel": 59,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 55,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-12",
-      "name": "Hall Thermostat",
-      "type": "THERMOSTAT",
-      "brand": "LG",
-      "model": "Model-614",
-      "serialNumber": "SN-805206",
-      "location": "Living Room",
-      "ipAddress": "94.191.199.197",
-      "macAddress": "D4:2D:1D:77:E9:C5",
-      "batteryLevel": 49,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 42,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-13",
-      "name": "Main Thermostat",
-      "type": "THERMOSTAT",
-      "brand": "Xiaomi",
-      "model": "Model-265",
-      "serialNumber": "SN-774794",
-      "location": "Garage",
-      "ipAddress": "53.12.210.201",
-      "macAddress": "0D:7A:46:EB:DB:21",
-      "batteryLevel": 32,
-      "online": false,
-      "isOn": true,
-      "powerConsumption": 98,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-14",
-      "name": "Gaming Computer",
-      "type": "COMPUTER",
-      "brand": "LG",
-      "model": "Model-431",
-      "serialNumber": "SN-293362",
-      "location": "Office",
-      "ipAddress": "244.36.11.17",
-      "macAddress": "AF:DF:75:8E:1A:F3",
-      "batteryLevel": 52,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 76,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-15",
-      "name": "Gaming Computer",
-      "type": "COMPUTER",
-      "brand": "August",
-      "model": "Model-324",
-      "serialNumber": "SN-337375",
-      "location": "Hall",
-      "ipAddress": "94.4.109.167",
-      "macAddress": "C6:C9:4F:70:5A:84",
-      "batteryLevel": 76,
-      "online": false,
-      "isOn": false,
-      "powerConsumption": 94,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-16",
-      "name": "Bedroom Speaker",
-      "type": "SPEAKER",
-      "brand": "Samsung",
-      "model": "Model-383",
-      "serialNumber": "SN-717675",
-      "location": "Garage",
-      "ipAddress": "64.113.233.38",
-      "macAddress": "86:55:EE:B9:2C:E9",
-      "batteryLevel": 23,
-      "online": false,
-      "isOn": false,
-      "powerConsumption": 44,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-17",
-      "name": "Bedroom TV",
-      "type": "TV",
-      "brand": "Samsung",
-      "model": "Model-651",
-      "serialNumber": "SN-810949",
-      "location": "Bedroom",
-      "ipAddress": "45.241.36.32",
-      "macAddress": "BF:8C:D7:F3:67:C8",
-      "batteryLevel": 90,
-      "online": false,
-      "isOn": true,
-      "powerConsumption": 43,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-18",
-      "name": "Gaming Computer",
-      "type": "COMPUTER",
-      "brand": "Nest",
-      "model": "Model-392",
-      "serialNumber": "SN-591466",
-      "location": "Kitchen",
-      "ipAddress": "106.203.164.65",
-      "macAddress": "00:4D:1C:59:BF:F9",
-      "batteryLevel": 62,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 88,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-19",
-      "name": "Bedroom Light",
-      "type": "LIGHT",
-      "brand": "Nest",
-      "model": "Model-914",
-      "serialNumber": "SN-429591",
-      "location": "Bedroom",
-      "ipAddress": "172.225.138.43",
-      "macAddress": "8F:81:7F:25:9D:E6",
-      "batteryLevel": 23,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 73,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-20",
-      "name": "Living Room AC",
-      "type": "AIR_CONDITIONER",
-      "brand": "Xiaomi",
-      "model": "Model-334",
-      "serialNumber": "SN-110185",
-      "location": "Office",
-      "ipAddress": "183.128.236.125",
-      "macAddress": "F9:9F:72:B0:30:BB",
-      "batteryLevel": 34,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 74,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-21",
-      "name": "Living Room AC",
-      "type": "AIR_CONDITIONER",
-      "brand": "Xiaomi",
-      "model": "Model-622",
-      "serialNumber": "SN-823907",
-      "location": "Bedroom",
-      "ipAddress": "16.205.209.192",
-      "macAddress": "32:64:92:3A:79:D0",
-      "batteryLevel": 100,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 84,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-22",
-      "name": "Kitchen Light",
-      "type": "LIGHT",
-      "brand": "LG",
-      "model": "Model-764",
-      "serialNumber": "SN-939779",
-      "location": "Office",
-      "ipAddress": "99.163.223.255",
-      "macAddress": "CC:91:D2:AD:AC:57",
-      "batteryLevel": 84,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 88,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-23",
-      "name": "Bedroom Light",
-      "type": "LIGHT",
-      "brand": "LG",
-      "model": "Model-598",
-      "serialNumber": "SN-704091",
-      "location": "Office",
-      "ipAddress": "2.198.60.1",
-      "macAddress": "F5:F7:ED:A6:EB:0B",
-      "batteryLevel": 58,
-      "online": false,
-      "isOn": false,
-      "powerConsumption": 40,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-24",
-      "name": "Main Thermostat",
-      "type": "THERMOSTAT",
-      "brand": "Xiaomi",
-      "model": "Model-873",
-      "serialNumber": "SN-334479",
-      "location": "Hall",
-      "ipAddress": "65.102.86.72",
-      "macAddress": "8F:4B:47:0C:BB:9C",
-      "batteryLevel": 75,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 70,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-25",
-      "name": "Kitchen Speaker",
-      "type": "SPEAKER",
-      "brand": "LG",
-      "model": "Model-554",
-      "serialNumber": "SN-267876",
-      "location": "Hall",
-      "ipAddress": "173.114.114.11",
-      "macAddress": "44:D1:2B:C9:05:A0",
-      "batteryLevel": 81,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 5,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-26",
-      "name": "Garage Lock",
-      "type": "LOCK",
-      "brand": "Xiaomi",
-      "model": "Model-706",
-      "serialNumber": "SN-644088",
-      "location": "Bedroom",
-      "ipAddress": "43.228.192.172",
-      "macAddress": "62:84:0D:43:92:26",
-      "batteryLevel": 45,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 33,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-27",
-      "name": "Front Door Lock",
-      "type": "LOCK",
-      "brand": "Philips",
-      "model": "Model-849",
-      "serialNumber": "SN-836990",
-      "location": "Kitchen",
-      "ipAddress": "207.174.212.251",
-      "macAddress": "82:B2:50:B6:71:D4",
-      "batteryLevel": 100,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 51,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-28",
-      "name": "Kitchen Speaker",
-      "type": "SPEAKER",
-      "brand": "Philips",
-      "model": "Model-792",
-      "serialNumber": "SN-676608",
-      "location": "Hall",
-      "ipAddress": "6.75.124.99",
-      "macAddress": "60:AF:A9:F2:08:D8",
-      "batteryLevel": 25,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 89,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-29",
-      "name": "Kitchen Light",
-      "type": "LIGHT",
-      "brand": "Samsung",
-      "model": "Model-512",
-      "serialNumber": "SN-156847",
-      "location": "Garage",
-      "ipAddress": "145.164.152.102",
-      "macAddress": "B4:EB:72:4B:69:95",
-      "batteryLevel": 58,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 97,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-30",
-      "name": "Garage Lock",
-      "type": "LOCK",
-      "brand": "Philips",
-      "model": "Model-650",
-      "serialNumber": "SN-568645",
-      "location": "Office",
-      "ipAddress": "106.146.140.170",
-      "macAddress": "F3:E6:87:4A:06:B7",
-      "batteryLevel": 100,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 11,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-31",
-      "name": "Living Room Light",
-      "type": "LIGHT",
-      "brand": "Samsung",
-      "model": "Model-200",
-      "serialNumber": "SN-979659",
-      "location": "Living Room",
-      "ipAddress": "177.226.219.196",
-      "macAddress": "F6:9F:48:11:6C:4D",
-      "batteryLevel": 96,
-      "online": false,
-      "isOn": true,
-      "powerConsumption": 80,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-32",
-      "name": "Front Door Lock",
-      "type": "LOCK",
-      "brand": "Samsung",
-      "model": "Model-460",
-      "serialNumber": "SN-485196",
-      "location": "Hall",
-      "ipAddress": "98.240.233.105",
-      "macAddress": "EF:4E:14:01:DD:C1",
-      "batteryLevel": 58,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 86,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-33",
-      "name": "Office Computer",
-      "type": "COMPUTER",
-      "brand": "LG",
-      "model": "Model-127",
-      "serialNumber": "SN-466632",
-      "location": "Bedroom",
-      "ipAddress": "177.233.184.198",
-      "macAddress": "12:90:DE:FB:FA:ED",
-      "batteryLevel": 94,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 6,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-34",
-      "name": "Office Computer",
-      "type": "COMPUTER",
-      "brand": "LG",
-      "model": "Model-873",
-      "serialNumber": "SN-242190",
-      "location": "Living Room",
-      "ipAddress": "212.174.72.107",
-      "macAddress": "04:50:3A:5F:7D:25",
-      "batteryLevel": 50,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 55,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-35",
-      "name": "Gaming Computer",
-      "type": "COMPUTER",
-      "brand": "August",
-      "model": "Model-713",
-      "serialNumber": "SN-262263",
-      "location": "Hall",
-      "ipAddress": "54.171.214.101",
-      "macAddress": "10:1D:73:42:73:C2",
-      "batteryLevel": 65,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 98,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-36",
-      "name": "Living Room AC",
-      "type": "AIR_CONDITIONER",
-      "brand": "Samsung",
-      "model": "Model-709",
-      "serialNumber": "SN-701319",
-      "location": "Living Room",
-      "ipAddress": "156.100.131.176",
-      "macAddress": "C3:E6:11:04:5F:47",
-      "batteryLevel": 39,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 62,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-37",
-      "name": "Hall Thermostat",
-      "type": "THERMOSTAT",
-      "brand": "Xiaomi",
-      "model": "Model-241",
-      "serialNumber": "SN-467606",
-      "location": "Kitchen",
-      "ipAddress": "149.206.211.77",
-      "macAddress": "50:C5:FE:F4:0A:AB",
-      "batteryLevel": 30,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 19,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-38",
-      "name": "Living Room Light",
-      "type": "LIGHT",
-      "brand": "Samsung",
-      "model": "Model-966",
-      "serialNumber": "SN-721572",
-      "location": "Hall",
-      "ipAddress": "231.142.224.142",
-      "macAddress": "BB:A8:FE:81:5F:3B",
-      "batteryLevel": 30,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 75,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-39",
-      "name": "Front Door Lock",
-      "type": "LOCK",
-      "brand": "Xiaomi",
-      "model": "Model-784",
-      "serialNumber": "SN-615825",
-      "location": "Kitchen",
-      "ipAddress": "153.99.204.44",
-      "macAddress": "DC:E3:0E:9A:CA:3B",
-      "batteryLevel": 100,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 47,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-40",
-      "name": "Bedroom Speaker",
-      "type": "SPEAKER",
-      "brand": "Samsung",
-      "model": "Model-193",
-      "serialNumber": "SN-447275",
-      "location": "Kitchen",
-      "ipAddress": "43.178.16.82",
-      "macAddress": "C9:7F:D0:11:EA:8F",
-      "batteryLevel": 63,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 8,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-41",
-      "name": "Living Room Light",
-      "type": "LIGHT",
-      "brand": "Philips",
-      "model": "Model-442",
-      "serialNumber": "SN-505143",
-      "location": "Hall",
-      "ipAddress": "128.89.91.113",
-      "macAddress": "72:5D:30:99:5C:18",
-      "batteryLevel": 84,
-      "online": false,
-      "isOn": false,
-      "powerConsumption": 72,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-42",
-      "name": "Living Room TV",
-      "type": "TV",
-      "brand": "Philips",
-      "model": "Model-238",
-      "serialNumber": "SN-169227",
-      "location": "Kitchen",
-      "ipAddress": "46.193.69.246",
-      "macAddress": "CC:8E:F0:57:50:32",
-      "batteryLevel": 62,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 34,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-43",
-      "name": "Office Computer",
-      "type": "COMPUTER",
-      "brand": "Nest",
-      "model": "Model-367",
-      "serialNumber": "SN-519617",
-      "location": "Office",
-      "ipAddress": "7.167.194.39",
-      "macAddress": "F4:C2:C8:4F:CF:79",
-      "batteryLevel": 38,
-      "online": false,
-      "isOn": false,
-      "powerConsumption": 62,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-44",
-      "name": "Bedroom Speaker",
-      "type": "SPEAKER",
-      "brand": "Nest",
-      "model": "Model-758",
-      "serialNumber": "SN-507056",
-      "location": "Garage",
-      "ipAddress": "40.249.3.252",
-      "macAddress": "CB:61:78:22:70:25",
-      "batteryLevel": 27,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 8,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-45",
-      "name": "Bedroom TV",
-      "type": "TV",
-      "brand": "Xiaomi",
-      "model": "Model-459",
-      "serialNumber": "SN-194205",
-      "location": "Office",
-      "ipAddress": "78.161.62.5",
-      "macAddress": "01:E8:90:6D:F6:D8",
-      "batteryLevel": 93,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 76,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-46",
-      "name": "Gaming Computer",
-      "type": "COMPUTER",
-      "brand": "Nest",
-      "model": "Model-780",
-      "serialNumber": "SN-258161",
-      "location": "Office",
-      "ipAddress": "145.56.231.251",
-      "macAddress": "8D:22:87:5A:5A:69",
-      "batteryLevel": 94,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 68,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-47",
-      "name": "Bedroom TV",
-      "type": "TV",
-      "brand": "LG",
-      "model": "Model-389",
-      "serialNumber": "SN-600398",
-      "location": "Garage",
-      "ipAddress": "209.1.243.87",
-      "macAddress": "B0:9B:90:0F:BB:EE",
-      "batteryLevel": 26,
-      "online": false,
-      "isOn": true,
-      "powerConsumption": 53,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-48",
-      "name": "Office Computer",
-      "type": "COMPUTER",
-      "brand": "Nest",
-      "model": "Model-848",
-      "serialNumber": "SN-204326",
-      "location": "Hall",
-      "ipAddress": "156.62.241.252",
-      "macAddress": "B9:C8:0C:9D:F4:AC",
-      "batteryLevel": 54,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 52,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-49",
-      "name": "Main Thermostat",
-      "type": "THERMOSTAT",
-      "brand": "Xiaomi",
-      "model": "Model-412",
-      "serialNumber": "SN-301955",
-      "location": "Garage",
-      "ipAddress": "191.241.48.167",
-      "macAddress": "A6:BD:67:88:17:CE",
-      "batteryLevel": 38,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 85,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-50",
-      "name": "Living Room TV",
-      "type": "TV",
-      "brand": "August",
-      "model": "Model-633",
-      "serialNumber": "SN-259223",
-      "location": "Bedroom",
-      "ipAddress": "185.223.99.153",
-      "macAddress": "A1:6D:43:C6:E0:A1",
-      "batteryLevel": 67,
-      "online": false,
-      "isOn": false,
-      "powerConsumption": 79,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-51",
-      "name": "Front Door Lock",
-      "type": "LOCK",
-      "brand": "Xiaomi",
-      "model": "Model-566",
-      "serialNumber": "SN-125501",
-      "location": "Bedroom",
-      "ipAddress": "156.232.144.59",
-      "macAddress": "59:66:1C:52:98:A2",
-      "batteryLevel": 96,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 37,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-52",
-      "name": "Hall Thermostat",
-      "type": "THERMOSTAT",
-      "brand": "LG",
-      "model": "Model-760",
-      "serialNumber": "SN-869497",
-      "location": "Kitchen",
-      "ipAddress": "245.90.146.103",
-      "macAddress": "1B:87:38:7B:4D:B6",
-      "batteryLevel": 57,
-      "online": true,
-      "isOn": false,
-      "powerConsumption": 64,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-53",
-      "name": "Living Room AC",
-      "type": "AIR_CONDITIONER",
-      "brand": "Samsung",
-      "model": "Model-265",
-      "serialNumber": "SN-630092",
-      "location": "Garage",
-      "ipAddress": "45.45.72.178",
-      "macAddress": "77:D7:37:0F:A7:97",
-      "batteryLevel": 27,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 66,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-54",
-      "name": "Living Room AC",
-      "type": "AIR_CONDITIONER",
-      "brand": "Samsung",
-      "model": "Model-506",
-      "serialNumber": "SN-963676",
-      "location": "Bedroom",
-      "ipAddress": "3.249.49.155",
-      "macAddress": "10:2C:F5:C7:19:BA",
-      "batteryLevel": 67,
-      "online": false,
-      "isOn": false,
-      "powerConsumption": 44,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-55",
-      "name": "Kitchen Light",
-      "type": "LIGHT",
-      "brand": "Nest",
-      "model": "Model-979",
-      "serialNumber": "SN-326494",
-      "location": "Office",
-      "ipAddress": "146.87.78.229",
-      "macAddress": "8F:4F:42:29:8A:C1",
-      "batteryLevel": 82,
-      "online": false,
-      "isOn": true,
-      "powerConsumption": 60,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-56",
-      "name": "Living Room Light",
-      "type": "LIGHT",
-      "brand": "LG",
-      "model": "Model-537",
-      "serialNumber": "SN-503990",
-      "location": "Office",
-      "ipAddress": "42.111.20.150",
-      "macAddress": "A1:D1:E2:FB:07:DD",
-      "batteryLevel": 39,
-      "online": true,
-      "isOn": true,
-      "powerConsumption": 36,
-      "installationDate": "2026-03-07T03:09:10.148Z",
-      "lastUpdate": "2026-03-07T03:09:10.148Z"
-    }
-  ],
-  "LIGHT": [
-    {
-      "deviceId": "DEV-5",
-      "brightness": 27,
-      "color": "blue",
-      "mode": "night"
-    },
-    {
-      "deviceId": "DEV-7",
-      "brightness": 37,
-      "color": "yellow",
-      "mode": "night"
-    },
-    {
-      "deviceId": "DEV-10",
-      "brightness": 48,
-      "color": "yellow",
-      "mode": "night"
-    },
-    {
-      "deviceId": "DEV-19",
-      "brightness": 26,
-      "color": "white",
-      "mode": "eco"
-    },
-    {
-      "deviceId": "DEV-22",
-      "brightness": 93,
-      "color": "red",
-      "mode": "normal"
-    },
-    {
-      "deviceId": "DEV-23",
-      "brightness": 11,
-      "color": "yellow",
-      "mode": "eco"
-    },
-    {
-      "deviceId": "DEV-29",
-      "brightness": 35,
-      "color": "yellow",
-      "mode": "eco"
-    },
-    {
-      "deviceId": "DEV-31",
-      "brightness": 3,
-      "color": "red",
-      "mode": "eco"
-    },
-    {
-      "deviceId": "DEV-38",
-      "brightness": 75,
-      "color": "blue",
-      "mode": "night"
-    },
-    {
-      "deviceId": "DEV-41",
-      "brightness": 40,
-      "color": "blue",
-      "mode": "eco"
-    },
-    {
-      "deviceId": "DEV-55",
-      "brightness": 8,
-      "color": "white",
-      "mode": "eco"
-    },
-    {
-      "deviceId": "DEV-56",
-      "brightness": 45,
-      "color": "yellow",
-      "mode": "normal"
-    }
-  ],
-  "THERMOSTAT": [
-    {
-      "deviceId": "DEV-6",
-      "temperature": 24,
-      "humidity": 57,
-      "targetTemperature": 22,
-      "mode": "auto",
-      "ecoMode": true
-    },
-    {
-      "deviceId": "DEV-12",
-      "temperature": 30,
-      "humidity": 54,
-      "targetTemperature": 23,
-      "mode": "cool",
-      "ecoMode": false
-    },
-    {
-      "deviceId": "DEV-13",
-      "temperature": 25,
-      "humidity": 35,
-      "targetTemperature": 24,
-      "mode": "auto",
-      "ecoMode": false
-    },
-    {
-      "deviceId": "DEV-24",
-      "temperature": 22,
-      "humidity": 65,
-      "targetTemperature": 25,
-      "mode": "auto",
-      "ecoMode": false
-    },
-    {
-      "deviceId": "DEV-37",
-      "temperature": 19,
-      "humidity": 70,
-      "targetTemperature": 23,
-      "mode": "cool",
-      "ecoMode": true
-    },
-    {
-      "deviceId": "DEV-49",
-      "temperature": 27,
-      "humidity": 70,
-      "targetTemperature": 22,
-      "mode": "auto",
-      "ecoMode": false
-    },
-    {
-      "deviceId": "DEV-52",
-      "temperature": 26,
-      "humidity": 64,
-      "targetTemperature": 20,
-      "mode": "heat",
-      "ecoMode": true
-    }
-  ],
-  "LOCK": [
-    {
-      "deviceId": "DEV-8",
-      "locked": false,
-      "lockType": "keypad",
-      "autoLock": true
-    },
-    {
-      "deviceId": "DEV-9",
-      "locked": false,
-      "lockType": "keypad",
-      "autoLock": false
-    },
-    {
-      "deviceId": "DEV-11",
-      "locked": false,
-      "lockType": "keypad",
-      "autoLock": false
-    },
-    {
-      "deviceId": "DEV-26",
-      "locked": true,
-      "lockType": "keypad",
-      "autoLock": false
-    },
-    {
-      "deviceId": "DEV-27",
-      "locked": true,
-      "lockType": "digital",
-      "autoLock": true
-    },
-    {
-      "deviceId": "DEV-30",
-      "locked": true,
-      "lockType": "keypad",
-      "autoLock": true
-    },
-    {
-      "deviceId": "DEV-32",
-      "locked": false,
-      "lockType": "digital",
-      "autoLock": false
-    },
-    {
-      "deviceId": "DEV-39",
-      "locked": true,
-      "lockType": "digital",
-      "autoLock": true
-    },
-    {
-      "deviceId": "DEV-51",
-      "locked": true,
-      "lockType": "keypad",
-      "autoLock": true
-    }
-  ],
-  "LOCK_SECURITY": [
-    {
-      "deviceId": "DEV-8",
-      "encryptedAccessCode": "ENC-8482",
-      "lastRotation": "2026-03-07T03:09:10.147Z"
-    },
-    {
-      "deviceId": "DEV-9",
-      "encryptedAccessCode": "ENC-4441",
-      "lastRotation": "2026-03-07T03:09:10.147Z"
-    },
-    {
-      "deviceId": "DEV-11",
-      "encryptedAccessCode": "ENC-9478",
-      "lastRotation": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-26",
-      "encryptedAccessCode": "ENC-9898",
-      "lastRotation": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-27",
-      "encryptedAccessCode": "ENC-2922",
-      "lastRotation": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-30",
-      "encryptedAccessCode": "ENC-2635",
-      "lastRotation": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-32",
-      "encryptedAccessCode": "ENC-6365",
-      "lastRotation": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-39",
-      "encryptedAccessCode": "ENC-8512",
-      "lastRotation": "2026-03-07T03:09:10.148Z"
-    },
-    {
-      "deviceId": "DEV-51",
-      "encryptedAccessCode": "ENC-7781",
-      "lastRotation": "2026-03-07T03:09:10.148Z"
-    }
-  ],
-  "TV": [
-    {
-      "deviceId": "DEV-17",
-      "volume": 88,
-      "resolution": "1080p",
-      "inputSource": "HDMI1"
-    },
-    {
-      "deviceId": "DEV-42",
-      "volume": 80,
-      "resolution": "1080p",
-      "inputSource": "Netflix"
-    },
-    {
-      "deviceId": "DEV-45",
-      "volume": 82,
-      "resolution": "4K",
-      "inputSource": "HDMI2"
-    },
-    {
-      "deviceId": "DEV-47",
-      "volume": 39,
-      "resolution": "1080p",
-      "inputSource": "Netflix"
-    },
-    {
-      "deviceId": "DEV-50",
-      "volume": 76,
-      "resolution": "4K",
-      "inputSource": "HDMI1"
-    }
-  ],
-  "AIR_CONDITIONER": [
-    {
-      "deviceId": "DEV-1",
-      "temperature": 17,
-      "mode": "fan",
-      "ecoMode": true
-    },
-    {
-      "deviceId": "DEV-20",
-      "temperature": 23,
-      "mode": "cool",
-      "ecoMode": false
-    },
-    {
-      "deviceId": "DEV-21",
-      "temperature": 20,
-      "mode": "dry",
-      "ecoMode": true
-    },
-    {
-      "deviceId": "DEV-36",
-      "temperature": 22,
-      "mode": "cool",
-      "ecoMode": false
-    },
-    {
-      "deviceId": "DEV-53",
-      "temperature": 20,
-      "mode": "dry",
-      "ecoMode": true
-    },
-    {
-      "deviceId": "DEV-54",
-      "temperature": 25,
-      "mode": "dry",
-      "ecoMode": true
-    }
-  ],
-  "COMPUTER": [
-    {
-      "deviceId": "DEV-4",
-      "operatingSystem": "macOS",
-      "ramGB": 16,
-      "storageGB": 1024
-    },
-    {
-      "deviceId": "DEV-14",
-      "operatingSystem": "Windows",
-      "ramGB": 8,
-      "storageGB": 256
-    },
-    {
-      "deviceId": "DEV-15",
-      "operatingSystem": "macOS",
-      "ramGB": 32,
-      "storageGB": 256
-    },
-    {
-      "deviceId": "DEV-18",
-      "operatingSystem": "Linux",
-      "ramGB": 16,
-      "storageGB": 512
-    },
-    {
-      "deviceId": "DEV-33",
-      "operatingSystem": "macOS",
-      "ramGB": 32,
-      "storageGB": 256
-    },
-    {
-      "deviceId": "DEV-34",
-      "operatingSystem": "Linux",
-      "ramGB": 32,
-      "storageGB": 1024
-    },
-    {
-      "deviceId": "DEV-35",
-      "operatingSystem": "Linux",
-      "ramGB": 32,
-      "storageGB": 512
-    },
-    {
-      "deviceId": "DEV-43",
-      "operatingSystem": "macOS",
-      "ramGB": 32,
-      "storageGB": 256
-    },
-    {
-      "deviceId": "DEV-46",
-      "operatingSystem": "Windows",
-      "ramGB": 16,
-      "storageGB": 256
-    },
-    {
-      "deviceId": "DEV-48",
-      "operatingSystem": "Linux",
-      "ramGB": 32,
-      "storageGB": 512
-    }
-  ],
-  "SPEAKER": [
-    {
-      "deviceId": "DEV-2",
-      "volume": 0,
-      "muted": false,
-      "connectivity": "Bluetooth"
-    },
-    {
-      "deviceId": "DEV-3",
-      "volume": 51,
-      "muted": false,
-      "connectivity": "Aux"
-    },
-    {
-      "deviceId": "DEV-16",
-      "volume": 13,
-      "muted": true,
-      "connectivity": "Aux"
-    },
-    {
-      "deviceId": "DEV-25",
-      "volume": 86,
-      "muted": false,
-      "connectivity": "WiFi"
-    },
-    {
-      "deviceId": "DEV-28",
-      "volume": 37,
-      "muted": false,
-      "connectivity": "WiFi"
-    },
-    {
-      "deviceId": "DEV-40",
-      "volume": 16,
-      "muted": true,
-      "connectivity": "Aux"
-    },
-    {
-      "deviceId": "DEV-44",
-      "volume": 33,
-      "muted": true,
-      "connectivity": "WiFi"
-    }
-  ]
-}
+[
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Whirlpool",
+    "modelo": "718",
+    "ubicacion": "Cocina",
+    "estado": "Usado",
+    "en_linea": true
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Daewoo",
+    "modelo": "613",
+    "ubicacion": "Baño",
+    "estado": "Nuevo",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Samsung",
+    "modelo": "675",
+    "ubicacion": "Baño",
+    "estado": "Usado",
+    "en_linea": true
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Daewoo",
+    "modelo": "856",
+    "ubicacion": "Sala",
+    "estado": "Nuevo",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Mabe",
+    "modelo": "326",
+    "ubicacion": "Atico",
+    "estado": "Nuevo",
+    "en_linea": true
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Daewoo",
+    "modelo": "450",
+    "ubicacion": "Recámara",
+    "estado": "Usado",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Whirlpool",
+    "modelo": "14",
+    "ubicacion": "Sotano",
+    "estado": "Usado",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Whirlpool",
+    "modelo": "633",
+    "ubicacion": "Recámara",
+    "estado": "Usado",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Daewoo",
+    "modelo": "897",
+    "ubicacion": "Sotano",
+    "estado": "Usado",
+    "en_linea": true
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Mabe",
+    "modelo": "93",
+    "ubicacion": "Atico",
+    "estado": "Nuevo",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Samsung",
+    "modelo": "725",
+    "ubicacion": "Baño",
+    "estado": "Nuevo",
+    "en_linea": true
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Samsung",
+    "modelo": "607",
+    "ubicacion": "Sala",
+    "estado": "Nuevo",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Samsung",
+    "modelo": "732",
+    "ubicacion": "Sala",
+    "estado": "Usado",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Hisense",
+    "modelo": "183",
+    "ubicacion": "Atico",
+    "estado": "Nuevo",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "LG",
+    "modelo": "794",
+    "ubicacion": "Sotano",
+    "estado": "Usado",
+    "en_linea": true
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Hisense",
+    "modelo": "793",
+    "ubicacion": "Recámara",
+    "estado": "Nuevo",
+    "en_linea": true
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Mewgenics",
+    "modelo": "538",
+    "ubicacion": "Atico",
+    "estado": "Nuevo",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Mewgenics",
+    "modelo": "783",
+    "ubicacion": "Sotano",
+    "estado": "Usado",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Mabe",
+    "modelo": "911",
+    "ubicacion": "Recámara",
+    "estado": "Usado",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "LG",
+    "modelo": "238",
+    "ubicacion": "Cocina",
+    "estado": "Nuevo",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Hisense",
+    "modelo": "248",
+    "ubicacion": "Sala",
+    "estado": "Usado",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Samsung",
+    "modelo": "810",
+    "ubicacion": "Sala",
+    "estado": "Usado",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "LG",
+    "modelo": "727",
+    "ubicacion": "Sala",
+    "estado": "Nuevo",
+    "en_linea": true
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Whirlpool",
+    "modelo": "698",
+    "ubicacion": "Sotano",
+    "estado": "Nuevo",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Mabe",
+    "modelo": "111",
+    "ubicacion": "Sala",
+    "estado": "Usado",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "LG",
+    "modelo": "336",
+    "ubicacion": "Atico",
+    "estado": "Usado",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Samsung",
+    "modelo": "340",
+    "ubicacion": "Cocina",
+    "estado": "Nuevo",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "LG",
+    "modelo": "848",
+    "ubicacion": "Sotano",
+    "estado": "Nuevo",
+    "en_linea": true
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Mabe",
+    "modelo": "686",
+    "ubicacion": "Sala",
+    "estado": "Usado",
+    "en_linea": true
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Mabe",
+    "modelo": "726",
+    "ubicacion": "Sala",
+    "estado": "Nuevo",
+    "en_linea": true
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Samsung",
+    "modelo": "147",
+    "ubicacion": "Sotano",
+    "estado": "Nuevo",
+    "en_linea": true
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Samsung",
+    "modelo": "978",
+    "ubicacion": "Baño",
+    "estado": "Usado",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "LG",
+    "modelo": "323",
+    "ubicacion": "Baño",
+    "estado": "Nuevo",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Daewoo",
+    "modelo": "746",
+    "ubicacion": "Cocina",
+    "estado": "Nuevo",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Mewgenics",
+    "modelo": "325",
+    "ubicacion": "Cocina",
+    "estado": "Usado",
+    "en_linea": true
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Daewoo",
+    "modelo": "267",
+    "ubicacion": "Recámara",
+    "estado": "Usado",
+    "en_linea": true
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Samsung",
+    "modelo": "991",
+    "ubicacion": "Sala",
+    "estado": "Nuevo",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Mewgenics",
+    "modelo": "31",
+    "ubicacion": "Sotano",
+    "estado": "Usado",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Samsung",
+    "modelo": "161",
+    "ubicacion": "Cocina",
+    "estado": "Usado",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Whirlpool",
+    "modelo": "809",
+    "ubicacion": "Cocina",
+    "estado": "Usado",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Mewgenics",
+    "modelo": "411",
+    "ubicacion": "Atico",
+    "estado": "Usado",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Hisense",
+    "modelo": "111",
+    "ubicacion": "Sotano",
+    "estado": "Usado",
+    "en_linea": true
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Mabe",
+    "modelo": "533",
+    "ubicacion": "Baño",
+    "estado": "Nuevo",
+    "en_linea": true
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Hisense",
+    "modelo": "603",
+    "ubicacion": "Atico",
+    "estado": "Nuevo",
+    "en_linea": true
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Samsung",
+    "modelo": "771",
+    "ubicacion": "Atico",
+    "estado": "Usado",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Whirlpool",
+    "modelo": "8",
+    "ubicacion": "Sala",
+    "estado": "Usado",
+    "en_linea": true
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Daewoo",
+    "modelo": "445",
+    "ubicacion": "Sala",
+    "estado": "Usado",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Samsung",
+    "modelo": "277",
+    "ubicacion": "Atico",
+    "estado": "Usado",
+    "en_linea": true
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Whirlpool",
+    "modelo": "754",
+    "ubicacion": "Sala",
+    "estado": "Nuevo",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "Mewgenics",
+    "modelo": "652",
+    "ubicacion": "Sotano",
+    "estado": "Nuevo",
+    "en_linea": false
+  },
+  {
+    "tipo": "Electrodomestico",
+    "marca": "LG",
+    "modelo": "713",
+    "ubicacion": "Atico",
+    "estado": "Usado",
+    "en_linea": true
+  }
+]
