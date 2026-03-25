@@ -4,7 +4,7 @@ db.devices.find()
 // Get one device
 db.devices.findOne()
 
-//Get devices by brand
+// Get devices by brand
 db.devices.find({ brand: "LG" })
 
 // Get devices by status
