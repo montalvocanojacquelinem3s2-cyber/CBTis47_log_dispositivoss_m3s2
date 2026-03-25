@@ -1,5 +1,13 @@
 [
   {
+  "type": "Electrodomestico",
+  "brand": "LG",
+  "model": "123",
+  "location": "Cocina",
+  "status": "Nuevo",
+  "online": true,
+},
+  {
     "type": "Electrodomestico",
     "brand": "Whirlpool",
     "model": "718",
