@@ -1,410 +1,410 @@
 [
   {
-    "tipo": "Electrodomestico",
-    "marca": "Whirlpool",
-    "modelo": "718",
-    "ubicacion": "Cocina",
-    "estado": "Usado",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "Whirlpool",
+    "model": "718",
+    "location": "Cocina",
+    "status": "Usado",
+    "online": true
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Daewoo",
-    "modelo": "613",
-    "ubicacion": "Baño",
-    "estado": "Nuevo",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Daewoo",
+    "model": "613",
+    "location": "Baño",
+    "status": "Nuevo",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Samsung",
-    "modelo": "675",
-    "ubicacion": "Baño",
-    "estado": "Usado",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "675",
+    "location": "Baño",
+    "status": "Usado",
+    "online": true
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Daewoo",
-    "modelo": "856",
-    "ubicacion": "Sala",
-    "estado": "Nuevo",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Daewoo",
+    "model": "856",
+    "location": "Sala",
+    "status": "Nuevo",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Mabe",
-    "modelo": "326",
-    "ubicacion": "Atico",
-    "estado": "Nuevo",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "Mabe",
+    "model": "326",
+    "location": "Atico",
+    "status": "Nuevo",
+    "online": true
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Daewoo",
-    "modelo": "450",
-    "ubicacion": "Recámara",
-    "estado": "Usado",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Daewoo",
+    "model": "450",
+    "location": "Recámara",
+    "status": "Usado",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Whirlpool",
-    "modelo": "14",
-    "ubicacion": "Sotano",
-    "estado": "Usado",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Whirlpool",
+    "model": "14",
+    "location": "Sotano",
+    "status": "Usado",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Whirlpool",
-    "modelo": "633",
-    "ubicacion": "Recámara",
-    "estado": "Usado",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Whirlpool",
+    "model": "633",
+    "location": "Recámara",
+    "status": "Usado",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Daewoo",
-    "modelo": "897",
-    "ubicacion": "Sotano",
-    "estado": "Usado",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "Daewoo",
+    "model": "897",
+    "location": "Sotano",
+    "status": "Usado",
+    "online": true
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Mabe",
-    "modelo": "93",
-    "ubicacion": "Atico",
-    "estado": "Nuevo",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Mabe",
+    "model": "93",
+    "location": "Atico",
+    "status": "Nuevo",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Samsung",
-    "modelo": "725",
-    "ubicacion": "Baño",
-    "estado": "Nuevo",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "725",
+    "location": "Baño",
+    "status": "Nuevo",
+    "online": true
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Samsung",
-    "modelo": "607",
-    "ubicacion": "Sala",
-    "estado": "Nuevo",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "607",
+    "location": "Sala",
+    "status": "Nuevo",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Samsung",
-    "modelo": "732",
-    "ubicacion": "Sala",
-    "estado": "Usado",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "732",
+    "location": "Sala",
+    "status": "Usado",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Hisense",
-    "modelo": "183",
-    "ubicacion": "Atico",
-    "estado": "Nuevo",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Hisense",
+    "model": "183",
+    "location": "Atico",
+    "status": "Nuevo",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "LG",
-    "modelo": "794",
-    "ubicacion": "Sotano",
-    "estado": "Usado",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "LG",
+    "model": "794",
+    "location": "Sotano",
+    "status": "Usado",
+    "online": true
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Hisense",
-    "modelo": "793",
-    "ubicacion": "Recámara",
-    "estado": "Nuevo",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "Hisense",
+    "model": "793",
+    "location": "Recámara",
+    "status": "Nuevo",
+    "online": true
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Mewgenics",
-    "modelo": "538",
-    "ubicacion": "Atico",
-    "estado": "Nuevo",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Mewgenics",
+    "model": "538",
+    "location": "Atico",
+    "status": "Nuevo",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Mewgenics",
-    "modelo": "783",
-    "ubicacion": "Sotano",
-    "estado": "Usado",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Mewgenics",
+    "model": "783",
+    "location": "Sotano",
+    "status": "Usado",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Mabe",
-    "modelo": "911",
-    "ubicacion": "Recámara",
-    "estado": "Usado",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Mabe",
+    "model": "911",
+    "location": "Recámara",
+    "status": "Usado",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "LG",
-    "modelo": "238",
-    "ubicacion": "Cocina",
-    "estado": "Nuevo",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "LG",
+    "model": "238",
+    "location": "Cocina",
+    "status": "Nuevo",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Hisense",
-    "modelo": "248",
-    "ubicacion": "Sala",
-    "estado": "Usado",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Hisense",
+    "model": "248",
+    "location": "Sala",
+    "status": "Usado",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Samsung",
-    "modelo": "810",
-    "ubicacion": "Sala",
-    "estado": "Usado",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "810",
+    "location": "Sala",
+    "status": "Usado",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "LG",
-    "modelo": "727",
-    "ubicacion": "Sala",
-    "estado": "Nuevo",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "LG",
+    "model": "727",
+    "location": "Sala",
+    "status": "Nuevo",
+    "online": true
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Whirlpool",
-    "modelo": "698",
-    "ubicacion": "Sotano",
-    "estado": "Nuevo",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Whirlpool",
+    "model": "698",
+    "location": "Sotano",
+    "status": "Nuevo",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Mabe",
-    "modelo": "111",
-    "ubicacion": "Sala",
-    "estado": "Usado",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Mabe",
+    "model": "111",
+    "location": "Sala",
+    "status": "Usado",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "LG",
-    "modelo": "336",
-    "ubicacion": "Atico",
-    "estado": "Usado",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "LG",
+    "model": "336",
+    "location": "Atico",
+    "status": "Usado",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Samsung",
-    "modelo": "340",
-    "ubicacion": "Cocina",
-    "estado": "Nuevo",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "340",
+    "location": "Cocina",
+    "status": "Nuevo",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "LG",
-    "modelo": "848",
-    "ubicacion": "Sotano",
-    "estado": "Nuevo",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "LG",
+    "model": "848",
+    "location": "Sotano",
+    "status": "Nuevo",
+    "online": true
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Mabe",
-    "modelo": "686",
-    "ubicacion": "Sala",
-    "estado": "Usado",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "Mabe",
+    "model": "686",
+    "location": "Sala",
+    "status": "Usado",
+    "online": true
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Mabe",
-    "modelo": "726",
-    "ubicacion": "Sala",
-    "estado": "Nuevo",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "Mabe",
+    "model": "726",
+    "location": "Sala",
+    "status": "Nuevo",
+    "online": true
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Samsung",
-    "modelo": "147",
-    "ubicacion": "Sotano",
-    "estado": "Nuevo",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "147",
+    "location": "Sotano",
+    "status": "Nuevo",
+    "online": true
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Samsung",
-    "modelo": "978",
-    "ubicacion": "Baño",
-    "estado": "Usado",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "978",
+    "location": "Baño",
+    "status": "Usado",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "LG",
-    "modelo": "323",
-    "ubicacion": "Baño",
-    "estado": "Nuevo",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "LG",
+    "model": "323",
+    "location": "Baño",
+    "status": "Nuevo",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Daewoo",
-    "modelo": "746",
-    "ubicacion": "Cocina",
-    "estado": "Nuevo",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Daewoo",
+    "model": "746",
+    "location": "Cocina",
+    "status": "Nuevo",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Mewgenics",
-    "modelo": "325",
-    "ubicacion": "Cocina",
-    "estado": "Usado",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "Mewgenics",
+    "model": "325",
+    "location": "Cocina",
+    "status": "Usado",
+    "online": true
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Daewoo",
-    "modelo": "267",
-    "ubicacion": "Recámara",
-    "estado": "Usado",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "Daewoo",
+    "model": "267",
+    "location": "Recámara",
+    "status": "Usado",
+    "online": true
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Samsung",
-    "modelo": "991",
-    "ubicacion": "Sala",
-    "estado": "Nuevo",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "991",
+    "location": "Sala",
+    "status": "Nuevo",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Mewgenics",
-    "modelo": "31",
-    "ubicacion": "Sotano",
-    "estado": "Usado",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Mewgenics",
+    "model": "31",
+    "location": "Sotano",
+    "status": "Usado",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Samsung",
-    "modelo": "161",
-    "ubicacion": "Cocina",
-    "estado": "Usado",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "161",
+    "location": "Cocina",
+    "status": "Usado",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Whirlpool",
-    "modelo": "809",
-    "ubicacion": "Cocina",
-    "estado": "Usado",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Whirlpool",
+    "model": "809",
+    "location": "Cocina",
+    "status": "Usado",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Mewgenics",
-    "modelo": "411",
-    "ubicacion": "Atico",
-    "estado": "Usado",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Mewgenics",
+    "model": "411",
+    "location": "Atico",
+    "status": "Usado",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Hisense",
-    "modelo": "111",
-    "ubicacion": "Sotano",
-    "estado": "Usado",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "Hisense",
+    "model": "111",
+    "location": "Sotano",
+    "status": "Usado",
+    "online": true
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Mabe",
-    "modelo": "533",
-    "ubicacion": "Baño",
-    "estado": "Nuevo",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "Mabe",
+    "model": "533",
+    "location": "Baño",
+    "status": "Nuevo",
+    "online": true
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Hisense",
-    "modelo": "603",
-    "ubicacion": "Atico",
-    "estado": "Nuevo",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "Hisense",
+    "model": "603",
+    "location": "Atico",
+    "status": "Nuevo",
+    "online": true
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Samsung",
-    "modelo": "771",
-    "ubicacion": "Atico",
-    "estado": "Usado",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "771",
+    "location": "Atico",
+    "status": "Usado",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Whirlpool",
-    "modelo": "8",
-    "ubicacion": "Sala",
-    "estado": "Usado",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "Whirlpool",
+    "model": "8",
+    "location": "Sala",
+    "status": "Usado",
+    "online": true
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Daewoo",
-    "modelo": "445",
-    "ubicacion": "Sala",
-    "estado": "Usado",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Daewoo",
+    "model": "445",
+    "location": "Sala",
+    "status": "Usado",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Samsung",
-    "modelo": "277",
-    "ubicacion": "Atico",
-    "estado": "Usado",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "277",
+    "location": "Atico",
+    "status": "Usado",
+    "online": true
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Whirlpool",
-    "modelo": "754",
-    "ubicacion": "Sala",
-    "estado": "Nuevo",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Whirlpool",
+    "model": "754",
+    "location": "Sala",
+    "status": "Nuevo",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "Mewgenics",
-    "modelo": "652",
-    "ubicacion": "Sotano",
-    "estado": "Nuevo",
-    "en_linea": false
+    "type": "Electrodomestico",
+    "brand": "Mewgenics",
+    "model": "652",
+    "location": "Sotano",
+    "status": "Nuevo",
+    "online": false
   },
   {
-    "tipo": "Electrodomestico",
-    "marca": "LG",
-    "modelo": "713",
-    "ubicacion": "Atico",
-    "estado": "Usado",
-    "en_linea": true
+    "type": "Electrodomestico",
+    "brand": "LG",
+    "model": "713",
+    "location": "Atico",
+    "status": "Usado",
+    "online": true
   }
 ]
