@@ -1,4 +1,7 @@
+// ==========================================
 // Simple Find Queries - Devices Collection
+// ==========================================
+
 
 // 1. Get all devices
 db.devices.find()
@@ -8,21 +11,26 @@ db.devices.find()
 db.devices.findOne()
 
 
-// 3. Get devices by brand (LG)
+// 3. Get one device by _id
+db.devices.findOne({ _id: ObjectId("69c4656680955ca74f75b4fc")})
+
+
+// 4. Get devices where brand is exactly "LG"
 db.devices.find({ brand: "LG" })
 
 
-// 4. Get devices by status (Nuevo)
+// 5. Get devices where status is exactly "Nuevo"
 db.devices.find({ status: "Nuevo" })
 
 
-// 5. Get devices by location (Cocina)
+// 6. Get devices where location is exactly "Cocina"
 db.devices.find({ location: "Cocina" })
 
 
-// 6. Get devices that are online
+// 7. Get devices that are online
 db.devices.find({ online: true })
 
 
-// 7. Get devices by brand and status
+// 8. Get devices by brand and status
 db.devices.find({ brand: "Samsung", status: "Nuevo" })
+
