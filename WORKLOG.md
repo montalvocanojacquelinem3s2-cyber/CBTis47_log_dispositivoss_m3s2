@@ -2,7 +2,7 @@
 
 ---
 
-## Scrum Master - axel
+## Scrum Master - Carrera Quezada Axel Ivan
 
 
 
