@@ -25,3 +25,11 @@ including hybrid devices that can perform more than one function.
 | 2 | The Query Developer |  Montalvo Cano Jacqueline  | **Constructor MQL.** Traduce las preguntas de negocio ("¿Cuántos usuarios...?") a código MongoDB (`db.collection.find(...)`). Optimiza filtros y consultas. |
 | 3 | The Integration Specialist |  De La Cuz Zayas Juan Irving  | **Configurador del Entorno.** Crea el Cluster en Atlas o la conexión en Compass. Gestiona índices y asegura la conectividad. Administra el repositorio GitHub. |
 | 4 | The Data Seeder / QA |  Ramírez López Fatima Yocelin  | **Generador de Caos.** Crea datos de prueba (JSON ficticio). Valida consultas y reporta errores ("bugs"). |
+
+---
+
+## Registro de Trabajo
+
+Consulta el trabajo detallado del equipo aquí:
+
+ [WORKLOG.md](./WORKLOG.md)
