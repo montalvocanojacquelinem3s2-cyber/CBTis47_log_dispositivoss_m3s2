@@ -37,7 +37,7 @@ Hubo algunas decisiones importantes, por ejemplo:
 
 ---
 
-## Data Seeder / QA - fatima
+## Data Seeder / QA - Ramírez López Fatima Yocelin
 
 -Se propusieron nuevos entregables para el proyecto, no se realizo ningún avance de mi parte
 
