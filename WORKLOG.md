@@ -22,16 +22,17 @@ Hubo algunas decisiones importantes, por ejemplo:
 
 -Al final representé todo con un diagrama en Mermaid para que se entienda visualmente.
 
--Mi rol ahora paso a ser Data Seeder / QA, y el rol se le asigno a mi compañera Samantha.
----
-
-## Query Developer - jacqui
-
-
+-Mi rol ahora paso a ser Data Seeder, y el rol se le asigno a mi compañera Samantha.
 
 ---
 
-## Integration Specialist - irving
+## Query Developer - Montalvo Cano Jacqueline
+
+
+
+---
+
+## Integration Specialist - De La Cruz Zayas Juan Irving
 
 
 
@@ -54,5 +55,5 @@ $ne diferente
 
 -Se reporto un problema con las semillas, hice otras 55 semillas mas y se insertaron en la base de datos
 
--Mi rol cambio a scrum master, y quien tomo mi rol fue mi compañera Fatima.
+-Mi rol cambio a Scrum Master, y quien tomo mi rol fue mi compañera Fatima.
 
