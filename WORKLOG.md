@@ -8,7 +8,7 @@
 
 ---
 
-## Data Modeler - samantha 
+## Data Modeler - Garcia Pulido Samantha Michelle 
 
 Yo fui el Data Modeler del equipo, entonces me encargué de diseñar cómo iba a estar estructurada la base de datos.
 Primero definí una entidad principal que se llama DEVICES, donde puse toda la información que comparten los dispositivos, como el nombre, la marca, el modelo, la ubicación y cosas de conectividad. La idea era no repetir datos y mantener todo más ordenado.
