@@ -1,0 +1,76 @@
+// Advanced Find Queries - Devices Collection
+
+
+// 1. Get devices where status is NOT "Nuevo"
+db.devices.find({
+  status: { $ne: "Nuevo" },
+  status: { $exists: true }
+})
+
+
+// 2. Get devices where brand is LG or Samsung
+db.devices.find({ brand: { $in: ["LG", "Samsung"] } })
+
+
+// 3. Get devices where brand is NOT LG or Samsung
+db.devices.find({ brand: { $nin: ["LG", "Samsung"] } })
+
+
+// 4. Get devices that are online
+db.devices.find({ online: true })
+
+
+// 5. Get devices that are offline
+db.devices.find({ online: false })
+
+
+// 6. Get devices that are Samsung AND status "Nuevo"
+db.devices.find({
+  brand: "Samsung",
+  status: "Nuevo"
+})
+
+
+// 7. Get devices that are LG OR located in Cocina
+db.devices.find({
+  $or: [
+    { brand: "LG" },
+    { location: "Cocina" }
+  ]
+})
+
+
+// 8. Get devices located in Cocina or Sala
+db.devices.find({
+  location: { $in: ["Cocina", "Sala"] }
+})
+
+
+// 9. Get devices that are NOT in Cocina (with existence check)
+db.devices.find({
+  location: { $ne: "Cocina", $exists: true }
+})
+
+
+// 10. Get devices that are online AND status is "Nuevo"
+db.devices.find({
+  online: true,
+  status: "Nuevo"
+})
+
+
+// ==============================
+// NUMERIC QUERIES (SIMULATED)
+// ==============================
+
+
+// 11. Get devices with powerUsage greater than 100
+db.devices.find({
+  powerUsage: { $gt: 100 }
+})
+
+
+// 12. Get devices with powerUsage between 50 and 200
+db.devices.find({
+  powerUsage: { $gte: 50, $lte: 200 }
+})
