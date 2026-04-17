@@ -2,13 +2,13 @@
 
 ---
 
-## Scrum Master - Carrera Quezada Axel Ivan
+## Scrum Master - Garcia Pulido Samantha Michelle
 
 
 
 ---
 
-## Data Modeler - Garcia Pulido Samantha Michelle 
+## Data Modeler - Ramírez López Fatima Yocelin
 
 Yo fui el Data Modeler del equipo, entonces me encargué de diseñar cómo iba a estar estructurada la base de datos.
 Primero definí una entidad principal que se llama DEVICES, donde puse toda la información que comparten los dispositivos, como el nombre, la marca, el modelo, la ubicación y cosas de conectividad. La idea era no repetir datos y mantener todo más ordenado.
@@ -22,7 +22,6 @@ Hubo algunas decisiones importantes, por ejemplo:
 
 -Al final representé todo con un diagrama en Mermaid para que se entienda visualmente.
 
--Mi rol ahora paso a ser Data Seeder, y el rol se le asigno a mi compañera Samantha.
 
 ---
 
@@ -52,13 +51,13 @@ Mi rol fue traducir las necesidades del sistema a código en MongoDB, creando co
 
 ---
 
-## Data Seeder / QA - Ramírez López Fatima Yocelin
+## Data Seeder / QA - Carrera Quezada Axel Ivan
 
--Se propusieron nuevos entregables para el proyecto, no se realizo ningún avance de mi parte
+-Se propusieron nuevos entregables para el proyecto, no se realizo ningún avance de mi parte.
 
 -Decidí investigar de que iba el primer entregable, como funcionan los scripts de query y como puedo hacer uno
 find es para encontrar varios documentos
-findOne es para encontrar el primer documento que coincida con las características buscadas
+findOne es para encontrar el primer documento que coincida con las características buscadas.
 
 -operadores
 $gt greater than, mayor que
@@ -67,7 +66,6 @@ $gte mayor o igual que
 $lte menor o igual que
 $ne diferente
 
--Se reporto un problema con las semillas, hice otras 55 semillas mas y se insertaron en la base de datos
+-Se reporto un problema con las semillas, hice otras 55 semillas mas y se insertaron en la base de datos.
 
--Mi rol cambio a Scrum Master, y quien tomo mi rol fue mi compañera Fatima.
 
