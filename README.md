@@ -1,6 +1,5 @@
 # CBTis47_Smart-
 Imagina que controlas una casa inteligente. Cada dispositivo (foco, termostato, cerradura) envía datos diferentes.
-ROL "THE DTA MODELER"
 # Smart Home Device Logger
 
 This project models a Smart Home system using MongoDB and a document-oriented
