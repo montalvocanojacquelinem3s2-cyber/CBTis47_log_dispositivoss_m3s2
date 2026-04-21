@@ -15,6 +15,34 @@ Como propietario de una casa inteligente, quiero registrar y gestionar los dispo
 ---
 
 ## Sprint Planning
+TABLA 1: PRIMER PARCIAL (Fundamentos y Modelado)
+ 1- Inducción y Configuración Rules & Tools.
+README.md (Initial Commit) Con "Student Pledge" firmado.
+2- Sintaxis JSON/BSON Objetos, Arrays, Tipos de Datos.
+portfolio/me.json Un archivo JSON válido representando un objeto del mundo real.
+3- Schema Design I Embedding vs Referencing.
+docs/schema.mmd Diagrama ER usando Mermaid.js (Código).
+4- MongoDB Compass & Atlas Creación de Cluster y Colecciones.
+scripts/01_create_collections.js Script de inicialización.
+5- CRUD: Create (Insert) insertOne, insertMany.
+data/seeds.json Archivo con +50 documentos de prueba.
+6- Defensa de Arquitectura.
+RELEASE v1.0 (Tag) Repositorio completo con datos cargados.
+7-EVALUACIÓN PARCIAL 1 Retroalimentación y Captura.
+Presentación del proyecto.
+TABLA 2: SEGUNDO PARCIAL (Consultas y Manipulación)
+8- CRUD: Read (Básico) find(), findOne(), Proyecciones.
+queries/01_simple_find.mongodb Scripts de búsqueda simple.
+9- Operadores de Comparación $gt, $lt, $in, $ne.
+queries/02_filters.mongodb Consultas con filtros numéricos y de listas.
+10- Operadores Lógicos $and, $or, $not.
+queries/03_logic.mongodb Scripts de lógica booleana.
+11- CRUD: Update & Delete $set, $inc, $push (Arrays).
+scripts/update_data.js Scripts para modificar documentos.
+12- CIERRE DE PROYECTO P2 Gestión dinámica de datos.
+RELEASE v2.0 (Tag) Set de consultas funcionales documentadas.
+13-EVALUACIÓN PARCIAL 2 Retroalimentación y Captura.
+docs/reflection_p2.md Post-mortem del Sprint 2.
 
 ---
 
