@@ -2,20 +2,18 @@ erDiagram
 
     DEVICES {
         string deviceId PK
-        string name
         string type
         string brand
         string model
         string serialNumber
         string location
-        string ipAddress
-        string macAddress
+        string status
         int batteryLevel
         boolean online
         boolean isOn
-        int powerConsumption
         date installationDate
         date lastUpdate
+        string name
     }
 
     LIGHT {
@@ -38,7 +36,7 @@ erDiagram
         string deviceId FK
         boolean locked
         string lockType
-        boolean autoLock
+        boolean autoLock 
     }
 
     LOCK_SECURITY {
