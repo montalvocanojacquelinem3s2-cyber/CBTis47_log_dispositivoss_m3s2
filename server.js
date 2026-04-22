@@ -52,10 +52,12 @@ app.get("/devices", async (req, res) => {
   }
 });
 
-app.post("/register", async (req, res) => {
+ 
+    app.post("/register", async (req, res) => {
   try {
-    const { email, password } = req.body;
+    let { email, password } = req.body;
 
+    // Validar datos
     if (!email || !password) {
       return res.status(400).json({
         success: false,
@@ -63,6 +65,10 @@ app.post("/register", async (req, res) => {
       });
     }
 
+    // Normalizar email
+    email = email.toLowerCase().trim();
+
+    // Verificar si ya existe
     const existingUser = await User.findOne({ email });
 
     if (existingUser) {
@@ -72,55 +78,18 @@ app.post("/register", async (req, res) => {
       });
     }
 
-    const newUser = new User({ email, password });
+    // Crear usuario
+    const newUser = new User({
+      email,
+      password
+    });
+
     await newUser.save();
 
+    // Respuesta correcta
     res.json({
       success: true,
-      message: "Usuario registrado"
-    });
-
-  } catch (error) {
-    res.status(500).json({
-      success: false,
-      message: error.message
-    });
-  }
-});
-
-app.post("/login", async (req, res) => {
-  try {
-    const { email, password } = req.body;
-
-    if (!email || !password) {
-      return res.status(400).json({
-        success: false,
-        message: "Faltan datos"
-      });
-    }
-
-    const user = await User.findOne({ email });
-
-    if (!user) {
-      return res.status(401).json({
-        success: false,
-        message: "Usuario no encontrado"
-      });
-    }
-
-    if (user.password !== password) {
-      return res.status(401).json({
-        success: false,
-        message: "Contraseña incorrecta"
-      });
-    }
-
-    res.json({
-      success: true,
-      user: {
-        id: user._id,
-        email: user.email
-      }
+      message: "Usuario registrado correctamente"
     });
 
   } catch (error) {
