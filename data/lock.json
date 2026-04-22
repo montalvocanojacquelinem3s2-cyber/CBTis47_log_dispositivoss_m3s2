@@ -1,0 +1,44 @@
+[
+  {
+    "deviceId": "f120a814-07de-4524-a0fd-b71d7cdeccf5",
+    "locked": true,
+    "lockType": "digital",
+    "autoLock": true
+  },
+  {
+    "deviceId": "aae4af9d-3f59-44bd-a0c5-a2fe788a9891",
+    "locked": false,
+    "lockType": "digital",
+    "autoLock": true
+  },
+  {
+    "deviceId": "4cbeb7b5-fb94-4597-8f23-99b4e97c79ab",
+    "locked": true,
+    "lockType": "digital",
+    "autoLock": true
+  },
+  {
+    "deviceId": "9219193c-5027-4407-9613-df0a159a3cad",
+    "locked": false,
+    "lockType": "digital",
+    "autoLock": true
+  },
+  {
+    "deviceId": "6c327cef-169c-4d8a-b9e9-81c5c5fb1b7d",
+    "locked": false,
+    "lockType": "digital",
+    "autoLock": true
+  },
+  {
+    "deviceId": "a869acd1-8e8a-4029-bb4f-bbc4dd89edb5",
+    "locked": true,
+    "lockType": "digital",
+    "autoLock": true
+  },
+  {
+    "deviceId": "19202680-28e9-4d69-bf87-6dca0260b805",
+    "locked": false,
+    "lockType": "digital",
+    "autoLock": true
+  }
+]

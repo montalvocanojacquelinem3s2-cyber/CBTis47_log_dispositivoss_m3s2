@@ -1,0 +1,74 @@
+[
+  {
+    "deviceId": "284fc5c0-b4e4-4858-b70c-a58eb8fef5dc",
+    "temperature": 26,
+    "humidity": 62,
+    "targetTemperature": 22,
+    "mode": "cool",
+    "ecoMode": true
+  },
+  {
+    "deviceId": "79e0151f-7a7f-496c-885b-4d470452ae32",
+    "temperature": 29,
+    "humidity": 69,
+    "targetTemperature": 22,
+    "mode": "cool",
+    "ecoMode": false
+  },
+  {
+    "deviceId": "f57061c5-b2df-4d38-b691-92a8254d57fc",
+    "temperature": 18,
+    "humidity": 69,
+    "targetTemperature": 22,
+    "mode": "cool",
+    "ecoMode": true
+  },
+  {
+    "deviceId": "ea0436e4-f00a-4de3-ac74-b566f2bfa9f8",
+    "temperature": 19,
+    "humidity": 68,
+    "targetTemperature": 22,
+    "mode": "cool",
+    "ecoMode": false
+  },
+  {
+    "deviceId": "435081ad-edf9-4a0b-bae9-f3131a96e84f",
+    "temperature": 21,
+    "humidity": 48,
+    "targetTemperature": 22,
+    "mode": "cool",
+    "ecoMode": false
+  },
+  {
+    "deviceId": "94e99e98-c7cc-4918-b7cd-6d33a8f4625f",
+    "temperature": 30,
+    "humidity": 41,
+    "targetTemperature": 22,
+    "mode": "cool",
+    "ecoMode": true
+  },
+  {
+    "deviceId": "9503e089-3ec1-4a2e-8d03-b942215c559b",
+    "temperature": 30,
+    "humidity": 70,
+    "targetTemperature": 22,
+    "mode": "cool",
+    "ecoMode": false
+  },
+  {
+    "deviceId": "0961051b-55bf-4e50-940a-fa4430950971",
+    "temperature": 23,
+    "humidity": 59,
+    "targetTemperature": 22,
+    "mode": "cool",
+    "ecoMode": true
+  },
+  {
+    "deviceId": "c2f79103-982b-4435-b2c4-4288d5bf64cd",
+    "temperature": 26,
+    "humidity": 53,
+    "targetTemperature": 22,
+    "mode": "cool",
+    "ecoMode": true
+  }
+]

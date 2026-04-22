@@ -1,0 +1,50 @@
+[
+  {
+    "deviceId": "a78e6ff0-8c68-4ca3-b9a6-54543a85a724",
+    "operatingSystem": "Windows",
+    "ramGB": 23,
+    "storageGB": 537
+  },
+  {
+    "deviceId": "30439420-d072-4d31-88f2-c2125e72f635",
+    "operatingSystem": "Windows",
+    "ramGB": 31,
+    "storageGB": 956
+  },
+  {
+    "deviceId": "3281178a-8e93-4e48-bd50-7cef9e0d4267",
+    "operatingSystem": "Windows",
+    "ramGB": 15,
+    "storageGB": 929
+  },
+  {
+    "deviceId": "07712c15-0f3c-43ff-b85a-2f2526acfa79",
+    "operatingSystem": "Windows",
+    "ramGB": 17,
+    "storageGB": 941
+  },
+  {
+    "deviceId": "827cd421-0d94-4295-ac47-66e2bb7303ea",
+    "operatingSystem": "Windows",
+    "ramGB": 10,
+    "storageGB": 471
+  },
+  {
+    "deviceId": "fd49e536-bc0e-4c63-8d4b-546907ee2fb6",
+    "operatingSystem": "Windows",
+    "ramGB": 10,
+    "storageGB": 356
+  },
+  {
+    "deviceId": "f6896e76-260d-44a9-9a8b-a85b326524ba",
+    "operatingSystem": "Windows",
+    "ramGB": 18,
+    "storageGB": 969
+  },
+  {
+    "deviceId": "4d60bb57-19d9-4e04-862b-7adc2609f4b5",
+    "operatingSystem": "Windows",
+    "ramGB": 11,
+    "storageGB": 681
+  }
+]

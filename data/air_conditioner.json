@@ -1,0 +1,33 @@
+[
+  {
+    "deviceId": "70c11d25-381f-47c3-84bd-9d1ae4fce1c5",
+    "temperature": 17,
+    "mode": "cool",
+    "ecoMode": true
+  },
+  {
+    "deviceId": "3dce67cd-1cd4-44d7-b44d-bc461ef05e11",
+    "temperature": 24,
+    "mode": "cool",
+    "ecoMode": true
+  },
+  {
+    "deviceId": "aea0d286-8a97-47c3-8078-3c93ca559c9b",
+    "temperature": 18,
+    "mode": "cool",
+    "ecoMode": true
+  },
+  {
+    "deviceId": "62de10e8-8944-42b0-bc25-a5b969a7fbf5",
+    "temperature": 17,
+    "mode": "cool",
+    "ecoMode": true
+  },
+  {
+    "deviceId": "440bf078-9d39-4d87-8019-d53b4b26e98b",
+    "temperature": 16,
+    "mode": "cool",
+    "ecoMode": true
+  }
+]
+
