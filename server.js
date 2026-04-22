@@ -100,6 +100,51 @@ app.get("/devices", async (req, res) => {
   }
 });
 
+app.post("/login", async (req, res) => {
+  try {
+    let { email, password } = req.body;
+
+    if (!email || !password) {
+      return res.status(400).json({
+        success: false,
+        message: "Faltan datos"
+      });
+    }
+
+    email = email.toLowerCase().trim();
+
+    const user = await User.findOne({ email });
+
+    if (!user) {
+      return res.status(401).json({
+        success: false,
+        message: "Usuario no encontrado"
+      });
+    }
+
+    if (user.password !== password) {
+      return res.status(401).json({
+        success: false,
+        message: "Contraseña incorrecta"
+      });
+    }
+
+    res.json({
+      success: true,
+      user: {
+        id: user._id,
+        email: user.email
+      }
+    });
+
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: error.message
+    });
+  }
+});
+
 // PUERTO
 const PORT = process.env.PORT || 3000;
 
