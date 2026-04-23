@@ -1,0 +1,54 @@
+{
+  "firstName": "Samantha Michelle",
+  "lastName": "Garcia Pulido",
+  "birthDate": "2009-07-09",
+  "address": {
+    "street": "Lomas de San Marcial",
+    "city": "Cordoba",
+    "state": "Veracruz",
+    "country": "Mexico"
+  },
+  "email": "garcia.pulido.samanta.m3s2@gmail.com",
+  "phone": "+52-271-197-2078",
+  "occupation": "Student",
+  "hobbies": [
+  “video games”
+    "sleep",
+    "eat"
+  ],
+  "friends": [
+    {
+      "firstName": "Nadia Itzel",
+      "lastName": "Trujillo Velázquez",
+      "birthDate": "2009-12-22",
+      "address": {
+        "street": "Colony Homex",
+        "city": "Cordoba",
+        "state": "Veracruz",
+        "country": "Mexico"
+      },
+      "phone": "+52-271-987-8745",
+      "occupation": "Student",
+      "hobbies": [
+        "sleep",
+        "video games"
+      ]
+    },
+    {
+      "firstName": "Guillermo",
+      "lastName": "Gil Guzman",
+      "birthDate": "2009-10-29",
+      "address": {
+        "street": "Colony vistermosa",
+        "city": "Cordoba",
+        "state": "Veracruz",
+        "country": "Mexico"
+      },
+      "phone": "+52-271-104-4458",
+      "occupation": "Student",
+      "hobbies": [
+        "play soccer"
+      ]
+    }
+  ]
+}
