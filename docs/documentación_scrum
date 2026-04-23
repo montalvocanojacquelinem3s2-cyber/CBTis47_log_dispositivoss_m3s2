@@ -51,3 +51,19 @@ docs/reflection_p2.md Post-mortem del Sprint 2.
 ---
 
 ## Incremento
+// 1. Get one device by _id
+db.devices.findOne({ _id: ObjectId('69ea90a127236869037df2f9')})
+*_id:69ea90a127236869037df2f9
+deviceId:"284fc5c0-b4e4-4858-b70c-a58eb8fef5dc"
+type:"thermostat"
+brand:"Xiaomi"
+model:"Model-256"
+serialNumber:"b246f06c-79e4-4506-990e-f2d8ed314597"
+location:"cocina"
+status:"inactive"
+batteryLevel:21
+online:true
+isOn:true
+installationDate:"2026-04-22T21:26:58.889Z"
+lastUpdate:"2026-04-22T21:26:58.889Z"
+name:"thermostat_1"
