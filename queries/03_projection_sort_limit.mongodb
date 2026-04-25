@@ -30,3 +30,24 @@ db.devices.find(
   { status: "Nuevo" },
   { _id: 0, brand: 1, location: 1 }
 ).sort({ brand: 1 }).limit(5)
+
+
+// 8. Get devices that are online, show brand and status, sorted by status
+db.devices.find(
+  { online: true },
+  { _id: 0, brand: 1, status: 1 }
+).sort({ status: 1 })
+
+
+// 9. Get devices in "Cocina", show brand and model, limit to 3 results
+db.devices.find(
+  { location: "Cocina" },
+  { _id: 0, brand: 1, model: 1 }
+).limit(3)
+
+
+// 10. Get devices that are NOT "Nuevo", show brand and location, sorted descending and limited
+db.devices.find(
+  { status: { $ne: "Nuevo" } },
+  { _id: 0, brand: 1, location: 1 }
+).sort({ brand: -1 }).limit(5)
