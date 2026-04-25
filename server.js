@@ -129,13 +129,13 @@ app.post("/login", async (req, res) => {
       });
     }
 
-    res.json({
-      success: true,
-      user: {
-        id: user._id,
-        email: user.email
-      }
-    });
+    res.status(200).json({
+  success: true,
+  user: {
+    id: user._id,
+    email: user.email
+  }
+});
 
   } catch (error) {
     res.status(500).json({
