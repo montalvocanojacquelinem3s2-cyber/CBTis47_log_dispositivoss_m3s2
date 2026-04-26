@@ -34,11 +34,31 @@ const User = mongoose.model("User", {
 // GUARDAR DATOS
 app.post("/devices", async (req, res) => {
   try {
+    const { mode } = req.body;
+
+    // MODO OBTENER DATOS
+    if (mode === "get") {
+      const devices = await Device.find();
+      return res.status(200).json({
+        success: true,
+        data: devices
+      });
+    }
+
+    // MODO GUARDAR
     const data = new Device(req.body);
     await data.save();
-    res.json({ mensaje: "Guardado correctamente" });
+
+    return res.status(200).json({
+      success: true,
+      message: "Guardado correctamente"
+    });
+
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    return res.status(500).json({
+      success: false,
+      message: error.message
+    });
   }
 });
 
