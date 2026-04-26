@@ -67,7 +67,7 @@ app.post("/login", async (req, res) => {
     // Normalizar email
     email = email.toLowerCase().trim();
 
-    // 🔥 MODO REGISTRO
+    // MODO REGISTRO
     if (mode === "register") {
       const existingUser = await User.findOne({ email });
 
@@ -91,7 +91,7 @@ app.post("/login", async (req, res) => {
       });
     }
 
-    // 🔐 MODO LOGIN
+    // MODO LOGIN
     const user = await User.findOne({ email });
 
     if (!user) {
