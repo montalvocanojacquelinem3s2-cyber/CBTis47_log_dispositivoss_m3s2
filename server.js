@@ -52,10 +52,9 @@ app.get("/devices", async (req, res) => {
   }
 });
 
- 
-    app.post("/login", async (req, res) => {
+app.post("/login", async (req, res) => {
   try {
-    let { email, password } = req.body;
+    let { email, password, mode } = req.body;
 
     // Validar datos
     if (!email || !password) {
@@ -68,51 +67,31 @@ app.get("/devices", async (req, res) => {
     // Normalizar email
     email = email.toLowerCase().trim();
 
-    // Verificar si ya existe
-    const existingUser = await User.findOne({ email });
+    // 🔥 MODO REGISTRO
+    if (mode === "register") {
+      const existingUser = await User.findOne({ email });
 
-    if (existingUser) {
-      return res.status(400).json({
-        success: false,
-        message: "El usuario ya existe"
+      if (existingUser) {
+        return res.status(400).json({
+          success: false,
+          message: "El usuario ya existe"
+        });
+      }
+
+      const newUser = new User({
+        email,
+        password
+      });
+
+      await newUser.save();
+
+      return res.status(200).json({
+        success: true,
+        message: "Usuario registrado correctamente"
       });
     }
 
-    // Crear usuario
-    const newUser = new User({
-      email,
-      password
-    });
-
-    await newUser.save();
-
-    // Respuesta correcta
-    res.json({
-      success: true,
-      message: "Usuario registrado correctamente"
-    });
-
-  } catch (error) {
-    res.status(500).json({
-      success: false,
-      message: error.message
-    });
-  }
-});
-
-app.post("/login", async (req, res) => {
-  try {
-    let { email, password } = req.body;
-
-    if (!email || !password) {
-      return res.status(400).json({
-        success: false,
-        message: "Faltan datos"
-      });
-    }
-
-    email = email.toLowerCase().trim();
-
+    // 🔐 MODO LOGIN
     const user = await User.findOne({ email });
 
     if (!user) {
@@ -129,16 +108,16 @@ app.post("/login", async (req, res) => {
       });
     }
 
-    res.status(200).json({
-  success: true,
-  user: {
-    id: user._id,
-    email: user.email
-  }
-});
+    return res.status(200).json({
+      success: true,
+      user: {
+        id: user._id,
+        email: user.email
+      }
+    });
 
   } catch (error) {
-    res.status(500).json({
+    return res.status(500).json({
       success: false,
       message: error.message
     });
