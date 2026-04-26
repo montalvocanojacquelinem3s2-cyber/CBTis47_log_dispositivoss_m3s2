@@ -53,7 +53,7 @@ app.get("/devices", async (req, res) => {
 });
 
  
-    app.post("/register", async (req, res) => {
+    app.post("/login", async (req, res) => {
   try {
     let { email, password } = req.body;
 
