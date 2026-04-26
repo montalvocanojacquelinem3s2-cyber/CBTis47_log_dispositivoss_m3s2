@@ -72,6 +72,23 @@ app.get("/devices", async (req, res) => {
   }
 });
 
+app.get("/devices", async (req, res) => {
+  try {
+    const devices = await Device.find();
+
+    return res.status(200).json({
+      success: true,
+      data: devices
+    });
+
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: error.message
+    });
+  }
+});
+
 app.post("/login", async (req, res) => {
   try {
     let { email, password, mode } = req.body;
