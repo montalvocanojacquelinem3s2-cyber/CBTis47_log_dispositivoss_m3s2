@@ -127,6 +127,9 @@ app.post("/login", async (req, res) => {
 app.get("/", (req, res) => {
   res.send("API funcionando");
 });
+app.get("/login", (req, res) => {
+  res.send("Ruta login activa (usa POST)");
+});
 
 // PUERTO
 const PORT = process.env.PORT || 3000;
