@@ -63,16 +63,24 @@ app.post("/devices", async (req, res) => {
 });
 
 // VER DATOS
-app.get("/devices", async (req, res) => {
-  try {
-    const devices = await Device.find();
-    res.json(devices);
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});
 
-app.get("/devices", async (req, res) => {
+app.post("/devices", async (req, res) => {
+  try {
+    const data = new Device(req.body);
+    await data.save();
+
+    return res.status(200).json({
+      success: true,
+      message: "Guardado correctamente"
+    });
+
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: error.message
+    });
+  }
+});app.get("/devices", async (req, res) => {
   try {
     const devices = await Device.find();
 
@@ -80,6 +88,14 @@ app.get("/devices", async (req, res) => {
       success: true,
       data: devices
     });
+
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: error.message
+    });
+  }
+});
 
   } catch (error) {
     return res.status(500).json({
