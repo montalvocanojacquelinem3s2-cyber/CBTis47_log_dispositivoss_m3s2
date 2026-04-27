@@ -16,6 +16,11 @@ erDiagram
         string name
     }
 
+    user_registration {
+        string deviceId FK
+        varchar passwor
+        string email
+    }
     LIGHT {
         string deviceId FK
         int brightness
@@ -72,7 +77,7 @@ erDiagram
         boolean muted
         string connectivity
     }
-
+    DEVICES ||--o{ user_registration : es
     DEVICES ||--o{ LIGHT : es
     DEVICES ||--o{ THERMOSTAT : es
     DEVICES ||--o{ LOCK : es
