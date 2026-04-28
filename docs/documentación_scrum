@@ -83,6 +83,14 @@ status:"active"
 batteryLevel:95
 online:true
 isOn:true
+
+// 3. Get devices where status is exactly "Nuevo"
+db.devices.find({ status: "Nuevo" })
+
+// 4. Get devices where location is exactly "Cocina"
+db.devices.find({ location: "Cocina" })
+
+
 // 5. Get devices that are online
 db.devices.find({ online: true })
 _id:
@@ -100,5 +108,6 @@ isOn:true
 installationDate:"2026-04-22T21:26:58.889Z"
 lastUpdate:"2026-04-22T21:26:58.889Z"
 name:"computer_0"
+
 // 6. Get devices by brand and status
 db.devices.find({ brand: "Samsung", status: "Nuevo" })
