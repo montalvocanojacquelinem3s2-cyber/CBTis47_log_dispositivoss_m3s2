@@ -1,0 +1,43 @@
+// WEEK 11 - UPDATE QUERIES
+
+// 1. Update one document: change status to "active" for one HP device
+db.devices.updateOne(
+  { brand: "HP" },
+  { $set: { status: "active" } }
+)
+
+// 2. Update many documents: change all "inactive" devices to "active"
+db.devices.updateMany(
+  { status: "inactive" },
+  { $set: { status: "active" } }
+)
+
+// 3. Update many: set online to true for all LG devices
+db.devices.updateMany(
+  { brand: "LG" },
+  { $set: { online: true } }
+)
+
+// 4. Add new field to all documents
+db.devices.updateMany(
+  {},
+  { $set: { warranty: true } }
+)
+
+// 5. Add lastUpdated ONLY to online devices
+db.devices.updateMany(
+  { online: true },
+  { $set: { lastUpdated: new Date() } }
+)
+
+// 6. Update using condition (battery level less than 20)
+db.devices.updateMany(
+  { batteryLevel: { $lt: 20 } },
+  { $set: { status: "maintenance" } }
+)
+
+// 7. Remove field "status" ONLY from LG devices
+db.devices.updateMany(
+  { brand: "LG" },
+  { $unset: { status: "" } }
+)
