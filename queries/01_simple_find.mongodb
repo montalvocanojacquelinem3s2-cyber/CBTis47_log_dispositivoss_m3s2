@@ -34,3 +34,31 @@ db.devices.find({ online: true })
 // 8. Get devices by brand and status
 db.devices.find({ brand: "Samsung", status: "Nuevo" })
 
+// ==========================================
+// Simple Find Queries - Users Collection
+// ==========================================
+
+// 1. Get all users
+db.users.find()
+
+// 2. Get one user
+db.users.findOne()
+
+// 3. Get one user by _id
+db.users.findOne({ _id: ObjectId("69f27aa6d9a56c6f24e38712") })
+
+// 4. Get users where email is exactly "juan@gmail.com"
+db.users.find({ email: "juan@gmail.com" })
+
+// 5. Get users where password is exactly "123456"
+db.users.find({ password: "123456" })
+
+// 6. Get users where correo_electrónico is exactly "luis0@gmail.com.mx"
+db.users.find({ "correo_electrónico": "luis0@gmail.com.mx" })
+
+// 7. Get users that have email field
+db.users.find({ email: { $exists: true } })
+
+// 8. Get users by email and password
+db.users.find({ email: "test@test.com", password: "123456" })
+
