@@ -1,4 +1,6 @@
-// WEEK 11 - UPDATE QUERIES
+==============================
+// WEEK 11 - UPDATE QUERIES //
+==============================
 
 // 1. Update one document: change status to "active" for one HP device
 db.devices.updateOne(
@@ -40,4 +42,50 @@ db.devices.updateMany(
 db.devices.updateMany(
   { brand: "LG" },
   { $unset: { status: "" } }
+)
+
+=====================================
+// WEEK 11 - UPDATE QUERIES (USERS)//
+=====================================
+
+// 1. Update one document: change password for one user
+db.users.updateOne(
+  { email: "test@test.com" },
+  { $set: { password: "newpass123" } }
+)
+
+// 2. Update many documents: change same password
+db.users.updateMany(
+  { password: "123456" },
+  { $set: { password: "updated123" } }
+)
+
+// 3. Update many: add active true for Gmail users
+db.users.updateMany(
+  { email: /gmail/ },
+  { $set: { active: true } }
+)
+
+// 4. Add new field to all documents
+db.users.updateMany(
+  {},
+  { $set: { verified: false } }
+)
+
+// 5. Add lastUpdated only to users with email
+db.users.updateMany(
+  { email: { $exists: true } },
+  { $set: { lastUpdated: new Date() } }
+)
+
+// 6. Update using condition
+db.users.updateMany(
+  { password: { $exists: true } },
+  { $set: { status: "updated" } }
+)
+
+// 7. Remove field "password" from one user
+db.users.updateMany(
+  { email: "juan@gmail.com" },
+  { $unset: { password: "" } }
 )
