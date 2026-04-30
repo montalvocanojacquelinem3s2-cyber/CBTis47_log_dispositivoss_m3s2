@@ -1,4 +1,4 @@
-// Projection, Sort & Limit Queries - Devices Collection
+// Projection, Sort & Limit Queries - Devices Collection //
 
 
 // 1. Get all devices showing only brand and location
@@ -25,9 +25,9 @@ db.devices.find().limit(5)
 db.devices.find().sort({ brand: 1 }).limit(10)
 
 
-// 7. Get devices with status "Nuevo", show only brand and location, sorted and limited
+// 7. Get devices with status "active" (antes "Nuevo")
 db.devices.find(
-  { status: "Nuevo" },
+  { status: "active" },
   { _id: 0, brand: 1, location: 1 }
 ).sort({ brand: 1 }).limit(5)
 
@@ -39,15 +39,15 @@ db.devices.find(
 ).sort({ status: 1 })
 
 
-// 9. Get devices in "Cocina", show brand and model, limit to 3 results
+// 9. Get devices in "cocina" (antes "Cocina")
 db.devices.find(
-  { location: "Cocina" },
+  { location: "cocina" },
   { _id: 0, brand: 1, model: 1 }
 ).limit(3)
 
 
-// 10. Get devices that are NOT "Nuevo", show brand and location, sorted descending and limited
+// 10. Get devices that are NOT "active" (antes "Nuevo")
 db.devices.find(
-  { status: { $ne: "Nuevo" } },
+  { status: { $ne: "active" } },
   { _id: 0, brand: 1, location: 1 }
 ).sort({ brand: -1 }).limit(5)
