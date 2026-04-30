@@ -84,11 +84,34 @@ batteryLevel:95
 online:true
 isOn:true
 
+
+
 // 3. Get devices where status is exactly "Nuevo"
 db.devices.find({ status: "Nuevo" })
 
+
+
 // 4. Get devices where location is exactly "Cocina"
-db.devices.find({ location: "Cocina" })
+db.devices.find({ location: "cocina" })
+_id:
+69efc4848a2a3959dbea7b82
+deviceId:
+"284fc5c0-b4e4-4858-b70c-a58eb8fef5dc"
+type:
+"thermostat"
+brand:
+"Xiaomi"
+model:
+"Model-256"
+serialNumber:"b246f06c-79e4-4506-990e-f2d8ed314597"
+location:"cocina"
+status:"inactive"
+batteryLevel:21
+online:true
+isOn:true
+installationDate:"2026-04-22T21:26:58.889Z"
+lastUpdate:"2026-04-22T21:26:58.889Z"
+name:"thermostat_1"
 
 
 // 5. Get devices that are online
@@ -109,5 +132,48 @@ installationDate:"2026-04-22T21:26:58.889Z"
 lastUpdate:"2026-04-22T21:26:58.889Z"
 name:"computer_0"
 
+
+
+
 // 6. Get devices by brand and status
 db.devices.find({ brand: "Samsung", status: "Nuevo" })
+
+
+
+
+
+// Simple Find Queries - Users Collection
+
+// 1. Get one user by _id
+db.users.findOne({ _id: ObjectId("69f27aa6d9a56c6f24e38712") })
+_id:69f27aa6d9a56c6f24e38712
+correo_electrónico:"adame6@yahoo.com"
+contraseña:"pass268845"
+
+// 2. Get users where email is exactly "juan@gmail.com"
+db.users.find({ email: "juan@gmail.com" })
+_id:69ed6a6b73004aebfe3a15b0
+email:"juan@gmail.com"
+password:"1234qwe"
+__v:0
+
+// 3. Get users where password is exactly "123456"
+db.users.find({ password: "123456" })
+_id:69ed3b1c02d358df2eed24dd
+email:"test@test.com"
+password:"123456"
+
+// 4. Get users where correo_electrónico is exactly "luis0@gmail.com.mx"
+db.users.find({ "correo_electrónico": "luis0@gmail.com.mx" })
+_id:
+69f27aa6d9a56c6f24e3870c
+correo_electrónico:
+"luis0@gmail.com.mx"
+contraseña:
+"pass538337"
+_id:69f27aa9d9a56c6f24e3873e
+correo_electrónico:"luis0@gmail.com.mx"
+contraseña:"pass538337"
+
+
+
