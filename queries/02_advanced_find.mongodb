@@ -1,76 +1,63 @@
-// Advanced Find Queries - Devices Collection
+// Advanced Find Queries - Devices Collection //
 
-
-// 1. Get devices where status is NOT "Nuevo"
+// 1. Get devices where status is NOT "active"
 db.devices.find({
-  status: { $ne: "Nuevo" },
-  status: { $exists: true }
+  status: { $ne: "active", $exists: true }
 })
-
 
 // 2. Get devices where brand is LG or Samsung
 db.devices.find({ brand: { $in: ["LG", "Samsung"] } })
 
-
 // 3. Get devices where brand is NOT LG or Samsung
 db.devices.find({ brand: { $nin: ["LG", "Samsung"] } })
-
 
 // 4. Get devices that are online
 db.devices.find({ online: true })
 
-
 // 5. Get devices that are offline
 db.devices.find({ online: false })
 
-
-// 6. Get devices that are Samsung AND status "Nuevo"
+// 6. Get devices that are Samsung AND status "active"
 db.devices.find({
   brand: "Samsung",
-  status: "Nuevo"
+  status: "active"
 })
 
-
-// 7. Get devices that are LG OR located in Cocina
+// 7. Get devices that are LG OR located in cocina
 db.devices.find({
   $or: [
     { brand: "LG" },
-    { location: "Cocina" }
+    { location: "cocina" }
   ]
 })
 
-
-// 8. Get devices located in Cocina or Sala
+// 8. Get devices located in cocina or sala
 db.devices.find({
-  location: { $in: ["Cocina", "Sala"] }
+  location: { $in: ["cocina", "sala"] }
 })
 
-
-// 9. Get devices that are NOT in Cocina (with existence check)
+// 9. Get devices that are NOT in cocina
 db.devices.find({
-  location: { $ne: "Cocina", $exists: true }
+  location: { $ne: "cocina", $exists: true }
 })
 
-
-// 10. Get devices that are online AND status is "Nuevo"
+// 10. Get devices that are online AND status is "active"
 db.devices.find({
   online: true,
-  status: "Nuevo"
+  status: "active"
 })
 
 
-// ==============================
-// NUMERIC QUERIES (SIMULATED)
-// ==============================
+// ==============================//
+// NUMERIC QUERIES (CORREGIDOS)  //
+// ==============================//
 
-
-// 11. Get devices with powerUsage greater than 100
+// 11. Get devices with batteryLevel greater than 50
 db.devices.find({
-  powerUsage: { $gt: 100 }
+  batteryLevel: { $gt: 50 }
 })
 
-
-// 12. Get devices with powerUsage between 50 and 200
+// 12. Get devices with batteryLevel between 20 and 80
 db.devices.find({
-  powerUsage: { $gte: 50, $lte: 200 }
+  batteryLevel: { $gte: 20, $lte: 80 }
 })
