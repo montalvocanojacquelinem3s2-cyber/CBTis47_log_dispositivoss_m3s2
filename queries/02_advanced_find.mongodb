@@ -47,11 +47,6 @@ db.devices.find({
   status: "active"
 })
 
-
-// ==============================//
-// NUMERIC QUERIES (CORREGIDOS)  //
-// ==============================//
-
 // 11. Get devices with batteryLevel greater than 50
 db.devices.find({
   batteryLevel: { $gt: 50 }
