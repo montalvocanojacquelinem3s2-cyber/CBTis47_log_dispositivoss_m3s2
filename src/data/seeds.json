@@ -1,0 +1,418 @@
+[
+  {
+  "type": "Electrodomestico",
+  "brand": "LG",
+  "model": "123",
+  "location": "Cocina",
+  "status": "Nuevo",
+  "online": true,
+},
+  {
+    "type": "Electrodomestico",
+    "brand": "Whirlpool",
+    "model": "718",
+    "location": "Cocina",
+    "status": "Usado",
+    "online": true
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Daewoo",
+    "model": "613",
+    "location": "Baño",
+    "status": "Nuevo",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "675",
+    "location": "Baño",
+    "status": "Usado",
+    "online": true
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Daewoo",
+    "model": "856",
+    "location": "Sala",
+    "status": "Nuevo",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Mabe",
+    "model": "326",
+    "location": "Atico",
+    "status": "Nuevo",
+    "online": true
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Daewoo",
+    "model": "450",
+    "location": "Recámara",
+    "status": "Usado",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Whirlpool",
+    "model": "14",
+    "location": "Sotano",
+    "status": "Usado",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Whirlpool",
+    "model": "633",
+    "location": "Recámara",
+    "status": "Usado",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Daewoo",
+    "model": "897",
+    "location": "Sotano",
+    "status": "Usado",
+    "online": true
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Mabe",
+    "model": "93",
+    "location": "Atico",
+    "status": "Nuevo",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "725",
+    "location": "Baño",
+    "status": "Nuevo",
+    "online": true
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "607",
+    "location": "Sala",
+    "status": "Nuevo",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "732",
+    "location": "Sala",
+    "status": "Usado",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Hisense",
+    "model": "183",
+    "location": "Atico",
+    "status": "Nuevo",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "LG",
+    "model": "794",
+    "location": "Sotano",
+    "status": "Usado",
+    "online": true
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Hisense",
+    "model": "793",
+    "location": "Recámara",
+    "status": "Nuevo",
+    "online": true
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Mewgenics",
+    "model": "538",
+    "location": "Atico",
+    "status": "Nuevo",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Mewgenics",
+    "model": "783",
+    "location": "Sotano",
+    "status": "Usado",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Mabe",
+    "model": "911",
+    "location": "Recámara",
+    "status": "Usado",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "LG",
+    "model": "238",
+    "location": "Cocina",
+    "status": "Nuevo",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Hisense",
+    "model": "248",
+    "location": "Sala",
+    "status": "Usado",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "810",
+    "location": "Sala",
+    "status": "Usado",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "LG",
+    "model": "727",
+    "location": "Sala",
+    "status": "Nuevo",
+    "online": true
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Whirlpool",
+    "model": "698",
+    "location": "Sotano",
+    "status": "Nuevo",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Mabe",
+    "model": "111",
+    "location": "Sala",
+    "status": "Usado",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "LG",
+    "model": "336",
+    "location": "Atico",
+    "status": "Usado",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "340",
+    "location": "Cocina",
+    "status": "Nuevo",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "LG",
+    "model": "848",
+    "location": "Sotano",
+    "status": "Nuevo",
+    "online": true
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Mabe",
+    "model": "686",
+    "location": "Sala",
+    "status": "Usado",
+    "online": true
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Mabe",
+    "model": "726",
+    "location": "Sala",
+    "status": "Nuevo",
+    "online": true
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "147",
+    "location": "Sotano",
+    "status": "Nuevo",
+    "online": true
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "978",
+    "location": "Baño",
+    "status": "Usado",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "LG",
+    "model": "323",
+    "location": "Baño",
+    "status": "Nuevo",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Daewoo",
+    "model": "746",
+    "location": "Cocina",
+    "status": "Nuevo",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Mewgenics",
+    "model": "325",
+    "location": "Cocina",
+    "status": "Usado",
+    "online": true
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Daewoo",
+    "model": "267",
+    "location": "Recámara",
+    "status": "Usado",
+    "online": true
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "991",
+    "location": "Sala",
+    "status": "Nuevo",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Mewgenics",
+    "model": "31",
+    "location": "Sotano",
+    "status": "Usado",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "161",
+    "location": "Cocina",
+    "status": "Usado",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Whirlpool",
+    "model": "809",
+    "location": "Cocina",
+    "status": "Usado",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Mewgenics",
+    "model": "411",
+    "location": "Atico",
+    "status": "Usado",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Hisense",
+    "model": "111",
+    "location": "Sotano",
+    "status": "Usado",
+    "online": true
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Mabe",
+    "model": "533",
+    "location": "Baño",
+    "status": "Nuevo",
+    "online": true
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Hisense",
+    "model": "603",
+    "location": "Atico",
+    "status": "Nuevo",
+    "online": true
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "771",
+    "location": "Atico",
+    "status": "Usado",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Whirlpool",
+    "model": "8",
+    "location": "Sala",
+    "status": "Usado",
+    "online": true
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Daewoo",
+    "model": "445",
+    "location": "Sala",
+    "status": "Usado",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Samsung",
+    "model": "277",
+    "location": "Atico",
+    "status": "Usado",
+    "online": true
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Whirlpool",
+    "model": "754",
+    "location": "Sala",
+    "status": "Nuevo",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "Mewgenics",
+    "model": "652",
+    "location": "Sotano",
+    "status": "Nuevo",
+    "online": false
+  },
+  {
+    "type": "Electrodomestico",
+    "brand": "LG",
+    "model": "713",
+    "location": "Atico",
+    "status": "Usado",
+    "online": true
+  }
+]
