@@ -29,7 +29,7 @@ Hubo algunas decisiones importantes, por ejemplo:
 
 Mi rol fue traducir las necesidades del sistema a código en MongoDB, creando consultas funcionales (MQL) para la colección devices.
 
--Me encargué de desarrollar el código necesario para que los datos se registraran correctamente en la base de datos. Para esto, utilicé MongoDB, FlutterFlow, Railway (como API) y GitHub.
+-Me encargué de desarrollar el código necesario para que los datos se registraran correctamente en la base de datos. Para esto, utilicé MongoDB, FlutterFlow, Render (como API) y GitHub.
 
 -Dentro del repositorio, trabajé sobre la estructura existente y creé las carpetas necesarias para la API, donde integré los archivos principales de configuración y ejecución del servidor. En esta parte, implementé la lógica para recibir datos desde la aplicación y almacenarlos en la base de datos, así como la consulta para visualizarlos.
 
