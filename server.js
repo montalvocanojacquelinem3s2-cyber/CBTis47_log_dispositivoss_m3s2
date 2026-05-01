@@ -66,6 +66,28 @@ app.post("/devices", async (req, res) => {
 
 app.post("/devices", async (req, res) => {
   try {
+    const { mode, _id } = req.body;
+
+    // OBTENER
+    if (mode === "get") {
+      const devices = await Device.find();
+      return res.status(200).json({
+        success: true,
+        data: devices
+      });
+    }
+
+    // ACTUALIZAR
+    if (mode === "update") {
+      await Device.findByIdAndUpdate(_id, req.body);
+
+      return res.status(200).json({
+        success: true,
+        message: "Actualizado correctamente"
+      });
+    }
+
+    // CREAR
     const data = new Device(req.body);
     await data.save();
 
@@ -80,7 +102,10 @@ app.post("/devices", async (req, res) => {
       message: error.message
     });
   }
-});app.get("/devices", async (req, res) => {
+});
+
+
+app.get("/devices", async (req, res) => {
   try {
     const devices = await Device.find();
 
