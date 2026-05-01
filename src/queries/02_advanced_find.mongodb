@@ -1,1 +1,113 @@
-a
+// Advanced Find Queries - Devices Collection //
+
+// 1. Get devices where status is NOT "active"
+db.devices.find({
+  status: { $ne: "active", $exists: true }
+})
+
+// 2. Get devices where brand is LG or Samsung
+db.devices.find({ brand: { $in: ["LG", "Samsung"] } })
+
+// 3. Get devices where brand is NOT LG or Samsung
+db.devices.find({ brand: { $nin: ["LG", "Samsung"] } })
+
+// 4. Get devices that are online
+db.devices.find({ online: true })
+
+// 5. Get devices that are offline
+db.devices.find({ online: false })
+
+// 6. Get devices that are Samsung AND status "active"
+db.devices.find({
+  brand: "Samsung",
+  status: "active"
+})
+
+// 7. Get devices that are LG OR located in cocina
+db.devices.find({
+  $or: [
+    { brand: "LG" },
+    { location: "cocina" }
+  ]
+})
+
+// 8. Get devices located in cocina or sala
+db.devices.find({
+  location: { $in: ["cocina", "sala"] }
+})
+
+// 9. Get devices that are NOT in cocina
+db.devices.find({
+  location: { $ne: "cocina", $exists: true }
+})
+
+// 10. Get devices that are online AND status is "active"
+db.devices.find({
+  online: true,
+  status: "active"
+})
+
+// 11. Get devices with batteryLevel greater than 50
+db.devices.find({
+  batteryLevel: { $gt: 50 }
+})
+
+// 12. Get devices with batteryLevel between 20 and 80
+db.devices.find({
+  batteryLevel: { $gte: 20, $lte: 80 }
+})
+
+// ==========================================
+// Advanced Find Queries - Users Collection
+// ==========================================
+
+// 1. Get users where email is NOT "test@test.com"
+db.users.find({
+  email: { $ne: "test@test.com", $exists: true }
+})
+
+// 2. Get users where email is Gmail or Hotmail
+db.users.find({
+  email: { $in: ["juan@gmail.com", "test@test.com"] }
+})
+
+// 3. Get users where email is NOT those
+db.users.find({
+  email: { $nin: ["juan@gmail.com", "test@test.com"] }
+})
+
+// 4. Get users that have email
+db.users.find({ email: { $exists: true } })
+
+// 5. Get users that do NOT have email (use correo_electrónico)
+db.users.find({ email: { $exists: false } })
+
+// 6. Get users that are Gmail AND password "1234qwe"
+db.users.find({
+  email: "juan@gmail.com",
+  password: "1234qwe"
+})
+
+// 7. Get users that are Gmail OR have correo_electrónico
+db.users.find({
+  $or: [
+    { email: "juan@gmail.com" },
+    { "correo_electrónico": { $exists: true } }
+  ]
+})
+
+// 8. Get users with specific emails
+db.users.find({
+  email: { $in: ["juan@gmail.com", "juanperez2@gmail.com"] }
+})
+
+// 9. Get users that are NOT Gmail
+db.users.find({
+  email: { $ne: "juan@gmail.com", $exists: true }
+})
+
+// 10. Get users with email and password
+db.users.find({
+  email: { $exists: true },
+  password: { $exists: true }
+})
