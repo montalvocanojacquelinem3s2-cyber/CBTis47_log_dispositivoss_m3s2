@@ -19,6 +19,8 @@ The system supports multiple device categories, including lights, thermostats, l
 Additionally, the system incorporates security features for smart locks, including encrypted access codes and rotation tracking.
 
 The database design follows a structured approach where a main device entity is extended by specific device types, enabling scalability and flexibility for future device integrations.
+
+---
 # Smart Home Device Logger
 
 This project models a Smart Home system using MongoDB and a document-oriented
