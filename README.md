@@ -1,5 +1,24 @@
 # CBTis47_Smart-
-Imagina que controlas una casa inteligente. Cada dispositivo (foco, termostato, cerradura) envía datos diferentes.
+## 📖 Project Description
+
+This project consists of the design and implementation of a Smart Home system using MongoDB as the main database. The system is focused on managing different types of smart devices within a home environment, allowing centralized control and monitoring.
+
+The platform includes three main user interaction screens:
+
+1. **User Registration Screen**  
+   Allows new users to create an account by providing essential information such as email and password. This data is stored and validated to ensure unique user identification.
+
+2. **User Access / Authentication Screen**  
+   Enables registered users to log into the system and access their smart home environment securely.
+
+3. **Device Registration and Management Screen**  
+   Allows users to register, configure, and manage smart devices within the home. Each device is stored in the database with its general attributes (such as type, brand, status, and location) and its specific configuration depending on the device type.
+
+The system supports multiple device categories, including lights, thermostats, locks, televisions, air conditioners, computers, and speakers. Each device type contains specialized attributes that extend from a central device model.
+
+Additionally, the system incorporates security features for smart locks, including encrypted access codes and rotation tracking.
+
+The database design follows a structured approach where a main device entity is extended by specific device types, enabling scalability and flexibility for future device integrations.
 # Smart Home Device Logger
 
 This project models a Smart Home system using MongoDB and a document-oriented
