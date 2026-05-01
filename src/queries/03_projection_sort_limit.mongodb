@@ -1,1 +1,100 @@
-j
+// Projection, Sort & Limit Queries - Devices Collection //
+
+
+// 1. Get all devices showing only brand and location
+db.devices.find({}, { _id: 0, brand: 1, location: 1 })
+
+
+// 2. Get devices showing brand, status and online
+db.devices.find({}, { _id: 0, brand: 1, status: 1, online: 1 })
+
+
+// 3. Get devices sorted by brand (ascending)
+db.devices.find().sort({ brand: 1 })
+
+
+// 4. Get devices sorted by status (descending)
+db.devices.find().sort({ status: -1 })
+
+
+// 5. Get only 5 devices
+db.devices.find().limit(5)
+
+
+// 6. Get 10 devices sorted by brand
+db.devices.find().sort({ brand: 1 }).limit(10)
+
+
+// 7. Get devices with status "active" (antes "Nuevo")
+db.devices.find(
+  { status: "active" },
+  { _id: 0, brand: 1, location: 1 }
+).sort({ brand: 1 }).limit(5)
+
+
+// 8. Get devices that are online, show brand and status, sorted by status
+db.devices.find(
+  { online: true },
+  { _id: 0, brand: 1, status: 1 }
+).sort({ status: 1 })
+
+
+// 9. Get devices in "cocina" (antes "Cocina")
+db.devices.find(
+  { location: "cocina" },
+  { _id: 0, brand: 1, model: 1 }
+).limit(3)
+
+
+// 10. Get devices that are NOT "active" (antes "Nuevo")
+db.devices.find(
+  { status: { $ne: "active" } },
+  { _id: 0, brand: 1, location: 1 }
+).sort({ brand: -1 }).limit(5)
+
+
+// ====================================================//
+// Projection, Sort & Limit Queries - Users Collection //
+// ====================================================//
+
+// 1. Get all users showing only email
+db.users.find({}, { _id: 0, email: 1 })
+
+// 2. Get users showing email and password
+db.users.find({}, { _id: 0, email: 1, password: 1 })
+
+// 3. Get users sorted by email (ascending)
+db.users.find().sort({ email: 1 })
+
+// 4. Get users sorted by password (descending)
+db.users.find().sort({ password: -1 })
+
+// 5. Get only 5 users
+db.users.find().limit(5)
+
+// 6. Get 10 users sorted by email
+db.users.find().sort({ email: 1 }).limit(10)
+
+// 7. Get users with email "juan@gmail.com", show only email
+db.users.find(
+  { email: "juan@gmail.com" },
+  { _id: 0, email: 1 }
+).sort({ email: 1 }).limit(5)
+
+// 8. Get users that have email, show email and password
+db.users.find(
+  { email: { $exists: true } },
+  { _id: 0, email: 1, password: 1 }
+).sort({ email: 1 })
+
+// 9. Get users with correo_electrónico, show it and limit 3
+db.users.find(
+  { "correo_electrónico": { $exists: true } },
+  { _id: 0, "correo_electrónico": 1 }
+).limit(3)
+
+// 10. Get users that are NOT "juan@gmail.com", show email
+db.users.find(
+  { email: { $ne: "juan@gmail.com" } },
+  { _id: 0, email: 1 }
+).sort({ email: -1 }).limit(5)
