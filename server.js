@@ -6,12 +6,15 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// conexión con MongoDB 
+// Conexión MongoDB
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB conectado"))
   .catch(err => console.log(err));
 
-// modelo
+
+// =============================
+// MODELO DEVICE
+// =============================
 const Device = mongoose.model("Device", {
   deviceName: String,
   type: String,
@@ -20,84 +23,30 @@ const Device = mongoose.model("Device", {
   serial: String,
   location: String,
   status: String,
-  battery: Number,
+  battery: String, // lo dejamos string como lo usas
   online: Boolean,
   installation: String,
   lastUp: String
 });
 
-const User = mongoose.model("User", {
-  email: String,
-  password: String
-});
 
-// GUARDAR DATOS
+// =============================
+// DEVICES ROUTES
+// =============================
+
+// CREAR dispositivo
 app.post("/devices", async (req, res) => {
   try {
-    const { mode } = req.body;
+    const newDevice = new Device(req.body);
+    await newDevice.save();
 
-    // MODO OBTENER DATOS
-    if (mode === "get") {
-      const devices = await Device.find();
-      return res.status(200).json({
-        success: true,
-        data: devices
-      });
-    }
-
-    // MODO GUARDAR
-    const data = new Device(req.body);
-    await data.save();
-
-    return res.status(200).json({
+    res.status(200).json({
       success: true,
-      message: "Guardado correctamente"
+      data: newDevice
     });
 
   } catch (error) {
-    return res.status(500).json({
-      success: false,
-      message: error.message
-    });
-  }
-});
-
-// VER DATOS
-
-app.post("/devices", async (req, res) => {
-  try {
-    const { mode, _id } = req.body;
-
-    // OBTENER
-    if (mode === "get") {
-      const devices = await Device.find();
-      return res.status(200).json({
-        success: true,
-        data: devices
-      });
-    }
-
-    // ACTUALIZAR
-    if (mode === "update") {
-      await Device.findByIdAndUpdate(_id, req.body);
-
-      return res.status(200).json({
-        success: true,
-        message: "Actualizado correctamente"
-      });
-    }
-
-    // CREAR
-    const data = new Device(req.body);
-    await data.save();
-
-    return res.status(200).json({
-      success: true,
-      message: "Guardado correctamente"
-    });
-
-  } catch (error) {
-    return res.status(500).json({
+    res.status(500).json({
       success: false,
       message: error.message
     });
@@ -105,111 +54,75 @@ app.post("/devices", async (req, res) => {
 });
 
 
+// OBTENER TODOS
 app.get("/devices", async (req, res) => {
   try {
     const devices = await Device.find();
 
-    return res.status(200).json({
+    res.status(200).json({
       success: true,
       data: devices
     });
 
   } catch (error) {
-    return res.status(500).json({
+    res.status(500).json({
       success: false,
       message: error.message
     });
   }
 });
 
-  } catch (error) {
-    return res.status(500).json({
-      success: false,
-      message: error.message
-    });
-  }
-});
 
-app.post("/login", async (req, res) => {
+// ACTUALIZAR
+app.put("/devices/:id", async (req, res) => {
   try {
-    let { email, password, mode } = req.body;
+    const updatedDevice = await Device.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true }
+    );
 
-    // Validar datos
-    if (!email || !password) {
-      return res.status(400).json({
-        success: false,
-        message: "Faltan datos"
-      });
-    }
-
-    // Normalizar email
-    email = email.toLowerCase().trim();
-
-    // MODO REGISTRO
-    if (mode === "register") {
-      const existingUser = await User.findOne({ email });
-
-      if (existingUser) {
-        return res.status(400).json({
-          success: false,
-          message: "El usuario ya existe"
-        });
-      }
-
-      const newUser = new User({
-        email,
-        password
-      });
-
-      await newUser.save();
-
-      return res.status(200).json({
-        success: true,
-        message: "Usuario registrado correctamente"
-      });
-    }
-
-    // MODO LOGIN
-    const user = await User.findOne({ email });
-
-    if (!user) {
-      return res.status(401).json({
-        success: false,
-        message: "Usuario no encontrado"
-      });
-    }
-
-    if (user.password !== password) {
-      return res.status(401).json({
-        success: false,
-        message: "Contraseña incorrecta"
-      });
-    }
-
-    return res.status(200).json({
+    res.status(200).json({
       success: true,
-      user: {
-        id: user._id,
-        email: user.email
-      }
+      data: updatedDevice
     });
 
   } catch (error) {
-    return res.status(500).json({
+    res.status(500).json({
       success: false,
       message: error.message
     });
   }
 });
+
+
+// ELIMINAR
+app.delete("/devices/:id", async (req, res) => {
+  try {
+    await Device.findByIdAndDelete(req.params.id);
+
+    res.status(200).json({
+      success: true,
+      message: "Dispositivo eliminado"
+    });
+
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: error.message
+    });
+  }
+});
+
+
+// RUTA BASE
 
 app.get("/", (req, res) => {
   res.send("API funcionando");
 });
-app.get("/login", (req, res) => {
-  res.send("Ruta login activa (usa POST)");
-});
 
-// PUERTO
+// SERVIDOR
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
