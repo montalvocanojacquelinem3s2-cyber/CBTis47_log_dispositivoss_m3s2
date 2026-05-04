@@ -27,15 +27,13 @@ Hubo algunas decisiones importantes, por ejemplo:
 
 ## Query Developer - Montalvo Cano Jacqueline
 
-Mi rol fue traducir las necesidades del sistema a código en MongoDB, creando consultas funcionales (MQL) para la colección devices.
-
--Me encargué de desarrollar el código necesario para que los datos se registraran correctamente en la base de datos. Para esto, utilicé MongoDB, FlutterFlow, Render (como API) y GitHub.
-
--Dentro del repositorio, trabajé sobre la estructura existente y creé las carpetas necesarias para la API, donde integré los archivos principales de configuración y ejecución del servidor. En esta parte, implementé la lógica para recibir datos desde la aplicación y almacenarlos en la base de datos, así como la consulta para visualizarlos.
-
--También desarrollé una carpeta de queries, donde agregué consultas básicas en MongoDB para validar el funcionamiento del sistema, como obtener todos los registros, buscar por id, filtrar por marca, estado, ubicación y dispositivos en línea.
-
--En general, mi trabajo consistió en construir el código funcional que permite registrar, consultar y validar los datos dentro del sistema Smart Home.
+Durante el desarrollo del proyecto, desempeñé el rol de Query Developer, siendo responsable de traducir los requerimientos del sistema en soluciones técnicas mediante el uso de MongoDB Query Language, enfocadas principalmente en la colección.
+Mi principal contribución fue el desarrollo de la lógica necesaria para el manejo de datos dentro del sistema Smart Home, asegurando que la información pudiera ser enviada, procesada y almacenada correctamente a través de una API. Para ello, trabajé con herramientas como MongoDB, FlutterFlow, Render y GitHub, integrando cada componente para lograr un flujo de datos funcional.
+Dentro del repositorio, participé en la estructuración y desarrollo de la API, organizando las carpetas necesarias y configurando los archivos principales del proyecto. Implementé el archivo server.js, donde desarrollé la lógica del servidor, incluyendo la gestión de rutas y el procesamiento de datos. Asimismo, trabajé con package.json para administrar dependencias, scripts y la configuración general del entorno.
+En la API, desarrollé los endpoints necesarios para registrar y consultar dispositivos, permitiendo el manejo de datos en formato JSON, su validación y almacenamiento en la base de datos. Además, integré el registro de usuarios mediante la colección users en MongoDB, ampliando la gestión de información dentro del sistema.
+Adicionalmente, creé una carpeta de queries, donde implementé consultas en MongoDB para validar el funcionamiento del sistema, como la obtención de registros, búsquedas por _id y filtrado por atributos como marca, estado, ubicación y dispositivos en línea.
+Durante el desarrollo, también contribuí en la definición de datos de prueba y en la organización de la información necesaria para validar el sistema, facilitando la ejecución de pruebas y el ajuste de los datos requeridos en cada etapa.
+Finalmente, realicé pruebas de integración para verificar la comunicación entre la aplicación desarrollada en FlutterFlow, la API desplegada en Render y la base de datos en MongoDB, asegurando un flujo de datos confiable y consistente dentro del sistema Smart Home.
 
 ---
 
