@@ -7,6 +7,17 @@ Desarrollar una base de datos en MongoDB para una Smart Home que permita registr
 
 ## Product Backlog
 
+- Create users collection
+- Store user credentials (email and password)
+- Create devices collection
+- Store device information (type, brand, model, location)
+- Track device status (on/off, maintenance)
+- Store battery level of devices
+- Track device connectivity (online/offline)
+- Query devices by location
+- Query devices by status
+- Update device status
+
 ---
 
 ## Historias de Usuario
