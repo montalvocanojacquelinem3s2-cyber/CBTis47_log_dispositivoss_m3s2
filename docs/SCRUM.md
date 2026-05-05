@@ -206,4 +206,18 @@ contraseña:"pass506574"
 correo_electrónico:"pablo7@zoho.com"
 contraseña:"pass252333"
 
-// 4.
+// 4.({ "correo_electrónico": "luis0@gmail.com.mx" })
+-_id:69f11041c50d0ccc6367636c
+correo_electrónico:"luis0@gmail.com.mx"
+contraseña:"pass538337"
+
+// 5.({ email: { $exists: true } })
+-_id:69f7e71c778e7ce901394d57
+email:"mariare@gmail.com"
+password:"27112345tt"
+__v:0
+
+// 6.({ correo_electrónico: "pablo7@zoho.com", contraseña: "pass252333" })
+-_id:69f11041c50d0ccc63676373
+correo_electrónico:"pablo7@zoho.com"
+contraseña:"pass252333"
