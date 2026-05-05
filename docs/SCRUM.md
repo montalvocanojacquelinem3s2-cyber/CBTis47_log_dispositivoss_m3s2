@@ -50,7 +50,7 @@ RELEASE v1.0 (Tag) Repositorio completo con datos cargados.
 7-EVALUACIÓN PARCIAL 1 Retroalimentación y Captura.
 Presentación del proyecto.
 
-#TABLA 2: SEGUNDO PARCIAL (Consultas y Manipulación)
+### TABLA 2: SEGUNDO PARCIAL (Consultas y Manipulación)
 
 8- CRUD: Read (Básico) find(), findOne(), Proyecciones.
 queries/01_simple_find.mongodb Scripts de búsqueda simple.
