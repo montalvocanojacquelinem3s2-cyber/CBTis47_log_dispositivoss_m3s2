@@ -45,7 +45,7 @@ db.users.find()
 db.users.findOne()
 
 // 3. Get one user by _id
-db.users.findOne({ _id: ObjectId("69f27aa6d9a56c6f24e38712") })
+db.users.findOne({ _id: ObjectId("69f11041c50d0ccc6367636e") })
 
 // 4. Get users where email is exactly "juan@gmail.com"
 db.users.find({ email: "juan@gmail.com" })
