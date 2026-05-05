@@ -51,7 +51,7 @@ db.users.findOne({ _id: ObjectId("69f11041c50d0ccc6367636e") })
 db.users.find({ correo_electrónico: "juan38@hotmail.com" })
 
 // 5. Get users where password is exactly "123456"
-db.users.find({ password: "123456" })
+db.users.find({ contraseña: "pass252333" })
 
 // 6. Get users where correo_electrónico is exactly "luis0@gmail.com.mx"
 db.users.find({ "correo_electrónico": "luis0@gmail.com.mx" })
