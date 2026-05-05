@@ -93,3 +93,35 @@ docs/reflection_p2.md Post-mortem del Sprint 2.
 titulo
 
 // 1. ({ _id: ObjectId("69ea90a127236869037df2f8") })
+-_id:69ea90a127236869037df2f8
+deviceId:"a78e6ff0-8c68-4ca3-b9a6-54543a85a724"
+type:"computer"
+brand:"HP"
+model:"Model-338"
+serialNumber:"5d47929e-b2eb-45f1-b6de-9414c240f7eb"
+location:"garage"
+status:"maintenance"
+batteryLevel:38
+online:true
+isOn:true
+installationDate:"2026-04-22T21:26:58.889Z"
+lastUpdate:"2026-04-22T21:26:58.889Z"
+name:"computer_0"
+
+// 2. ({ brand: "LG" })
+-_id:69ea90a127236869037df2fa
+deviceId:"30439420-d072-4d31-88f2-c2125e72f635"
+type:"computer"
+brand:"LG"
+model:"Model-196"
+serialNumber:"12f911f8-9d1f-4ab1-887d-32b02c418e77"
+location:"sala"
+status:"active"
+batteryLevel:95
+online:true
+isOn:true
+installationDate:"2026-04-22T21:26:58.889Z"
+lastUpdate:"2026-04-22T21:26:58.889Z"
+name:"computer_2"
+
+// 3.({ status: "active" })
