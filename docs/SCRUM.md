@@ -192,3 +192,8 @@ name:"air_conditioner_9"
 USERS
 
 // 1.({ _id: ObjectId("69f11041c50d0ccc6367636e") })
+-_id:69f11041c50d0ccc6367636e
+correo_electrónico:"pablo2@gmail.com"
+contraseña:"pass215330"
+
+// 2.
