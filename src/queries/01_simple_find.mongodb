@@ -20,7 +20,7 @@ db.devices.find({ brand: "LG" })
 
 
 // 5. Get devices where status is exactly "Nuevo"
-db.devices.find({ status: "Nuevo" })
+db.devices.find({ status: "active" })
 
 
 // 6. Get devices where location is exactly "cocina"
