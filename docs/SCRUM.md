@@ -90,7 +90,7 @@ docs/reflection_p2.md Post-mortem del Sprint 2.
 
 ## Incremento
 
-titulo
+DEVICES
 
 // 1. ({ _id: ObjectId("69ea90a127236869037df2f8") })
 -_id:69ea90a127236869037df2f8
@@ -187,3 +187,8 @@ isOn:true
 installationDate:"2026-04-22T21:26:58.889Z"
 lastUpdate:"2026-04-22T21:26:58.889Z"
 name:"air_conditioner_9"
+
+
+USERS
+
+// 1.({ _id: ObjectId("69f11041c50d0ccc6367636e") })
