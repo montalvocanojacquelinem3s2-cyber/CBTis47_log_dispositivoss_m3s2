@@ -27,7 +27,7 @@ Como propietario de una casa inteligente, quiero registrar y gestionar los dispo
 
 ## Sprint Planning
 
-#TABLA 1: PRIMER PARCIAL (Fundamentos y Modelado)
+# TABLA 1: PRIMER PARCIAL (Fundamentos y Modelado)
 
  1- Inducción y Configuración Rules & Tools.
 README.md (Initial Commit) Con "Student Pledge" firmado.
