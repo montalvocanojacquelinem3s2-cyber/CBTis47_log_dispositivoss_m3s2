@@ -196,4 +196,14 @@ USERS
 correo_electrónico:"pablo2@gmail.com"
 contraseña:"pass215330"
 
-// 2.
+// 2.({ correo_electrónico: "juan38@hotmail.com" })
+-_id:69f11041c50d0ccc63676392
+correo_electrónico:"juan38@hotmail.com"
+contraseña:"pass506574"
+
+// 3.({ contraseña: "pass252333" })
+-_id:69f11041c50d0ccc63676373
+correo_electrónico:"pablo7@zoho.com"
+contraseña:"pass252333"
+
+// 4.
