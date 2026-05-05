@@ -32,7 +32,7 @@ db.devices.find({ online: true })
 
 
 // 8. Get devices by brand and status
-db.devices.find({ brand: "Samsung", status: "Nuevo" })
+db.devices.find({ brand: "Samsung", status: "active" })
 
 // ==========================================
 // Simple Find Queries - Users Collection
