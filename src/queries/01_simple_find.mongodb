@@ -12,7 +12,7 @@ db.devices.findOne()
 
 
 // 3. Get one device by _id (usando uno que SÍ existe)
-db.devices.findOne({ _id: ObjectId("69efc4848a2a3959dbea7b81") })
+db.devices.findOne({ _id: ObjectId("69ea90a127236869037df2f8") })
 
 
 // 4. Get devices where brand is exactly "LG"
