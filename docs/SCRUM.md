@@ -125,3 +125,65 @@ lastUpdate:"2026-04-22T21:26:58.889Z"
 name:"computer_2"
 
 // 3.({ status: "active" })
+-_id:69ea90a127236869037df2fa
+deviceId:"30439420-d072-4d31-88f2-c2125e72f635"
+type:"computer"
+brand:"LG"
+model:"Model-196"
+serialNumber:"12f911f8-9d1f-4ab1-887d-32b02c418e77"
+location:"sala"
+status:"active"
+batteryLevel:95
+online:true
+isOn:true
+installationDate:"2026-04-22T21:26:58.889Z"
+lastUpdate:"2026-04-22T21:26:58.889Z"
+name:"computer_2"
+
+// 4.({ location: "cocina" })
+-_id:69ea90a127236869037df2f9
+deviceId:"284fc5c0-b4e4-4858-b70c-a58eb8fef5dc"
+type:"thermostat"
+brand:"Xiaomi"
+model:"Model-256"
+serialNumber:"b246f06c-79e4-4506-990e-f2d8ed314597"
+location:"cocina"
+status:"inactive"
+batteryLevel:21
+online:true
+isOn:true
+installationDate:"2026-04-22T21:26:58.889Z"
+lastUpdate:"2026-04-22T21:26:58.889Z"
+name:"thermostat_1"
+
+// 5.({ online: true })
+-_id:69ea90a127236869037df2fc
+deviceId:"fd1375c4-cda2-416d-ac0e-01cff208b273"
+type:"tv"
+brand:"Samsung"
+model:"Model-933"
+serialNumber:"a6497248-06aa-455b-be08-859f8296abca"
+location:"garage"
+status:"maintenance"
+batteryLevel:64
+online:true
+isOn:true
+installationDate:"2026-04-22T21:26:58.889Z"
+lastUpdate:"2026-04-22T21:26:58.889Z"
+name:"tv_4"
+
+// 6.({ brand: "Samsung", status: "active" })
+-_id:69ea90a127236869037df301
+deviceId:"70c11d25-381f-47c3-84bd-9d1ae4fce1c5"
+type:"air_conditioner"
+brand:"Samsung"
+model:"Model-255"
+serialNumber:"6edd362e-a62c-4b7d-b57d-4762a558da00"
+location:"garage"
+status:"active"
+batteryLevel:50
+online:true
+isOn:true
+installationDate:"2026-04-22T21:26:58.889Z"
+lastUpdate:"2026-04-22T21:26:58.889Z"
+name:"air_conditioner_9"
