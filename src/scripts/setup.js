@@ -33,7 +33,6 @@ async function setup() {
     await client.connect();
     const db = client.db(DB_NAME);
 
-    // SOLO para pruebas (borra todo)
     // Comenta esto si ya tienes datos importantes
     await db.collection("devices").deleteMany({});
     await db.collection("users").deleteMany({});
