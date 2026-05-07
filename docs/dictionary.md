@@ -1,4 +1,4 @@
-#Diccionario de datos
+# Diccionario de datos
 
 brand:"Xiaomi"
 
