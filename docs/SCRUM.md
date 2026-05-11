@@ -72,7 +72,8 @@ docs/reflection_p2.md Post-mortem del Sprint 2.
 
 ---
 
-## Sprint Backlog - Parcial 1
+## Sprint Backlog 
+### Parcial 1
 
 - Create database `smart_home`
 - Create collection `users`
@@ -83,12 +84,15 @@ docs/reflection_p2.md Post-mortem del Sprint 2.
 - Test basic queries in MongoDB
 
 
-## Sprint Backlog - Parcial 2
+### Parcial 2
 
 - Implement queries to filter devices by status
 - Implement queries to filter devices by location
 - Update device status (on/off)
 - Improve data structure for devices
+
+
+### Parcial 3
 
 ---
 
