@@ -94,6 +94,11 @@ docs/reflection_p2.md Post-mortem del Sprint 2.
 
 ### Parcial 3
 
+-
+-
+-
+-
+
 ---
 
 ## Incremento
