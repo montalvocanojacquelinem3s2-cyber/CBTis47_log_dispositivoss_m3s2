@@ -65,7 +65,7 @@ The goal of this project is to design a flexible and scalable data model capable
 
 ---
 
-## ✨ Features
+##  Features
 
 - User registration and authentication
   
@@ -81,7 +81,7 @@ The goal of this project is to design a flexible and scalable data model capable
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 | Technology      | Purpose                |
 | --------------- | ---------------------- |
@@ -95,7 +95,7 @@ The goal of this project is to design a flexible and scalable data model capable
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -126,7 +126,7 @@ Import the JSON files into MongoDB Compass or Atlas.
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```plaintext
 /project-root
@@ -151,7 +151,7 @@ Import the JSON files into MongoDB Compass or Atlas.
 
 ---
 
-## ⚙️ Usage
+##  Usage
 
 The project can be used to:
 
@@ -176,7 +176,7 @@ The project can be used to:
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 The project follows a **Document-Oriented NoSQL Architecture**.
 
@@ -202,7 +202,7 @@ graph TD
 
 ---
 
-## 👥 Roles
+##  Roles
 
 | ROL | NOMBRE TÉCNICO             | RESPONSABLE (Nombre)            | RESPONSABILIDAD PRINCIPAL (Sprints Semanales)                                                                                                                  |
 | --- | -------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -214,7 +214,7 @@ graph TD
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 Currently, the project focuses on data modeling and database architecture.
 
@@ -228,20 +228,20 @@ Future testing plans include:
 
 ---
 
-## 📈 Future Improvements
+## Future Improvements
 
-🔹 Real-time device synchronization
-🔹 Mobile application integration
-🔹 AI-powered automation
-🔹 IoT sensor support
-🔹 Voice assistant compatibility
-🔹 Dashboard analytics
-🔹 Role-based authentication
-🔹 Energy consumption monitoring
+- Real-time device synchronization
+- Mobile application integration
+- AI-powered automation
+-IoT sensor support
+- Voice assistant compatibility
+- Dashboard analytics
+- Role-based authentication
+- Energy consumption monitoring
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -251,13 +251,13 @@ Future testing plans include:
 
 ---
 
-## 📜 License
+##  License
 
 This project is intended for educational purposes only.
 
 ---
 
-## 👨‍💻 Authors
+## Authors
 
 ### Development Team
 
@@ -269,7 +269,7 @@ This project is intended for educational purposes only.
 
 ---
 
-## 📝 Work Log
+##  Work Log
 
 Consulta el trabajo detallado del equipo aquí:
 
