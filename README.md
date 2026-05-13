@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# 🏠 Smart Home Device Logger
+#  Smart Home Device Logger
 
 ### MongoDB-based Smart Home Management System
 
@@ -16,7 +16,7 @@
 
 ---
 
-## 📑 Table of Contents
+##  Table of Contents
 
 * [📖 Project Description](#-project-description)
 * [🎯 Project Goal](#-project-goal)
@@ -36,7 +36,7 @@
 
 ---
 
-## 📖 Project Description
+##  Project Description
 
 This project consists of the design and implementation of a Smart Home system using MongoDB as the main database. The system is focused on managing different types of smart devices within a home environment, allowing centralized control and monitoring.
 
