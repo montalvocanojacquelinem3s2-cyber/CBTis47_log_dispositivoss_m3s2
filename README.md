@@ -59,7 +59,7 @@ The database design follows a structured approach where a main device entity is 
 
 ---
 
-## 🎯 Project Goal
+##  Project Goal
 
 The goal of this project is to design a flexible and scalable data model capable of representing multiple types of electronic devices within a smart home, including hybrid devices that can perform more than one function.
 
@@ -67,15 +67,17 @@ The goal of this project is to design a flexible and scalable data model capable
 
 ## ✨ Features
 
-✅ User registration and authentication
-✅ Smart device registration and management
-✅ Multiple smart device categories
-✅ Flexible MongoDB document modeling
-✅ Scalable NoSQL architecture
-✅ Device-specific configurations
-✅ Smart lock security system
-✅ JSON-based data structures
-✅ MongoDB Atlas compatibility
+- User registration and authentication
+  
+- Smart device registration and management
+  
+- Multiple smart device categories
+- Flexible MongoDB document modeling
+- Scalable NoSQL architecture
+- Device-specific configurations
+- Smart lock security system
+- JSON-based data structures
+- MongoDB Atlas compatibility
 
 ---
 
