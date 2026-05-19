@@ -7,16 +7,52 @@ Desarrollar una base de datos en MongoDB para una Smart Home que permita registr
 
 ## Product Backlog
 
-- Create users collection
-- Store user credentials (email and password)
-- Create devices collection
-- Store device information (type, brand, model, location)
-- Track device status (on/off, maintenance)
-- Store battery level of devices
-- Track device connectivity (online/offline)
-- Query devices by location
-- Query devices by status
-- Update device status
+
+
+---
+
+| ID | Epic | User Story | Acceptance Criteria | Priority |
+|----|------|-------------|---------------------|----------|
+
+| PB-01 | Gestión de Base de Datos | Como administrador del sistema, quiero crear una base de datos para almacenar información de la Smart Home, para organizar todos los datos del proyecto. | - La base de datos debe llamarse `hogar_inteligente`.<br>- Debe estar creada en MongoDB Atlas.<br>- Debe permitir múltiples colecciones. | Alta |
+
+| PB-02 | Gestión de Dispositivos | Como propietario de una Smart Home, quiero registrar dispositivos inteligentes, para monitorear su estado y funcionamiento. | - Debe existir una colección `devices`.<br>- Cada dispositivo debe tener un `deviceId` único.<br>- Debe guardar marca, modelo y ubicación. | Alta |
+
+| PB-03 | Gestión de Usuarios | Como administrador, quiero registrar usuarios del sistema, para controlar el acceso a la plataforma. | - Debe existir una colección `users`.<br>- Cada usuario debe almacenar correo y contraseña.<br>- Los datos deben guardarse correctamente. | Alta |
+
+| PB-04 | Inserción de Datos | Como desarrollador, quiero insertar datos de prueba en las colecciones, para validar el funcionamiento de la base de datos. | - Deben existir documentos en `devices` y `users`.<br>- Los documentos deben contener información válida. | Alta |
+
+| PB-05 | Consultas MongoDB | Como usuario del sistema, quiero realizar consultas simples utilizando `find()`, para obtener información de los dispositivos registrados. | - Las consultas deben devolver resultados correctos.<br>- Debe ser posible buscar por marca, estado y ubicación. | Alta |
+
+| PB-06 | Consultas MongoDB | Como administrador, quiero utilizar `findOne()` para buscar dispositivos específicos, para consultar información individual. | - Debe devolver un único documento.<br>- Debe funcionar utilizando `_id`. | Media |
+
+| PB-07 | Monitoreo de Dispositivos | Como usuario, quiero consultar dispositivos conectados, para monitorear cuáles están en línea. | - La query debe filtrar con `online:true`.<br>- Debe mostrar solamente dispositivos activos en línea. | Media |
+
+| PB-08 | Organización del Proyecto | Como desarrollador, quiero organizar las queries en archivos `.mongodb`, para mantener una mejor estructura del proyecto. | - Deben existir archivos separados por tipo de query.<br>- Los archivos deben contener comentarios descriptivos. | Media |
+
+| PB-09 | Documentación | Como desarrollador, quiero documentar las consultas y resultados, para explicar el funcionamiento del sistema. | - La documentación debe incluir queries y resultados.<br>- Debe utilizar formato Markdown. | Media |
+
+| PB-10 | Modelado de Datos | Como desarrollador, quiero diseñar un diagrama entidad-relación, para representar visualmente la estructura de la base de datos. | - El diagrama debe incluir relaciones.<br>- Debe mostrar entidades y atributos. | Media |
+
+| PB-11 | GitHub Repository | Como desarrollador, quiero subir el proyecto a GitHub, para almacenar y compartir el repositorio. | - El repositorio debe contener documentación.<br>- Debe incluir archivos `.mongodb` y `README.md`. | Alta |
+
+| PB-12 | Capturas del Sistema | Como desarrollador, quiero agregar capturas de MongoDB Atlas, para mostrar evidencia del funcionamiento del proyecto. | - Deben verse las colecciones.<br>- Deben mostrarse documentos y queries. | Baja |
+
+| PB-13 | Scrum Documentation | Como integrante del equipo, quiero crear documentación Scrum, para organizar las actividades y avances del proyecto. | - Debe incluir Product Goal.<br>- Debe incluir Sprint Backlog e Increment. | Media |
+
+| PB-14 | Testing | Como desarrollador, quiero crear escenarios Gherkin, para validar el comportamiento esperado del sistema. | - Debe utilizar formato Given/When/Then.<br>- Debe existir al menos un escenario por funcionalidad importante. | Media |
+
+---
+
+# Gherkin Scenarios
+
+## Feature: Registro de dispositivos
+
+```gherkin
+Scenario: Registrar un nuevo dispositivo
+Given que el usuario está conectado a MongoDB Atlas
+When registra un dispositivo inteligente
+Then el dispositivo debe almacenarse correctamente en la colección devices
 
 ---
 
