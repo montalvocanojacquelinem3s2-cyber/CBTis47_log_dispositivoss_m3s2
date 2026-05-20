@@ -8,9 +8,6 @@ Desarrollar una base de datos en MongoDB para una Smart Home que permita registr
 ## Product Backlog
 
 
-
----
-
 | ID | Epic | User Story | Acceptance Criteria | Priority |
 |----|------|-------------|---------------------|----------|
 |PB-01|Gestión de Base de Datos|Como administrador del sistema, quiero crear una base de datos para almacenar información de la Smart Home, para organizar todos los datos del proyecto.|- La base de datos debe llamarse `hogar_inteligente`.<br>- Debe estar creada en MongoDB Atlas.<br>- Debe permitir múltiples colecciones.|Alta|
@@ -28,8 +25,8 @@ Desarrollar una base de datos en MongoDB para una Smart Home que permita registr
 |PB-13|Scrum Documentation|Como integrante del equipo, quiero crear documentación Scrum, para organizar las actividades y avances del proyecto.|- Debe incluir Product Goal.<br>- Debe incluir Sprint Backlog e Increment.|Media|
 |PB-14|Testing|Como desarrollador, quiero crear escenarios Gherkin, para validar el comportamiento esperado del sistema.|- Debe utilizar formato Given/When/Then.<br>- Debe existir al menos un escenario por funcionalidad importante.|Media|
 
----
-# Gherkin Scenarios
+
+### Gherkin Scenarios
 
 #### 01Feature: Database Management
 
