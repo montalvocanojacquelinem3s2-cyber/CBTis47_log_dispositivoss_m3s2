@@ -344,17 +344,6 @@ The system implements several security-oriented modeling practices:
 
 ---
 
-# Future Improvements
-
-- Real-time synchronization
-- IoT sensor integration
-- Mobile application support
-- AI-based automation
-- Energy analytics dashboard
-- Voice assistant compatibility
-- Role-based authentication
-
----
 
 # License
 
