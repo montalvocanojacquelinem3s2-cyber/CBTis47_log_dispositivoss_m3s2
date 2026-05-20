@@ -31,75 +31,199 @@ Desarrollar una base de datos en MongoDB para una Smart Home que permita registr
 ---
 # Gherkin Scenarios
 
-#### 01Feature: Registro de dispositivos
+#### 01Feature: Database Management
 
-Scenario: Registrar un nuevo dispositivo
-Given que el usuario está conectado a MongoDB Atlas
-When registra un dispositivo inteligente
-Then el dispositivo debe almacenarse correctamente en la colección devices
+Scenario: Create MongoDB database successfully
+Given MongoDB Atlas is configured
+When the developer creates the "hogar_inteligente" database
+Then the database must be available with multiple collections
 
-#### 02Feature: Search devices by brand
+Scenario: Create database with invalid configuration
+Given MongoDB Atlas credentials are incorrect
+When the developer attempts to create the database
+Then the connection must fail
 
-Scenario: Search LG devices
+
+
+#### 02Feature: Device Management
+
+Scenario: Register smart device successfully
+Given the devices collection exists
+When a new smart device is inserted
+Then the document must be stored correctly
+
+Scenario: Register device without deviceId
+Given the devices collection exists
+When a device is inserted without deviceId
+Then the system must reject the document
+
+
+
+#### 03Feature: User Management
+
+Scenario: Register user successfully
+Given the users collection exists
+When a new user is inserted
+Then the user document must be stored correctly
+
+Scenario: Register user without password
+Given the users collection exists
+When a user is inserted without password
+Then the insertion should fail
+
+
+
+#### 04Feature: Test Data Insertion
+
+Scenario: Insert test data into collections
+Given the collections are created
+When test documents are inserted
+Then the collections must contain valid data
+
+Scenario: Insert invalid test data
+Given the collections are created
+When invalid documents are inserted
+Then MongoDB should reject the operation
+
+
+
+#### 05Feature: MongoDB Queries
+
+Scenario: Find devices by brand
 Given there are registered devices
 When the query db.devices.find({ brand: "LG" }) is executed
-Then only LG devices must be displayed
+Then matching devices must be returned
 
-#### 03Feature: Online devices
-
-Scenario: Get online devices
+Scenario: Search non existing brand
 Given there are registered devices
-When the query db.devices.find({ online: true }) is executed
-Then only online devices must be displayed
+When the query db.devices.find({ brand: "Nokia" }) is executed
+Then the result must be empty
 
-#### 04Feature: User registration
 
-Scenario: Register a user
-Given the user is inside the users collection
-When a new user is inserted
-Then the user must be stored correctly
 
-#### 05Feature: Search user by email
+#### 06Feature: FindOne Queries
 
-Scenario: Search existing user
-Given there are registered users
-When the query db.users.find({ "correo_electrónico": "luis0@gmail.com.mx" }) is executed
-Then the corresponding user must be displayed
-
-#### 06Feature: Validate user credentials
-
-Scenario: Validate login information
-Given there are registered users
-When the query db.users.find({ email: "test@test.com", password: "123456" }) is executed
-Then the matching user must be displayed
-
-#### 07Feature: MongoDB Queries
-
-Scenario: Execute find query
-Given there are documents in the collection
-When db.devices.find() is executed
-Then all devices must be returned
-
-#### 08Feature: Find one document
-
-Scenario: Search device by ObjectId
+Scenario: Find device by ObjectId
 Given there are registered devices
 When db.devices.findOne({ _id: ObjectId("69efc4848a2a3959dbea7b81") }) is executed
-Then one matching device must be displayed
+Then one document must be returned
 
-#### 09Feature: Project documentation
+Scenario: Find device with invalid ObjectId
+Given there are registered devices
+When db.devices.findOne({ _id: ObjectId("123") }) is executed
+Then MongoDB must generate an ObjectId error
+
+
+
+#### 07Feature: Online Device Monitoring
+
+Scenario: Get online devices
+Given there are active devices
+When db.devices.find({ online: true }) is executed
+Then only online devices must be displayed
+
+Scenario: Query online devices in empty collection
+Given the devices collection is empty
+When db.devices.find({ online: true }) is executed
+Then no documents should be returned
+
+
+
+#### 08Feature: Project Organization
+
+Scenario: Organize MongoDB files correctly
+Given the project repository exists
+When .mongodb files are created
+Then the queries must be separated by category
+
+Scenario: Missing query files
+Given the repository exists
+When query files are not uploaded
+Then the project structure should be incomplete
+
+
+
+#### 09Feature: Documentation
 
 Scenario: Create Markdown documentation
-Given the project documentation is being created
-When the queries and results are added
-Then the documentation must explain the database behavior
+Given the project is completed
+When the documentation is written
+Then the README.md file must explain the project
 
-#### 10Feature: GitHub repository
+Scenario: Documentation without query examples
+Given the documentation exists
+When the reviewer checks the README.md
+Then the documentation should be considered incomplete
+
+
+
+#### 10Feature: Database Modeling
+
+Scenario: Create entity relationship diagram
+Given the database structure is defined
+When the diagram is created
+Then entities and attributes must be represented
+
+Scenario: Diagram without relationships
+Given the diagram exists
+When relationships are missing
+Then the model should be considered incomplete
+
+
+
+#### 11Feature: GitHub Repository
 
 Scenario: Upload project to GitHub
 Given the repository exists
-When the project files are uploaded
-Then the repository must contain all project documentation
+When project files are uploaded
+Then the repository must contain all documentation and queries
+
+Scenario: Repository without README file
+Given the repository exists
+When the reviewer checks the files
+Then the project should be marked as incomplete
+
+
+
+#### 12Feature: System Screenshots
+
+Scenario: Upload MongoDB screenshots
+Given MongoDB Compass contains data
+When screenshots are added to the repository
+Then the images must show collections and queries
+
+Scenario: Missing screenshots
+Given the repository exists
+When screenshots are not uploaded
+Then the evidence section should be incomplete
+
+
+
+#### 13Feature: Scrum Documentation
+
+Scenario: Create Scrum documentation successfully
+Given the Scrum process is defined
+When the Product Backlog and Sprint Backlog are documented
+Then the Scrum documentation must be complete
+
+Scenario: Missing Sprint Backlog
+Given the Scrum documentation exists
+When the Sprint Backlog section is missing
+Then the documentation should be incomplete
+
+
+
+#### 14Feature: Functional Testing
+
+Scenario: Validate MongoDB queries successfully
+Given the collections contain documents
+When the queries are executed
+Then MongoDB must return valid results
+
+Scenario: Execute invalid MongoDB query
+Given MongoDB Compass is connected
+When an invalid query is executed
+Then the system must generate an error
 
 ---
 
