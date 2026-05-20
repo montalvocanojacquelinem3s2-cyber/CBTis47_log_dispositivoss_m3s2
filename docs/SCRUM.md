@@ -31,13 +31,75 @@ Desarrollar una base de datos en MongoDB para una Smart Home que permita registr
 ---
 # Gherkin Scenarios
 
-## Feature: Registro de dispositivos
+#### 01Feature: Registro de dispositivos
 
-```gherkin
 Scenario: Registrar un nuevo dispositivo
 Given que el usuario está conectado a MongoDB Atlas
 When registra un dispositivo inteligente
 Then el dispositivo debe almacenarse correctamente en la colección devices
+
+#### 02Feature: Search devices by brand
+
+Scenario: Search LG devices
+Given there are registered devices
+When the query db.devices.find({ brand: "LG" }) is executed
+Then only LG devices must be displayed
+
+#### 03Feature: Online devices
+
+Scenario: Get online devices
+Given there are registered devices
+When the query db.devices.find({ online: true }) is executed
+Then only online devices must be displayed
+
+#### 04Feature: User registration
+
+Scenario: Register a user
+Given the user is inside the users collection
+When a new user is inserted
+Then the user must be stored correctly
+
+#### 05Feature: Search user by email
+
+Scenario: Search existing user
+Given there are registered users
+When the query db.users.find({ "correo_electrónico": "luis0@gmail.com.mx" }) is executed
+Then the corresponding user must be displayed
+
+#### 06Feature: Validate user credentials
+
+Scenario: Validate login information
+Given there are registered users
+When the query db.users.find({ email: "test@test.com", password: "123456" }) is executed
+Then the matching user must be displayed
+
+#### 07Feature: MongoDB Queries
+
+Scenario: Execute find query
+Given there are documents in the collection
+When db.devices.find() is executed
+Then all devices must be returned
+
+#### 08Feature: Find one document
+
+Scenario: Search device by ObjectId
+Given there are registered devices
+When db.devices.findOne({ _id: ObjectId("69efc4848a2a3959dbea7b81") }) is executed
+Then one matching device must be displayed
+
+#### 09Feature: Project documentation
+
+Scenario: Create Markdown documentation
+Given the project documentation is being created
+When the queries and results are added
+Then the documentation must explain the database behavior
+
+#### 10Feature: GitHub repository
+
+Scenario: Upload project to GitHub
+Given the repository exists
+When the project files are uploaded
+Then the repository must contain all project documentation
 
 ---
 
