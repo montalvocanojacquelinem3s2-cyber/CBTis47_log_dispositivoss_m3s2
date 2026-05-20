@@ -1,286 +1,379 @@
-# CBTis47 Smart Home System
-
 <div align="center">
 
-#  Smart Home Device Logger
+# CBTis47 Smart Home Management System
 
-### MongoDB-based Smart Home Management System
+### MongoDB-Based Smart Home Infrastructure
 
-![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?style=for-the-badge\&logo=mongodb)
-![Status](https://img.shields.io/badge/Status-In%20Development-blue?style=for-the-badge)
-![License](https://img.shields.io/badge/License-Educational-orange?style=for-the-badge)
-![JSON](https://img.shields.io/badge/JSON-Document%20Model-black?style=for-the-badge\&logo=json)
-![GitHub](https://img.shields.io/badge/GitHub-Repository-white?style=for-the-badge\&logo=github)
+<p align="center">
+  <img src="./docs/screenshots/banner.png" width="100%">
+</p>
+
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?style=for-the-badge&logo=mongodb)
+![MongoDB Atlas](https://img.shields.io/badge/MongoDB%20Atlas-Cloud-green?style=for-the-badge&logo=mongodb)
+![JSON](https://img.shields.io/badge/JSON-Document%20Model-black?style=for-the-badge&logo=json)
+![Mermaid.js](https://img.shields.io/badge/Mermaid.js-Diagrams-blue?style=for-the-badge)
 
 </div>
 
 ---
 
-##  Table of Contents
+# Table of Contents
 
-* [📖 Project Description](#-project-description)
-* [🎯 Project Goal](#-project-goal)
-* [✨ Features](#-features)
-* [🛠️ Technologies Used](#️-technologies-used)
-* [🚀 Getting Started](#-getting-started)
-* [📂 Project Structure](#-project-structure)
-* [⚙️ Usage](#️-usage)
-* [🏗️ Architecture](#️-architecture)
-* [👥 Roles](#-roles)
-* [🧪 Testing](#-testing)
-* [📈 Future Improvements](#-future-improvements)
-* [🤝 Contributing](#-contributing)
-* [📜 License](#-license)
-* [👨‍💻 Authors](#-authors)
-* [📝 Work Log](#-work-log)
-
----
-
-##  Project Description
-
-This project consists of the design and implementation of a Smart Home system using MongoDB as the main database. The system is focused on managing different types of smart devices within a home environment, allowing centralized control and monitoring.
-
-The platform includes three main user interaction screens:
-
-1. **User Registration Screen**
-   Allows new users to create an account by providing essential information such as email and password. This data is stored and validated to ensure unique user identification.
-
-2. **User Access / Authentication Screen**
-   Enables registered users to log into the system and access their smart home environment securely.
-
-3. **Device Registration and Management Screen**
-   Allows users to register, configure, and manage smart devices within the home. Each device is stored in the database with its general attributes (such as type, brand, status, and location) and its specific configuration depending on the device type.
-
-The system supports multiple device categories, including lights, thermostats, locks, televisions, air conditioners, computers, and speakers. Each device type contains specialized attributes that extend from a central device model.
-
-Additionally, the system incorporates security features for smart locks, including encrypted access codes and rotation tracking.
-
-The database design follows a structured approach where a main device entity is extended by specific device types, enabling scalability and flexibility for future device integrations.
+- [Project Description](#project-description)
+- [System Overview](#system-overview)
+- [Project Goals](#project-goals)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Why MongoDB?](#why-mongodb)
+- [Data Modeling](#data-modeling)
+- [Architecture](#architecture)
+- [Database Collections](#database-collections)
+- [Sample Queries](#sample-queries)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Security Considerations](#security-considerations)
+- [Team Contributions](#team-contributions)
+- [Future Improvements](#future-improvements)
+- [License](#license)
+- [Authors](#authors)
 
 ---
 
-##  Project Goal
+# Project Description
 
-The goal of this project is to design a flexible and scalable data model capable of representing multiple types of electronic devices within a smart home, including hybrid devices that can perform more than one function.
+The CBTis47 Smart Home Management System is a MongoDB-based platform designed to centralize the administration and monitoring of smart home devices inside a connected environment.
+
+The system supports multiple smart device categories while maintaining flexible and scalable document structures using MongoDB and BSON modeling principles.
+
+The project focuses on:
+
+- Smart device registration
+- User authentication
+- Device monitoring
+- Flexible NoSQL schemas
+- Smart lock security modeling
+- Hybrid device compatibility
 
 ---
 
-##  Features
+# System Overview
 
-- User registration and authentication
-  
-- Smart device registration and management
-  
-- Multiple smart device categories
-- Flexible MongoDB document modeling
-- Scalable NoSQL architecture
+The platform was designed using a document-oriented architecture where every smart device can store both shared and device-specific attributes.
+
+This approach allows the system to support:
+
+- Lights
+- Thermostats
+- Locks
+- Speakers
+- Televisions
+- Air conditioners
+- Future IoT integrations
+
+without requiring rigid relational schemas.
+
+---
+
+# Project Goals
+
+The main goal of this project is to design a scalable and flexible NoSQL infrastructure capable of representing heterogeneous smart devices within a unified smart home ecosystem.
+
+Additional goals include:
+
+- Practicing BSON document modeling
+- Understanding embedded documents
+- Applying MongoDB architecture principles
+- Simulating real-world IoT systems
+
+---
+
+# Features
+
+- User registration system
+- Authentication system
+- Smart device management
+- Flexible BSON documents
 - Device-specific configurations
-- Smart lock security system
-- JSON-based data structures
-- MongoDB Atlas compatibility
+- Scalable MongoDB architecture
+- Embedded JSON structures
+- Smart lock security support
+- MongoDB Atlas integration
 
 ---
 
-##  Technologies Used
+# Technologies Used
 
-| Technology      | Purpose                |
-| --------------- | ---------------------- |
-| MongoDB         | Main database          |
-| MongoDB Atlas   | Cloud database hosting |
+| Technology | Purpose |
+|---|---|
+| MongoDB | Main database |
+| MongoDB Atlas | Cloud hosting |
 | MongoDB Compass | Database visualization |
-| JSON            | Document structure     |
-| Mermaid.js      | Diagrams and modeling  |
-| Git             | Version control        |
-| GitHub          | Repository hosting     |
+| JSON | Data representation |
+| BSON | MongoDB document format |
+| Mermaid.js | Architecture diagrams |
+| GitHub | Repository hosting |
+| Git | Version control |
 
 ---
 
-##  Getting Started
+# Why MongoDB?
 
-### Prerequisites
+MongoDB was selected because smart home systems contain highly dynamic and heterogeneous devices.
 
-Before running the project, make sure you have:
+Each device category requires different attributes and configurations, making traditional rigid schemas less efficient for scalability.
 
-* MongoDB Atlas account
-* MongoDB Compass installed
-* Git installed
-* Basic MongoDB knowledge
+MongoDB provides:
 
----
-
-### Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/your-username/your-repository.git
-```
-
-Navigate into the project directory:
-
-```bash
-cd your-repository
-```
-
-Import the JSON files into MongoDB Compass or Atlas.
+- Flexible document structures
+- Embedded documents
+- Dynamic attributes
+- High scalability
+- Efficient JSON-like modeling
+- Hybrid device compatibility
 
 ---
 
-##  Project Structure
+# Data Modeling
 
-```plaintext
-/project-root
-│
-├── README.md
-├── WORKLOG.md
-├── /json
-│   ├── devices.json
-│   ├── lights.json
-│   ├── thermostats.json
-│   ├── locks.json
-│   ├── televisions.json
-│   ├── speakers.json
-│   └── air_conditioners.json
-│
-├── /diagrams
-│   └── smart_home_model.mmd
-│
-└── /docs
-    └── project_documentation.md
-```
+The project uses a centralized device collection combined with flexible embedded configurations.
 
----
-
-##  Usage
-
-The project can be used to:
-
-* Store smart home device information
-* Simulate device management systems
-* Test MongoDB document structures
-* Practice NoSQL database modeling
-* Develop scalable smart home solutions
-
-### Example Device Document
+## Example BSON Document
 
 ```json
 {
-  "device_name": "Living Room Light",
-  "type": "Light",
-  "brand": "Philips",
+  "_id": ObjectId(),
+  "device_name": "Living Room TV",
+  "device_type": "Television",
+  "brand": "Samsung",
   "status": "ON",
-  "brightness": 80,
-  "location": "Living Room"
+
+  "location": {
+    "room": "Living Room",
+    "floor": 1
+  },
+
+  "configuration": {
+    "resolution": "4K",
+    "volume": 30,
+    "wifi_enabled": true
+  },
+
+  "created_at": ISODate(),
+  "updated_at": ISODate()
 }
 ```
 
+## Design Decisions
+
+The project uses embedded documents because:
+
+- They reduce query complexity
+- Improve device organization
+- Support polymorphic structures
+- Simplify scalability
+- Allow flexible configurations
+
 ---
 
-##  Architecture
-
-The project follows a **Document-Oriented NoSQL Architecture**.
+# Architecture
 
 ```mermaid
 graph TD
-    A[User] --> B[Authentication]
-    B --> C[Smart Home System]
-    C --> D[Device Collection]
-    D --> E[Lights]
-    D --> F[Thermostats]
-    D --> G[Locks]
-    D --> H[TVs]
-    D --> I[Speakers]
+
+    A[Users Collection]
+    B[Authentication Module]
+    C[Device Collection]
+
+    D[Lights]
+    E[Thermostats]
+    F[Locks]
+    G[Televisions]
+    H[Speakers]
+    I[Air Conditioners]
+
+    A --> B
+    B --> C
+
+    C --> D
+    C --> E
+    C --> F
+    C --> G
+    C --> H
+    C --> I
 ```
 
-### Design Approach
+---
 
-* Centralized device collection
-* Flexible document inheritance
-* Embedded document structures
-* Scalable schema design
-* Hybrid device compatibility
+# Database Collections
+
+| Collection | Description |
+|---|---|
+| users | Stores user credentials |
+| devices | Central smart device registry |
+| lights | Smart lighting devices |
+| thermostats | Temperature devices |
+| locks | Security devices |
+| televisions | Multimedia devices |
+| speakers | Audio devices |
 
 ---
 
-##  Roles
+# Sample Queries
 
-| ROL | NOMBRE TÉCNICO             | RESPONSABLE (Nombre)            | RESPONSABILIDAD PRINCIPAL (Sprints Semanales)                                                                                                                  |
-| --- | -------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0   | Scrum Master               | Garcia Pulido Samantha Michelle | **Facilitador del proceso.** Asegura que el equipo siga Scrum, elimina impedimentos, mejora la comunicación y protege el Sprint de interrupciones externas.    |
-| 1   | The Data Modeler           | Ramírez López Fatima Yocelin    | **Arquitecto JSON.** Define la estructura del documento. Decide qué datos se "embeben" (embed) y cuáles se referencian. Escribe el diagrama en Mermaid.js.     |
-| 2   | The Query Developer        | Montalvo Cano Jacqueline        | **Constructor MQL.** Traduce las preguntas de negocio ("¿Cuántos usuarios...?") a código MongoDB (`db.collection.find(...)`). Optimiza filtros y consultas.    |
-| 3   | The Integration Specialist | De La Cuz Zayas Juan Irving     | **Configurador del Entorno.** Crea el Cluster en Atlas o la conexión en Compass. Gestiona índices y asegura la conectividad. Administra el repositorio GitHub. |
-| 4   | The Data Seeder / QA       | Carrera Quezada Axel Ivan       | **Generador de Caos.** Crea datos de prueba (JSON ficticio). Valida consultas y reporta errores ("bugs").                                                      |
+## Find active devices
+
+```javascript
+db.devices.find({
+  status: "ON"
+})
+```
+
+## Find locked smart locks
+
+```javascript
+db.devices.find({
+  device_type: "Lock",
+  "security.is_locked": true
+})
+```
+
+## Count devices by category
+
+```javascript
+db.devices.aggregate([
+  {
+    $group: {
+      _id: "$device_type",
+      total: { $sum: 1 }
+    }
+  }
+])
+```
 
 ---
 
-##  Testing
+# Project Structure
 
-Currently, the project focuses on data modeling and database architecture.
-
-Future testing plans include:
-
-* MongoDB query validation
-* JSON schema validation
-* Device integration tests
-* Authentication testing
-* CRUD operation testing
+```plaintext
+CBTis47-SmartHome/
+│
+├── README.md
+├── WORKLOG.md
+├── LICENSE
+├── .gitignore
+│
+├── docs/
+│   ├── screenshots/
+│   ├── diagrams/
+│   └── documentation/
+│
+├── database/
+│   ├── collections/
+│   ├── schemas/
+│   └── seeders/
+│
+├── json/
+│   ├── users.json
+│   ├── devices.json
+│   ├── locks.json
+│   └── thermostats.json
+│
+└── diagrams/
+    └── smart_home_model.mmd
+```
 
 ---
 
-## Future Improvements
+# Installation
 
-- Real-time device synchronization
-- Mobile application integration
-- AI-powered automation
--IoT sensor support
+## Prerequisites
+
+Before running the project, install:
+
+- MongoDB Compass
+- Git
+- MongoDB Atlas account
+
+## Clone Repository
+
+```bash
+git clone https://github.com/your-repository.git
+```
+
+## Navigate into Project
+
+```bash
+cd CBTis47-SmartHome
+```
+
+## Import JSON Collections
+
+Import all JSON files into MongoDB Compass or MongoDB Atlas.
+
+---
+
+# MongoDB Compass Preview
+
+<p align="center">
+  <img src="./docs/screenshots/compass-preview.png" width="850">
+</p>
+
+---
+
+# Security Considerations
+
+The system implements several security-oriented modeling practices:
+
+- Authentication-based access
+- Smart lock protection
+- Encrypted access code modeling
+- Secure Atlas connectivity
+- Structured ownership validation
+
+---
+
+# Team Contributions
+
+| Team Member | Contribution |
+|---|---|
+| Samantha Michelle | Scrum coordination and sprint management |
+| Fatima Yocelin | BSON modeling and Mermaid architecture |
+| Jacqueline | MongoDB queries and aggregation |
+| Juan Irving | Atlas integration and repository management |
+| Axel Ivan | JSON test data generation and QA |
+
+---
+
+# Future Improvements
+
+- Real-time synchronization
+- IoT sensor integration
+- Mobile application support
+- AI-based automation
+- Energy analytics dashboard
 - Voice assistant compatibility
-- Dashboard analytics
 - Role-based authentication
-- Energy consumption monitoring
 
 ---
 
-##  Contributing
+# License
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push your branch
-5. Open a Pull Request
+This project was developed for educational purposes.
 
 ---
 
-##  License
+# Authors
 
-This project is intended for educational purposes only.
-
----
-
-## Authors
-
-### Development Team
-
-* Garcia Pulido Samantha Michelle
-* Ramírez López Fatima Yocelin
-* Montalvo Cano Jacqueline
-* De La Cuz Zayas Juan Irving
-* Carrera Quezada Axel Ivan
-
----
-
-##  Work Log
-
-Consulta el trabajo detallado del equipo aquí:
-
-[WORKLOG.md](./WORKLOG.md)
+- Garcia Pulido Samantha Michelle
+- Ramírez López Fatima Yocelin
+- Montalvo Cano Jacqueline
+- De La Cruz Zayas Juan Irving
+- Carrera Quezada Axel Ivan
 
 ---
 
 <div align="center">
 
-### ⭐ Smart Home Device Logger ⭐
-
-MongoDB • NoSQL • Smart Devices • JSON Modeling
+MongoDB • BSON • Smart Home • NoSQL Architecture
 
 </div>
