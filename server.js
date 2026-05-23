@@ -3,12 +3,20 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 const app = express();
+
+// =============================
+//  MIDDLEWARE
+// =============================
 app.use(cors());
 app.use(express.json());
 
+
+// =============================
+//  MONGODB CONNECTION
+// =============================
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB conectado"))
-  .catch(err => console.log(err));
+  .catch(err => console.log("Mongo error:", err));
 
 
 // =============================
@@ -35,17 +43,17 @@ const User = mongoose.model("User", {
 
 
 // =============================
-//  DEVICES
+//  DEVICES (CRUD)
 // =============================
 
+
+// CREATE / UPDATE (INTELIGENTE)
 app.post("/devices", async (req, res) => {
   try {
-
     const { _id, ...deviceData } = req.body;
 
     // UPDATE
     if (_id) {
-
       const updatedDevice = await Device.findByIdAndUpdate(
         _id,
         deviceData,
@@ -63,33 +71,41 @@ app.post("/devices", async (req, res) => {
     const newDevice = new Device(deviceData);
     await newDevice.save();
 
-    res.json({
+    return res.json({
       success: true,
       mode: "created",
       data: newDevice
     });
 
   } catch (error) {
-
-    res.status(500).json({
+    return res.status(500).json({
       success: false,
       message: error.message
     });
-
   }
 });
 
 
+// GET ALL DEVICES
 app.get("/devices", async (req, res) => {
   try {
     const devices = await Device.find();
-    res.json({ success: true, data: devices });
+
+    return res.json({
+      success: true,
+      data: devices
+    });
 
   } catch (error) {
-    res.status(500).json({ success: false, message: error.message });
+    return res.status(500).json({
+      success: false,
+      message: error.message
+    });
   }
 });
 
+
+// UPDATE BY ID
 app.put("/devices/:id", async (req, res) => {
   try {
     const updated = await Device.findByIdAndUpdate(
@@ -98,21 +114,35 @@ app.put("/devices/:id", async (req, res) => {
       { new: true }
     );
 
-    res.json({ success: true, data: updated });
+    return res.json({
+      success: true,
+      data: updated
+    });
 
   } catch (error) {
-    res.status(500).json({ success: false, message: error.message });
+    return res.status(500).json({
+      success: false,
+      message: error.message
+    });
   }
 });
 
+
+// DELETE
 app.delete("/devices/:id", async (req, res) => {
   try {
     await Device.findByIdAndDelete(req.params.id);
 
-    res.json({ success: true, message: "Eliminado" });
+    return res.json({
+      success: true,
+      message: "Eliminado correctamente"
+    });
 
   } catch (error) {
-    res.status(500).json({ success: false, message: error.message });
+    return res.status(500).json({
+      success: false,
+      message: error.message
+    });
   }
 });
 
@@ -120,7 +150,6 @@ app.delete("/devices/:id", async (req, res) => {
 // =============================
 //  LOGIN / REGISTER
 // =============================
-
 app.post("/login", async (req, res) => {
   try {
     let { email, password, mode } = req.body;
@@ -134,7 +163,7 @@ app.post("/login", async (req, res) => {
 
     email = email.toLowerCase().trim();
 
-    // REGISTRO
+    // REGISTER
     if (mode === "register") {
       const existingUser = await User.findOne({ email });
 
@@ -180,7 +209,7 @@ app.post("/login", async (req, res) => {
     });
 
   } catch (error) {
-    res.status(500).json({
+    return res.status(500).json({
       success: false,
       message: error.message
     });
@@ -191,7 +220,6 @@ app.post("/login", async (req, res) => {
 // =============================
 //  BASE
 // =============================
-
 app.get("/", (req, res) => {
   res.send("API funcionando");
 });
@@ -200,7 +228,6 @@ app.get("/", (req, res) => {
 // =============================
 //  SERVER
 // =============================
-
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
