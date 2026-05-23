@@ -40,15 +40,45 @@ const User = mongoose.model("User", {
 
 app.post("/devices", async (req, res) => {
   try {
-    const newDevice = new Device(req.body);
+
+    const { _id, ...deviceData } = req.body;
+
+    // UPDATE
+    if (_id) {
+
+      const updatedDevice = await Device.findByIdAndUpdate(
+        _id,
+        deviceData,
+        { new: true }
+      );
+
+      return res.json({
+        success: true,
+        mode: "updated",
+        data: updatedDevice
+      });
+    }
+
+    // CREATE
+    const newDevice = new Device(deviceData);
     await newDevice.save();
 
-    res.json({ success: true, data: newDevice });
+    res.json({
+      success: true,
+      mode: "created",
+      data: newDevice
+    });
 
   } catch (error) {
-    res.status(500).json({ success: false, message: error.message });
+
+    res.status(500).json({
+      success: false,
+      message: error.message
+    });
+
   }
 });
+
 
 app.get("/devices", async (req, res) => {
   try {
