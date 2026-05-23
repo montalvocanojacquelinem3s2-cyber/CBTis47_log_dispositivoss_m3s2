@@ -1,0 +1,61 @@
+// DEVICES //
+
+// 1. Match online devices
+db.devices.aggregate([
+  {
+    $match: {
+      online: true
+    }
+  }
+])
+
+// 2. Group devices by brand
+db.devices.aggregate([
+  {
+    $group: {
+      _id: "$brand",
+      totalDevices: { $sum: 1 }
+    }
+  }
+])
+
+// 3. Count active devices
+db.devices.aggregate([
+  {
+    $match: {
+      status: "activo"
+    }
+  },
+  {
+    $count: "activeDevices"
+  }
+])
+
+
+// USERS//
+
+// 1. Match users with a specific email
+db.users.aggregate([
+  {
+    $match: {
+      email: "juan@gmail.com"
+    }
+  }
+])
+
+// 2. Group users by password
+db.users.aggregate([
+  {
+    $group: {
+      _id: "$password",
+      totalUsers: { $sum: 1 }
+    }
+  }
+])
+
+// 3. Count all users
+db.users.aggregate([
+  {
+    $count: "totalUsers"
+  }
+])
