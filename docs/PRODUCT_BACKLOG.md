@@ -22,7 +22,7 @@ Create a Smart Home system that allows users to manage, monitor, and organize sm
 ---
 
 
-# Epic 01: User Access and Security
+# US 01: User Access and Security
 
 ### Description
 This epic focuses on secure access to the Smart Home system and user authentication.
@@ -56,7 +56,7 @@ And a warning message must appear
 
 ---
 
-# Epic 02: Smart Device Registration
+# US 02: Smart Device Registration
 
 ### Description
 This epic manages the registration of smart devices inside the Smart Home platform.
@@ -119,7 +119,7 @@ But the application must remain accessible
 
 ---
 
-# Epic 03: Device Monitoring
+# US 03: Device Monitoring
 
 ### Description
 This epic allows users to monitor the status and availability of smart devices.
@@ -144,7 +144,7 @@ But the application must remain accessible
 
 ---
 
-# Epic 04: Search and Information Access
+# US 04: Search and Information Access
 
 ### Description
 This epic helps users search and access Smart Home information quickly.
@@ -169,7 +169,7 @@ But the search page must continue working correctly
 
 ---
 
-# Epic 05: Alerts and Error Messages
+# US 05: Alerts and Error Messages
 
 ### Description
 This epic provides users with understandable notifications and system warnings.
@@ -194,7 +194,7 @@ But the application should not close unexpectedly
 
 ---
 
-# Epic 06: Device Control
+# US 06: Device Control
 
 ### Description
 This epic allows users to control Smart Home devices easily.
@@ -219,7 +219,7 @@ But the user should still access other devices
 
 ---
 
-# Epic 07: Information Organization
+# US 07: Information Organization
 
 ### Description
 This epic keeps Smart Home information organized and easy to understand.
@@ -244,7 +244,7 @@ But the platform layout must remain organized
 
 ---
 
-# Epic 08: Visual Evidence and Reports
+# US 08: Visual Evidence and Reports
 
 ### Description
 This epic provides visual information that helps users understand device activity and system behavior.
@@ -269,7 +269,7 @@ But the rest of the platform must remain functional
 
 ---
 
-# Epic 09: System Reliability
+# US 09: System Reliability
 
 ### Description
 This epic ensures the Smart Home platform remains stable during normal and unexpected situations.
@@ -294,7 +294,7 @@ And the platform must remain stable
 
 ---
 
-# Epic 10: Functional Validation
+# US 10: Functional Validation
 
 ### Description
 This epic validates important Smart Home features through successful and failed user interactions.
