@@ -1,6 +1,6 @@
 # Product Goal
 
-Create a Smart Home management system that allows people to organize, monitor, and manage their home devices and users in a simple, secure, and reliable way. The system should help users easily access information, verify device status, and maintain an organized digital environment for their home.
+Create a Smart Home system that allows users to manage, monitor, and organize smart devices in an easy and reliable way. The system should help homeowners keep track of connected devices, check their status, receive organized information, and access the platform safely while providing a simple and user-friendly experience.
 
 ---
 
@@ -8,20 +8,16 @@ Create a Smart Home management system that allows people to organize, monitor, a
 
 | ID | Epic | User Story | Acceptance Criteria | Priority |
 |----|------|-------------|---------------------|----------|
-| PB-01 | Home Information Management | As a homeowner, I want all my home information to remain organized, so that I can access it easily whenever I need it. | - Information must be saved correctly.<br>- Information must remain organized.<br>- Users must be able to access their information easily.<br>- The system must display saved information properly. | High |
-| PB-02 | Device Registration | As a homeowner, I want to register my smart devices, so that I can manage them inside the system. | - Devices must be registered successfully.<br>- Devices must contain complete information.<br>- Registered devices must appear in the system.<br>- Device information must be displayed clearly. | High |
-| PB-03 | User Access | As a user, I want to access the system securely, so that my Smart Home information remains protected. | - Users must be able to log into the system.<br>- Incorrect passwords must display an error message.<br>- User sessions must work correctly.<br>- User information must remain protected. | High |
-| PB-04 | Information Validation | As a project reviewer, I want the system to validate information correctly, so that errors can be prevented. | - Valid information must be accepted.<br>- Invalid information must display an error message.<br>- The system must continue working after an error.<br>- Information must remain accessible. | High |
-| PB-05 | Information Search | As a homeowner, I want to search my information easily, so that I can find devices and users quickly. | - Searches must display results correctly.<br>- Empty results must be allowed.<br>- The system must not crash during searches.<br>- Search results must be understandable. | High |
-| PB-06 | Device Details | As a homeowner, I want to view detailed information about my devices, so that I can identify them easily. | - Device information must load correctly.<br>- Details must be displayed clearly.<br>- Missing information must display an error message.<br>- The system must continue running correctly after errors. | Medium |
-| PB-07 | Device Monitoring | As a homeowner, I want to monitor the status of my devices, so that I can know which ones are active. | - Active devices must appear correctly.<br>- Device status must update properly.<br>- The system must display device activity clearly.<br>- The monitoring section must load correctly. | Medium |
-| PB-08 | Organized Project Structure | As a project team member, I want the project files and sections to remain organized, so that the project is easier to understand. | - Project sections must remain organized.<br>- Information must be easy to access.<br>- Files must be grouped correctly.<br>- The project structure must remain understandable. | Medium |
-| PB-09 | User-Friendly Documentation | As a client, I want the documentation to be simple and understandable, so that I can understand the project easily. | - Documentation must explain the system clearly.<br>- Instructions must be understandable.<br>- Information must remain organized.<br>- Examples must be included. | Medium |
-| PB-10 | Visual System Representation | As a client, I want to see a visual representation of the system, so that I can understand how the Smart Home is organized. | - The visual representation must be understandable.<br>- Information must appear organized.<br>- Important sections must be visible.<br>- The design must represent the system correctly. | Medium |
-| PB-11 | Shared Project Access | As a project owner, I want the project to be shared online, so that it can be reviewed easily. | - Project files must be accessible.<br>- Documentation must be available.<br>- The project structure must remain organized.<br>- Important information must be visible. | High |
-| PB-12 | Visual Evidence | As a reviewer, I want to see screenshots of the system, so that I can verify the project functionality visually. | - Screenshots must be clear.<br>- Information must be visible in the images.<br>- Screenshots must be uploaded correctly.<br>- Images must be understandable. | Low |
-| PB-13 | Project Planning | As a team member, I want project activities to remain organized, so that work progress can be monitored correctly. | - Tasks must remain organized.<br>- Progress information must be visible.<br>- Planning sections must be understandable.<br>- Work evidence must exist. | Medium |
-| PB-14 | System Validation | As a client, I want the system to respond correctly during normal and error situations, so that the application feels reliable. | - Successful actions must display confirmation messages.<br>- Errors must display understandable messages.<br>- The system must continue running after failures.<br>- Problems must not crash the application. | Medium |
+| PB-01 | User Access and Security | As a homeowner, I want to access the system securely, so that my personal information and devices remain protected. | - Users must be able to log into the system.<br>- Incorrect passwords must display an error message.<br>- Empty login fields should not be accepted.<br>- Users must access the system only with valid credentials.<br>- The system should remain stable after failed login attempts. | High |
+| PB-02 | Smart Device Registration | As a homeowner, I want to register smart devices, so that I can organize and monitor them easily. | - Devices must include a name and location.<br>- Devices must appear in the system after registration.<br>- The system should prevent incomplete information.<br>- Users must receive confirmation after adding a device.<br>- Registered devices should remain saved correctly. | High |
+| PB-03 | Device Monitoring | As a homeowner, I want to monitor my smart devices, so that I can know which devices are active or inactive. | - Active devices must display their current status.<br>- Offline devices should appear as disconnected.<br>- The system must refresh device information correctly.<br>- Users must be able to identify unavailable devices easily.<br>- Monitoring information should remain organized. | High |
+| PB-04 | Search and Information Access | As a homeowner, I want to search for devices quickly, so that I can find important information easily. | - Users must be able to search devices by name or location.<br>- Search results must appear correctly.<br>- Searches without results should display a clear message.<br>- The system should respond quickly during searches.<br>- Device information must remain readable and organized. | High |
+| PB-05 | Alerts and Error Messages | As a homeowner, I want to receive clear alerts and notifications, so that I can understand problems inside the system. | - Incorrect actions must display understandable messages.<br>- Connection problems should notify the user.<br>- The system should warn users about incomplete information.<br>- Error messages must be easy to understand.<br>- Notifications should help users solve problems quickly. | Medium |
+| PB-06 | Device Control | As a homeowner, I want to control my smart devices, so that I can manage my home more comfortably. | - Users must be able to turn devices on or off.<br>- The system must update the device status correctly.<br>- Devices that fail to respond should display an error message.<br>- Changes must appear immediately in the system.<br>- Device controls should be easy to use. | High |
+| PB-07 | Information Organization | As a homeowner, I want the system information to remain organized, so that I can understand my Smart Home easily. | - Devices must appear in an organized way.<br>- Important information should be easy to identify.<br>- Empty sections should display friendly messages.<br>- The system should maintain a clean structure.<br>- Users should navigate the platform without confusion. | Medium |
+| PB-08 | Visual Evidence and Reports | As a homeowner, I want visual evidence of system activity, so that I can review important device information easily. | - Device information must be displayed clearly.<br>- System activity should be visible.<br>- Important changes must be easy to identify.<br>- Information should remain readable.<br>- Visual sections should help users understand the system better. | Medium |
+| PB-09 | System Reliability | As a homeowner, I want the system to remain stable, so that I can continue using my Smart Home without interruptions. | - The system should continue working after errors.<br>- Failed actions should not close the platform.<br>- Connection problems should display warnings.<br>- Users should be able to retry actions.<br>- The platform must protect stored information. | High |
+| PB-10 | Functional Validation | As a homeowner, I want the system behavior to be tested, so that important features work correctly in different situations. | - The system must validate successful actions.<br>- Incorrect actions must generate proper warnings.<br>- Failed operations should not affect other functions.<br>- User interactions should behave consistently.<br>- Important system features must be verified with test scenarios. | Medium |
 
 ---
 
@@ -29,350 +25,260 @@ Create a Smart Home management system that allows people to organize, monitor, a
 
 ---
 
-# Epic 01: Home Information Management
+# Epic 01: User Access and Security
 
 ### Description
-This epic focuses on keeping all Smart Home information organized and accessible for users.
+This epic focuses on secure access to the Smart Home system and user authentication.
 
 ```gherkin
-Feature: Home Information Management
+Feature: User Access and Security
 
-Scenario: Save information successfully
+Scenario: Login successfully
 
-Given the system is available
-When the user saves information
-Then the information must be stored correctly
-And the information must remain organized
+Given the user has a registered account
+And the login page is available
+When the user enters a correct email and password
+Then the system must allow access successfully
+And the main page should load correctly
 
-Scenario: Save information with connection failure
+Scenario: Login with incorrect password
 
-Given the internet connection is unstable
-When the user attempts to save information
-Then the system must display a connection error
-But the application must continue running
-```
-
----
-
-# Epic 02: Device Registration
-
-### Description
-This epic allows users to register and manage devices inside the Smart Home system.
-
-```gherkin
-Feature: Device Registration
-
-Scenario: Register device successfully
-
-Given the device section is available
-When the user registers a new device
-Then the device information must be saved
-And the device must appear in the system
-
-Scenario: Register incomplete device information
-
-Given the registration form is open
-When the user submits incomplete information
-Then the system must display an error message
-But the application must continue working
-```
-
----
-
-# Epic 03: User Access
-
-### Description
-This epic manages secure user access inside the Smart Home system.
-
-```gherkin
-Feature: User Access
-
-Scenario: User login successfully
-
-Given a registered user exists
-When the user enters valid credentials
-Then access to the system must be granted
-And the main section must load correctly
-
-Scenario: Incorrect password entered
-
-Given a registered user exists
+Given the user has a registered account
 When the user enters an incorrect password
 Then the system must deny access
-And an error message must be displayed
+And an error message should be displayed
+But the platform must remain available
+
+Scenario: Login with empty fields
+
+Given the login page is available
+When the user leaves required fields empty
+Then the system should prevent access
+And a warning message must appear
 ```
 
 ---
 
-# Epic 04: Information Validation
+# Epic 02: Smart Device Registration
 
 ### Description
-This epic validates that the information entered into the system is correct and complete.
+This epic manages the registration of smart devices inside the Smart Home platform.
 
 ```gherkin
-Feature: Information Validation
+Feature: Smart Device Registration
 
-Scenario: Save valid information
+Scenario: Register a smart device successfully
 
-Given the system is working correctly
-When valid information is entered
-Then the information must be stored successfully
-And the information must remain accessible
+Given the device registration form is available
+When the user enters valid device information
+Then the device must be saved successfully
+And the new device should appear in the system
 
-Scenario: Save invalid information
+Scenario: Register device with incomplete information
 
-Given the information form is available
-When invalid information is submitted
-Then the system must reject the action
-But the application must remain stable
+Given the registration form is available
+When the user submits incomplete information
+Then the system must reject the registration
+And an error message should appear
+But the platform should continue working normally
 ```
 
 ---
 
-# Epic 05: Information Search
+# Epic 03: Device Monitoring
 
 ### Description
-This epic allows users to search information easily inside the system.
-
-```gherkin
-Feature: Information Search
-
-Scenario: Search information successfully
-
-Given information exists in the system
-When the user performs a search
-Then matching results must appear
-And the results must be understandable
-
-Scenario: Search without results
-
-Given information exists in the system
-When the user searches unavailable information
-Then the system must display empty results
-But the application must continue working
-```
-
----
-
-# Epic 06: Device Details
-
-### Description
-This epic allows users to view detailed information about registered devices.
-
-```gherkin
-Feature: Device Details
-
-Scenario: Open device details successfully
-
-Given a registered device exists
-When the user opens the device details
-Then the information must be displayed correctly
-And the details must be understandable
-
-Scenario: Device information fails to load
-
-Given the selected device is unavailable
-When the user attempts to open the details
-Then the system must display an error message
-But the application must continue running
-```
-
----
-
-# Epic 07: Device Monitoring
-
-### Description
-This epic allows users to monitor the activity and status of their devices.
+This epic allows users to monitor the status and availability of smart devices.
 
 ```gherkin
 Feature: Device Monitoring
 
-Scenario: Display active devices
+Scenario: View connected devices
 
-Given active devices exist
-When the user opens the monitoring section
-Then active devices must appear correctly
-And the status information must be visible
+Given the user has registered devices
+When the monitoring section loads
+Then active devices must display their status
+And disconnected devices should appear as offline
 
-Scenario: Monitoring section fails to load
+Scenario: Device monitoring fails to load
 
-Given the monitoring section is unavailable
-When the user attempts to access it
-Then the system must display an error message
-But the application must remain active
+Given the monitoring section is opened
+When the connection fails
+Then the system should display a warning message
+But the application must remain accessible
 ```
 
 ---
 
-# Epic 08: Organized Project Structure
+# Epic 04: Search and Information Access
 
 ### Description
-This epic keeps project information organized and understandable.
+This epic helps users search and access Smart Home information quickly.
 
 ```gherkin
-Feature: Organized Project Structure
+Feature: Search and Information Access
 
-Scenario: Access organized project information
+Scenario: Search devices successfully
 
-Given the project structure exists
-When the reviewer accesses the project
-Then the information must remain organized
-And the sections must be understandable
+Given the user has registered devices
+When the user searches for a device by name
+Then matching results must appear correctly
+And the information should remain organized
 
-Scenario: Missing project sections
+Scenario: Search without results
 
-Given the project is available
-When important sections are missing
-Then the project should be considered incomplete
-But the remaining information must still be accessible
+Given the user is searching for a device
+When no matching information exists
+Then the system should display a "No results found" message
+But the search page must continue working correctly
 ```
 
 ---
 
-# Epic 09: User-Friendly Documentation
+# Epic 05: Alerts and Error Messages
 
 ### Description
-This epic provides clear and understandable documentation for users and clients.
+This epic provides users with understandable notifications and system warnings.
 
 ```gherkin
-Feature: User-Friendly Documentation
+Feature: Alerts and Error Messages
 
-Scenario: Read documentation successfully
+Scenario: Display successful notification
 
-Given the documentation exists
-When the reviewer opens the documentation
-Then the information must be understandable
-And examples must be included
+Given the user completes an action correctly
+When the action finishes
+Then the system should display a confirmation message
+And the message must be understandable
 
-Scenario: Missing documentation information
+Scenario: Display connection error
 
-Given the documentation exists
-When important explanations are missing
-Then the documentation should be considered incomplete
-But the project must remain accessible
+Given the user is using the platform
+When the internet connection fails
+Then the system should display a connection warning
+But the application should not close unexpectedly
 ```
 
 ---
 
-# Epic 10: Visual System Representation
+# Epic 06: Device Control
 
 ### Description
-This epic visually represents the Smart Home system structure and organization.
+This epic allows users to control Smart Home devices easily.
 
 ```gherkin
-Feature: Visual System Representation
+Feature: Device Control
 
-Scenario: Display system representation successfully
+Scenario: Turn on a smart device
 
-Given the visual representation exists
-When the reviewer opens the design
-Then the information must be understandable
-And the structure must appear organized
+Given the user has access to device controls
+When the user activates a device
+Then the device status should change successfully
+And the updated status must appear immediately
 
-Scenario: Missing visual information
+Scenario: Device does not respond
 
-Given the visual representation exists
-When important sections are missing
-Then the representation should be incomplete
-But the design must still load correctly
+Given the user attempts to control a device
+When the selected device is unavailable
+Then the system should display an error message
+But the user should still access other devices
 ```
 
 ---
 
-# Epic 11: Shared Project Access
+# Epic 07: Information Organization
 
 ### Description
-This epic allows the project to be shared and reviewed online.
+This epic keeps Smart Home information organized and easy to understand.
 
 ```gherkin
-Feature: Shared Project Access
+Feature: Information Organization
 
-Scenario: Access shared project successfully
+Scenario: Display organized information
 
-Given the project repository exists
-When the reviewer opens the project
-Then important files must be accessible
-And documentation must be available
+Given the user enters the platform
+When device information is displayed
+Then the sections must remain organized
+And important information should be easy to identify
 
-Scenario: Missing important project files
+Scenario: Empty information section
 
-Given the project is available
-When important files are missing
-Then the project should be marked incomplete
-But the repository must remain accessible
+Given there are no registered devices
+When the user opens the dashboard
+Then the system should display a friendly empty message
+But the platform layout must remain organized
 ```
 
 ---
 
-# Epic 12: Visual Evidence
+# Epic 08: Visual Evidence and Reports
 
 ### Description
-This epic provides screenshots as visual proof of the project functionality.
+This epic provides visual information that helps users understand device activity and system behavior.
 
 ```gherkin
-Feature: Visual Evidence
+Feature: Visual Evidence and Reports
 
-Scenario: Upload screenshots successfully
+Scenario: Display device activity correctly
 
-Given the system contains information
-When screenshots are uploaded
-Then the images must be clear
-And the information must be visible
+Given the system contains device information
+When the user checks device activity
+Then the information should appear clearly
+And important changes must be visible
 
-Scenario: Missing screenshots
+Scenario: Visual information fails to load
 
-Given the project exists
-When screenshots are not uploaded
-Then the evidence section should be incomplete
-But the project must remain accessible
+Given the user opens the activity section
+When the information cannot load
+Then the system should display a warning message
+But the rest of the platform must remain functional
 ```
 
 ---
 
-# Epic 13: Project Planning
+# Epic 09: System Reliability
 
 ### Description
-This epic organizes project activities and work progress.
+This epic ensures the Smart Home platform remains stable during normal and unexpected situations.
 
 ```gherkin
-Feature: Project Planning
+Feature: System Reliability
 
-Scenario: Organize project planning successfully
+Scenario: Continue working after an error
 
-Given the project planning exists
-When the team reviews the planning
-Then the tasks must remain organized
-And progress information must be visible
+Given the user is using the platform
+When a minor system error occurs
+Then the platform should continue operating
+And user information must remain protected
 
-Scenario: Missing planning information
+Scenario: Retry failed action
 
-Given the project documentation exists
-When important planning sections are missing
-Then the documentation should be incomplete
-But the remaining information must still be readable
+Given an action could not be completed
+When the user retries the operation
+Then the system should attempt the action again
+And the platform must remain stable
 ```
 
 ---
 
-# Epic 14: System Validation
+# Epic 10: Functional Validation
 
 ### Description
-This epic validates system behavior during successful actions and failures.
+This epic validates important Smart Home features through successful and failed user interactions.
 
 ```gherkin
-Feature: System Validation
+Feature: Functional Validation
 
-Scenario: System works correctly
+Scenario: Validate successful user action
 
-Given the system contains valid information
-When the user performs an action
-Then the system must display successful results
-And the process must finish correctly
+Given the platform is working correctly
+When the user completes a valid action
+Then the system should process the action successfully
+And the expected result must appear
 
-Scenario: Unexpected system error
+Scenario: Validate failed operation
 
-Given the system is active
-When an unexpected error occurs
-Then the system must display an understandable error message
-But the application must continue running safely
+Given the user performs an invalid action
+When the system detects the problem
+Then an understandable warning must appear
+But other system features should continue working
 ```
