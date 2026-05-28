@@ -58,8 +58,7 @@ And a warning message must appear
 # US 02: Smart Device Registration
 
 ### Description
-This epic manages the registration of smart devices inside the Smart Home platform.
-
+ As a homeowner, I want to register smart devices, so that I can organize and monitor them easily.
 ```gherkin
 
 
@@ -121,8 +120,7 @@ But the application must remain accessible
 # US 03: Device Monitoring
 
 ### Description
-This epic allows users to monitor the status and availability of smart devices.
-
+ As a homeowner, I want to monitor my smart devices, so that I can know which devices are active or inactive.
 ```gherkin
 
 
@@ -146,8 +144,7 @@ But the application must remain accessible
 # US 04: Search and Information Access
 
 ### Description
-This epic helps users search and access Smart Home information quickly.
-
+As a homeowner, I want to search for devices quickly, so that I can find important information easily.
 ```gherkin
 
 
@@ -171,8 +168,7 @@ But the search page must continue working correctly
 # US 05: Alerts and Error Messages
 
 ### Description
-This epic provides users with understandable notifications and system warnings.
-
+ As a homeowner, I want to receive clear alerts and notifications, so that I can understand problems inside the system.
 ```gherkin
 
 
@@ -196,8 +192,7 @@ But the application should not close unexpectedly
 # US 06: Device Control
 
 ### Description
-This epic allows users to control Smart Home devices easily.
-
+ As a homeowner, I want to control my smart devices, so that I can manage my home more comfortably.
 ```gherkin
 
 
@@ -221,8 +216,7 @@ But the user should still access other devices
 # US 07: Information Organization
 
 ### Description
-This epic keeps Smart Home information organized and easy to understand.
-
+ As a homeowner, I want the system information to remain organized, so that I can understand my Smart Home easily.
 ```gherkin
 
 
@@ -246,8 +240,7 @@ But the platform layout must remain organized
 # US 08: Visual Evidence and Reports
 
 ### Description
-This epic provides visual information that helps users understand device activity and system behavior.
-
+As a homeowner, I want visual evidence of system activity, so that I can review important device information easily.
 ```gherkin
 
 
@@ -271,8 +264,7 @@ But the rest of the platform must remain functional
 # US 09: System Reliability
 
 ### Description
-This epic ensures the Smart Home platform remains stable during normal and unexpected situations.
-
+ As a homeowner, I want the system to remain stable, so that I can continue using my Smart Home without interruptions.
 ```gherkin
 
 
@@ -296,8 +288,7 @@ And the platform must remain stable
 # US 10: Functional Validation
 
 ### Description
-This epic validates important Smart Home features through successful and failed user interactions.
-
+ As a homeowner, I want the system behavior to be tested, so that important features work correctly in different situations.
 ```gherkin
 Feature: Functional Validation
 
