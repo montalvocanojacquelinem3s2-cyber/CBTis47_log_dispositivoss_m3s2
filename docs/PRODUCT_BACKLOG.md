@@ -25,8 +25,7 @@ Create a Smart Home system that allows users to manage, monitor, and organize sm
 # US 01: User Access and Security
 
 ### Description
-This epic focuses on secure access to the Smart Home system and user authentication.
-
+As a homeowner, I want to access the system securely, so that my personal information and devices remain protected.
 ```gherkin
 
 
