@@ -1,0 +1,163 @@
+*DEVICES COLLECTION*
+// 1. Show the 3 brands with the most devices
+db.devices.aggregate([
+  {
+    $group: {
+      _id: "$brand",
+      totalDevices: { $sum: 1 }
+    }
+  },
+  {
+    $sort: {
+      totalDevices: -1
+    }
+  },
+  {
+    $limit: 3
+    }
+])
+
+// 2. Show only specific fields
+db.devices.aggregate([
+  {
+    $project: {
+      _id: 0,
+      brand: 1,
+      model: 1,
+      location: 1,
+      status: 1
+    }
+  }
+])
+
+// 3. Show online devices sorted by brand
+db.devices.aggregate([
+  {
+    $match: {
+      online: true
+    }
+  },
+  {
+    $sort: {
+      brand: 1
+    }
+  }
+])
+
+// 4. Count devices by status
+db.devices.aggregate([
+  {
+    $group: {
+      _id: "$status",
+      total: { $sum: 1 }
+    }
+  }
+])
+
+// 5. Show the first 5 devices
+db.devices.aggregate([
+  {
+    $limit: 5
+  }
+])
+
+// 6. Show devices grouped by location
+db.devices.aggregate([
+  {
+    $group: {
+      _id: "$location",
+      totalDevices: { $sum: 1 }
+    }
+  },
+  {
+    $sort: {
+      totalDevices: -1
+    }
+  }
+])
+
+// 7. Show active devices with custom field names
+db.devices.aggregate([
+  {
+    $match: {
+      status: "activo"
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      deviceBrand: "$brand",
+      deviceModel: "$model",
+      currentLocation: "$location"
+    }
+  }
+])
+
+// 8. Show top 5 online devices
+db.devices.aggregate([
+  {
+    $match: {
+      online: true
+    }
+  },
+  {
+    $limit: 5
+  }
+])
+
+// 9. Sort devices by brand and model
+db.devices.aggregate([
+  {
+    $sort: {
+      brand: 1,
+      model: 1
+    }
+  }
+])
+
+// 10. Count all online devices
+db.devices.aggregate([
+  {
+    $match: {
+      online: true
+    }
+  },
+  {
+    $count: "totalOnlineDevices"
+  }
+])
+
+*USER COLLECTION*
+
+// 1. Show only email field
+db.users.aggregate([
+  {
+    $project: {
+      _id: 0,
+      email: 1
+    }
+  }
+])
+
+// 2. Sort users by email
+db.users.aggregate([
+  {
+    $sort: {
+      email: 1
+    }
+  }
+])
+
+// 3. Show only 1 user
+db.users.aggregate([
+  {
+    $limit: 1
+  }
+])
+
+// 4. Count total users
+db.users.aggregate([
+  {
+    $count: "totalUsers"
+  }
+])
