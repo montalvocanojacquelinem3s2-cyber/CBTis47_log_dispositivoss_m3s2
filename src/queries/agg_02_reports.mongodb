@@ -1,4 +1,4 @@
-#DEVICES COLLECTION
+//DEVICES COLLECTION//
 // 1. Show the 3 brands with the most devices
 db.devices.aggregate([
   {
@@ -127,7 +127,7 @@ db.devices.aggregate([
   }
 ])
 
-#USER COLLECTION
+//USER COLLECTION//
 
 // 1. Show only email field
 db.users.aggregate([
