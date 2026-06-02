@@ -1,207 +1,210 @@
- # SMART HOME MANAGEMENT SYSTEM
+# SMART HOME MANAGEMENT SYSTEM
 
-## SPRINTS BACKLOG
-
-# SPRINT GOAL 
-
-  Desarrollar una plataforma integral de gestión para hogares inteligentes capaz de registrar usuarios, administrar dispositivos IoT, almacenar eventos generados por sensores, monitorear el estado de los dispositivos en tiempo real y proporcionar información histórica       para mejorar la seguridad, el control y la eficiencia energética del hogar.
----
-
-1. PRODUCT VISION
-
-El Smart Home Management System es una plataforma diseñada para centralizar el monitoreo, control y automatización de dispositivos inteligentes dentro de una vivienda. El sistema permitirá a los usuarios gestionar iluminación, sensores ambientales, dispositivos conectados y sistemas de seguridad desde una única interfaz, garantizando comodidad, eficiencia energética y protección del hogar.
+## SPRINT 1 BACKLOG
 
 ---
 
+<div align="center">
 
-# HISTORIA DE USUARIO 1
+### SPRINT GOAL
 
-## US-01 Registro y Gestión de Dispositivos
+</div>
 
-As a user
+Establecer las bases técnicas y organizacionales del proyecto Smart Home Management System mediante la creación del entorno de desarrollo, la planificación inicial, la configuración de herramientas colaborativas, la documentación del flujo de trabajo y el diseño preliminar de la interfaz de usuario. Al finalizar el sprint, el equipo deberá contar con una estructura de proyecto funcional, una base documental sólida, una cuenta configurada en MongoDB Atlas y un prototipo visual de la aplicación, dejando preparada la integración de la base de datos para futuros sprints.
 
-I want to register and manage smart devices
+---
 
-So that I can monitor and control all devices connected to my home.
+<div align="center">
+
+# HISTORIAS DE USUARIO
+
+</div>
+
+---
+
+## US-01 | Configuración Inicial del Proyecto
+
+**As a developer**
+
+I want to configure the project environment and repository
+
+So that the team can work collaboratively and efficiently.
 
 ### Acceptance Criteria
 
-Given the user is authenticated
+**Given** the project has been approved
 
-When the user registers a new device
+**When** the repository and folders are created
 
-Then the system should store the device information successfully
+**Then** all team members should be able to access the project
 
-And display it in the device dashboard
+**And** the structure should be ready for development.
 
----
+### Subtareas
 
-Given a device exists
+|   ID  | Actividad                             | Horas |
+| :---: | ------------------------------------- | :---: |
+| ST-01 | Creación del repositorio GitHub       |  1 h  |
+| ST-02 | Configuración inicial del proyecto    |  1 h  |
+| ST-03 | Organización de carpetas principales  |  1 h  |
+| ST-04 | Creación de la carpeta Devices        |  1 h  |
+| ST-05 | Configuración de control de versiones |  1 h  |
 
-When the user updates its information
-
-Then the changes should be saved
-
-And reflected immediately in the system
-
----
-
-# Subtasks
-
-| ID    | Subtarea                      | Tiempo Estimado |
-| ----- | ----------------------------- | --------------- |
-| ST-01 | Diseño de tabla Dispositivos  | 1 h             |
-| ST-02 | Creación de tabla SQLite      | 1 h             |
-| ST-03 | Formulario de registro        | 2 h             |
-| ST-04 | Validaciones de datos         | 1 h             |
-| ST-05 | Actualización de dispositivos | 1 h             |
-| ST-06 | Pruebas funcionales           | 1 h             |
-
-Total: 7 horas
+**Tiempo Total:** 5 horas
 
 ---
 
-# HISTORIA DE USUARIO 2
+## US-02 | Diseño y Planeación de la Aplicación
 
-## US-02 Registro y Consulta de Eventos
+**As a user**
 
-As a user
+I want to visualize the application's workflow and interface
 
-I want to view historical device events
-
-So that I can analyze the behavior of my smart home.
+So that I can understand how the Smart Home system will operate.
 
 ### Acceptance Criteria
 
-Given events are stored
+**Given** the project is in the planning phase
 
-When the user accesses the history section
+**When** the flow diagram and prototype are completed
 
-Then the system should display recorded events
+**Then** the workflow should be documented
 
-And allow filtering by device and date
+**And** a visual proposal of the application should be available.
 
----
+### Subtareas
 
-Given event information exists
+|   ID  | Actividad                                  | Horas |
+| :---: | ------------------------------------------ | :---: |
+| ST-06 | Elaboración del diagrama de flujo inicial  |  2 h  |
+| ST-07 | Diseño de la pantalla principal Smart Home |  2 h  |
+| ST-08 | Correcciones y validación del diseño       |  1 h  |
 
-When the user performs a search
-
-Then matching records should be displayed
-
-And ordered chronologically
-
----
-
-# Subtasks
-
-| ID    | Subtarea                       | Tiempo Estimado |
-| ----- | ------------------------------ | --------------- |
-| ST-07 | Diseño tabla Eventos           | 1 h             |
-| ST-08 | Registro automático de eventos | 2 h             |
-| ST-09 | Consulta de historial          | 2 h             |
-| ST-10 | Filtros de búsqueda            | 1 h             |
-| ST-11 | Pruebas del módulo             | 1 h             |
-
-Total: 7 horas
+**Tiempo Total:** 5 horas
 
 ---
 
-# SPRINT 1
+## US-03 | Preparación del Entorno de Base de Datos
 
-## Sprint Goal
+**As a developer**
 
-Diseñar e implementar la infraestructura inicial del sistema Smart Home, incluyendo el modelo de datos, la creación de la base de datos SQLite, el registro de usuarios y la administración básica de dispositivos para establecer una base sólida para el desarrollo de funcionalidades futuras.
+I want to configure the database environment
 
-| ID     | Tarea                      | Horas | Estado     |
-| ------ | -------------------------- | ----- | ---------- |
-| SP1-01 | Análisis de requerimientos | 1 h   | Completado |
-| SP1-02 | Diseño del modelo de datos | 2 h   | Completado |
-| SP1-03 | Creación de tablas SQLite  | 2 h   | Completado |
-| SP1-04 | Registro de usuarios       | 1 h   | Completado |
-| SP1-05 | Login de usuarios          | 1 h   | Completado |
-| SP1-06 | Documentación inicial      | 1 h   | Completado |
+So that the application can store and manage information in future iterations.
 
-### Horas Totales Sprint 1
+### Acceptance Criteria
 
-8 horas
+**Given** MongoDB Atlas is available
 
----
+**When** the account and environment are configured
 
-# SPRINT 2
+**Then** the platform should be prepared for integration
 
-## Sprint Goal
+**And** the connection process should be documented.
 
-Desarrollar el módulo de administración de dispositivos inteligentes permitiendo registrar, actualizar, consultar y almacenar información de los dispositivos conectados al sistema.
+### Subtareas
 
-| ID     | Tarea                         | Horas | Estado     |
-| ------ | ----------------------------- | ----- | ---------- |
-| SP2-01 | Diseño entidad Dispositivos   | 1 h   | Completado |
-| SP2-02 | Desarrollo CRUD Dispositivos  | 2 h   | Completado |
-| SP2-03 | Validaciones de información   | 1 h   | Completado |
-| SP2-04 | Integración con base de datos | 2 h   | Completado |
-| SP2-05 | Pruebas funcionales           | 1 h   | Completado |
-| SP2-06 | Actualización documentación   | 1 h   | Completado |
+|   ID  | Actividad                                | Horas |
+| :---: | ---------------------------------------- | :---: |
+| ST-09 | Creación de cuenta MongoDB Atlas         |  1 h  |
+| ST-10 | Configuración inicial del clúster        |  1 h  |
+| ST-11 | Intento de conexión con la aplicación    |  2 h  |
+| ST-12 | Documentación de incidencias encontradas |  1 h  |
 
-### Horas Totales Sprint 2
-
-8 horas
+**Tiempo Total:** 5 horas
 
 ---
 
-# SPRINT 3
+## US-04 | Investigación y Evidencias del Proyecto
 
-## Sprint Goal
+**As a team member**
 
-Implementar el sistema de monitoreo y registro histórico de eventos generados por dispositivos inteligentes, permitiendo la consulta, filtrado y análisis de información para mejorar la supervisión del hogar.
+I want to document learning activities and project evidence
 
-| ID     | Tarea                           | Horas | Estado     |
-| ------ | ------------------------------- | ----- | ---------- |
-| SP3-01 | Diseño entidad Eventos          | 1 h   | Completado |
-| SP3-02 | Registro automático de eventos  | 2 h   | Completado |
-| SP3-03 | Consulta de historial           | 2 h   | Completado |
-| SP3-04 | Filtros por dispositivo y fecha | 1 h   | Completado |
-| SP3-05 | Pruebas integrales              | 1 h   | Completado |
-| SP3-06 | Documentación final             | 1 h   | Completado |
+So that project progress can be monitored and justified.
 
-### Horas Totales Sprint 3
+### Acceptance Criteria
 
-8 horas
+**Given** development activities are performed
+
+**When** evidence is generated
+
+**Then** records should be stored
+
+**And** project progress should be documented.
+
+### Subtareas
+
+|   ID  | Actividad                              | Horas |
+| :---: | -------------------------------------- | :---: |
+| ST-13 | Elaboración de semillas de aprendizaje |  4 h  |
+| ST-14 | Organización de evidencias             |  2 h  |
+| ST-15 | Actualización de documentación         |  1 h  |
+
+**Tiempo Total:** 7 horas
 
 ---
 
-# RESUMEN DE SPRINTS
+<div align="center">
 
-| Sprint   | Objetivo Alcanzado                                | Horas |
-| -------- | ------------------------------------------------- | ----- |
-| Sprint 1 | Infraestructura inicial, usuarios y base de datos | 8 h   |
-| Sprint 2 | Gestión completa de dispositivos inteligentes     | 8 h   |
-| Sprint 3 | Registro y monitoreo de eventos históricos        | 8 h   |
+# SPRINT BACKLOG
 
-## Total de Horas del Proyecto
+</div>
 
-24 horas
+|   ID   | Actividad                          | Responsable  | Horas |   Estado   |
+| :----: | ---------------------------------- | ------------ | :---: | :--------: |
+| SP1-01 | Creación del repositorio GitHub    | Equipo       |  1 h  | Completado |
+| SP1-02 | Configuración inicial del proyecto | Equipo       |  1 h  | Completado |
+| SP1-03 | Organización de carpetas           | Equipo       |  1 h  | Completado |
+| SP1-04 | Creación carpeta Devices           | Backend      |  1 h  | Completado |
+| SP1-05 | Control de versiones               | Equipo       |  1 h  | Completado |
+| SP1-06 | Diagrama de flujo inicial          | Scrum Master |  2 h  | Completado |
+| SP1-07 | Diseño de interfaz principal       | Frontend     |  2 h  | Completado |
+| SP1-08 | Ajustes de diseño                  | Frontend     |  1 h  | Completado |
+| SP1-09 | Creación de cuenta MongoDB Atlas   | Data         |  1 h  | Completado |
+| SP1-10 | Configuración de MongoDB Atlas     | Data         |  1 h  | Completado |
+| SP1-11 | Conexión MongoDB ↔ Aplicación      | Data         |  2 h  |  Pendiente |
+| SP1-12 | Registro de incidencias técnicas   | Data         |  1 h  | Completado |
+| SP1-13 | Elaboración de semillas            | Equipo       |  4 h  | Completado |
+| SP1-14 | Organización de evidencias         | Scrum Master |  2 h  | Completado |
+| SP1-15 | Actualización documental           | Scrum Master |  1 h  | Completado |
 
+---
 
- ##DEFINITION OF DONE
+<div align="center">
 
-Una tarea será considerada completada cuando:
+# RESUMEN DEL SPRINT
 
-El desarrollo haya sido implementado.
-El código compile sin errores.
-Las pruebas hayan sido aprobadas.
-Los criterios de aceptación hayan sido cumplidos.
-La documentación se encuentre actualizada.
-El cambio haya sido subido al repositorio GitHub.
-El Product Owner valide el resultado.
+</div>
 
-## Resultado Final
+| Indicador               | Resultado |
+| ----------------------- | --------- |
+| Historias de Usuario    | 4         |
+| Subtareas Totales       | 15        |
+| Actividades Completadas | 14        |
+| Actividades Pendientes  | 1         |
+| Horas Planeadas         | 22 h      |
+| Horas Ejecutadas        | 20 h      |
+| Porcentaje de Avance    | 91 %      |
 
-Al finalizar los tres sprints se obtuvo una plataforma Smart Home funcional capaz de:
+---
 
-* Gestionar usuarios.
-* Administrar dispositivos inteligentes.
-* Registrar eventos generados por dispositivos.
-* Consultar historial de actividad.
-* Almacenar información en SQLite.
-* Mantener documentación técnica y evidencias de desarrollo.
+### Entregables Completados
+
+* Repositorio GitHub configurado.
+* Estructura inicial del proyecto creada.
+* Carpeta **Devices** implementada.
+* Diagrama de flujo inicial documentado.
+* Diseño preliminar de la aplicación Smart Home.
+* Cuenta MongoDB Atlas creada y configurada.
+* Más de 100 semillas de aprendizaje registradas.
+* Evidencias y documentación organizadas.
+
+### Actividades Pendientes
+
+* Finalizar la conexión entre MongoDB Atlas y la aplicación.
+* Realizar pruebas de almacenamiento y consulta de datos.
+
+### Conclusión del Sprint
+
+El Sprint 1 permitió establecer los fundamentos técnicos y organizacionales del proyecto Smart Home Management System. Se completó la planificación inicial, la estructura del repositorio, la documentación base y el diseño preliminar de la aplicación. Aunque la configuración de MongoDB Atlas fue realizada exitosamente, la integración completa con la aplicación quedó pendiente y será abordada en el siguiente sprint.
