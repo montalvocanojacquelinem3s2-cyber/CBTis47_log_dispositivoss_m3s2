@@ -1,10 +1,10 @@
-                                    # SMART HOME MANAGEMENT SYSTEM
+ # SMART HOME MANAGEMENT SYSTEM
 
 ## SPRINTS BACKLOG
 
 # SPRINT GOAL 
 
-    Desarrollar una plataforma integral de gestión para hogares inteligentes capaz de registrar usuarios, administrar dispositivos IoT, almacenar eventos generados por sensores, monitorear el estado de los dispositivos en tiempo real y proporcionar información histórica       para mejorar la seguridad, el control y la eficiencia energética del hogar.
+  Desarrollar una plataforma integral de gestión para hogares inteligentes capaz de registrar usuarios, administrar dispositivos IoT, almacenar eventos generados por sensores, monitorear el estado de los dispositivos en tiempo real y proporcionar información histórica       para mejorar la seguridad, el control y la eficiencia energética del hogar.
 ---
 
 1. PRODUCT VISION
