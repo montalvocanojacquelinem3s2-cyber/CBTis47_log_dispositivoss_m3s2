@@ -1,318 +1,290 @@
-# SMART HOME MANAGEMENT SYSTEM
+# Sprint 1 Planning
 
-# SPRINT 1 PLANNING
-
----
-
-<div align="center">
-
-# SPRINT GOAL
-
-</div>
-
-Establecer las bases técnicas, organizacionales y académicas del proyecto Smart Home Management System mediante la creación de la infraestructura inicial del proyecto, la configuración de herramientas colaborativas, la documentación de procesos, el diseño preliminar de la aplicación y la preparación del entorno de base de datos. Al finalizar este sprint, el equipo deberá contar con un repositorio funcional, una estructura organizada para el desarrollo, documentación técnica inicial, un prototipo visual de la aplicación Smart Home y un entorno MongoDB Atlas preparado para futuras integraciones.
+**Project:** Smart Home Management System
+**Sprint:** Sprint 1
+**Duration:** First Academic Term
+**Development Team:** 4 Members
+**Total Capacity:** 160 Hours
 
 ---
 
-<div align="center">
+# Sprint Goal
 
-# SPRINT PARAMETERS
+Establish the technical, organizational, and academic foundations of the Smart Home Management System by creating the initial project infrastructure, configuring collaborative development tools, documenting project workflows, designing the preliminary user interface, and preparing the database environment.
 
-</div>
-
-| Parámetro            | Valor                           |
-| -------------------- | ------------------------------- |
-| Sprint               | Sprint 1                        |
-| Duración             | Primer Parcial                  |
-| Equipo de Desarrollo | 4 Integrantes                   |
-| Product Owner        | Definido por el equipo          |
-| Scrum Master         | No asignado durante este sprint |
-| Proyecto             | Smart Home Management System    |
-| Tecnología Principal | Java                            |
-| Base de Datos        | MongoDB Atlas                   |
-| Repositorio          | GitHub                          |
+At the end of this sprint, the team should have a functional repository structure, documented workflows, an initial Smart Home application prototype, a configured MongoDB Atlas environment, and the necessary resources to begin system development in future sprints.
 
 ---
 
-<div align="center">
+# Sprint Parameters
 
-# CAPACITY PLAN
-
-</div>
-
-| Integrante | Horas Disponibles |
-| ---------- | ----------------- |
-| Miembro 1  | 40 h              |
-| Miembro 2  | 40 h              |
-| Miembro 3  | 40 h              |
-| Miembro 4  | 40 h              |
-
-### Capacidad Total del Sprint
-
-**160 Horas Disponibles**
+| Parameter        | Value                           |
+| ---------------- | ------------------------------- |
+| Sprint           | Sprint 1                        |
+| Duration         | First Academic Term             |
+| Development Team | 4 Members                       |
+| Product Owner    | Defined by the Team             |
+| Scrum Master     | Not Assigned During This Sprint |
+| Project          | Smart Home Management System    |
+| Main Technology  | Java                            |
+| Database         | MongoDB Atlas                   |
+| Repository       | GitHub                          |
 
 ---
 
-<div align="center">
+# Capacity Plan
 
-# SELECTED USER STORIES
+| Team Member | Available Hours |
+| ----------- | --------------- |
+| Member 1    | 40 h            |
+| Member 2    | 40 h            |
+| Member 3    | 40 h            |
+| Member 4    | 40 h            |
 
-</div>
+### Total Sprint Capacity
+
+**160 Available Hours**
 
 ---
 
-## US-01 | Configuración Inicial del Proyecto
+# Selected Epics & User Stories
 
-### User Story
+## Epic 1 — Project Setup and Development Environment
+
+### User Story US-01
 
 **As a developer**
 
-**I want to establish the project's development environment and collaborative infrastructure**
+I want to establish the project's development environment and collaborative infrastructure
 
-**So that the team can work efficiently throughout the project lifecycle.**
+So that the team can work efficiently throughout the entire development lifecycle.
 
-### Acceptance Criteria
+#### Acceptance Criteria
 
-#### AC-01
+**AC-01**
 
-**Given** the project has been approved
+Given the project has been approved
 
-**When** the GitHub repository is created
+When the GitHub repository is created
 
-**Then** all team members must have access permissions
+Then all team members must have access permissions
 
-**And** version control must be available for collaborative development.
+And version control functionality must be available.
 
-#### AC-02
+**AC-02**
 
-**Given** the repository structure exists
+Given the repository structure exists
 
-**When** the initial project folders are created
+When the project folders are organized
 
-**Then** the directory organization must be standardized
+Then a standardized directory structure must be implemented
 
-**And** the project must be ready to receive future modules.
+And future modules can be incorporated without restructuring the project.
 
-#### AC-03
+**AC-03**
 
-**Given** the development environment is configured
+Given the development environment is configured
 
-**When** a team member clones the repository
+When a team member clones the repository
 
-**Then** the project structure must be accessible
+Then the project must be accessible
 
-**And** development activities can begin without additional setup.
+And development activities can begin immediately.
 
-### Estimated Effort
+#### Estimated Effort
 
 **60 Hours**
 
 ---
 
-## US-02 | Diseño Inicial de la Plataforma Smart Home
+## Epic 2 — Smart Home User Interface Design
 
-### User Story
+### User Story US-02
 
 **As a user**
 
-**I want to visualize the operation and appearance of the Smart Home platform**
+I want to visualize the Smart Home platform through an initial interface design
 
-**So that I can understand how devices and information will be managed within the system.**
+So that I can understand how the system will manage devices and information.
 
-### Acceptance Criteria
+#### Acceptance Criteria
 
-#### AC-01
+**AC-01**
 
-**Given** the project requirements have been identified
+Given the system requirements have been identified
 
-**When** the initial flow diagram is created
+When the initial flow diagram is created
 
-**Then** all major processes must be represented
+Then all primary business processes must be represented
 
-**And** system interactions must be documented.
+And user interactions must be documented.
 
-#### AC-02
+**AC-02**
 
-**Given** the interface design phase begins
+Given the design phase has started
 
-**When** the first Smart Home screen is developed
+When the Smart Home screen prototype is created
 
-**Then** it must represent the project's visual identity
+Then the interface must reflect the Smart Home concept
 
-**And** include the primary navigation elements.
+And include the main navigation components.
 
-#### AC-03
+**AC-03**
 
-**Given** the prototype has been reviewed
+Given the prototype has been reviewed
 
-**When** observations or improvements are identified
+When improvements are identified
 
-**Then** the design must be updated
+Then corrections must be applied
 
-**And** the modifications must be documented.
+And the updated version must be documented.
 
-### Estimated Effort
+#### Estimated Effort
 
 **45 Hours**
 
 ---
 
-## US-03 | Preparación de la Infraestructura de Datos
+## Epic 3 — Database Infrastructure Preparation
 
-### User Story
+### User Story US-03
 
 **As a developer**
 
-**I want to prepare the MongoDB Atlas environment**
+I want to prepare the MongoDB Atlas environment
 
-**So that the project has a database platform ready for future integration.**
+So that the project has a database platform available for future integration.
 
-### Acceptance Criteria
+#### Acceptance Criteria
 
-#### AC-01
+**AC-01**
 
-**Given** MongoDB Atlas services are available
+Given MongoDB Atlas services are available
 
-**When** an account is created and configured
+When an account is created
 
-**Then** database resources must be accessible
+Then database resources must be accessible
 
-**And** project credentials must be documented.
+And access credentials must be documented securely.
 
-#### AC-02
+**AC-02**
 
-**Given** the cluster configuration process begins
+Given the cluster configuration process begins
 
-**When** the environment is configured
+When MongoDB Atlas is configured
 
-**Then** the database platform must be operational
+Then the environment must support future application connections
 
-**And** support future application connections.
+And required database resources must be available.
 
-#### AC-03
+**AC-03**
 
-**Given** the integration phase has not yet been completed
+Given the database integration has not yet been completed
 
-**When** connection requirements are analyzed
+When connection requirements are analyzed
 
-**Then** the connection procedure must be documented
+Then technical documentation must describe the connection process
 
-**And** identified technical limitations must be recorded for future resolution.
+And identified limitations must be recorded for future implementation.
 
-### Estimated Effort
+#### Estimated Effort
 
 **35 Hours**
 
 ---
 
-## US-04 | Investigación y Documentación Académica
+## Epic 4 — Academic Research and Documentation
 
-### User Story
+### User Story US-04
 
 **As a team member**
 
-**I want to document learning activities, evidence and project progress**
+I want to document learning activities, project evidence, and progress
 
-**So that development can be justified and tracked throughout the academic period.**
+So that development can be tracked and academically justified.
 
-### Acceptance Criteria
+#### Acceptance Criteria
 
-#### AC-01
+**AC-01**
 
-**Given** research and learning activities are performed
+Given research and learning activities are performed
 
-**When** seeds are generated
+When learning seeds are generated
 
-**Then** they must be documented appropriately
+Then they must be properly documented
 
-**And** stored as project evidence.
+And stored as project evidence.
 
-#### AC-02
+**AC-02**
 
-**Given** evidence is generated during development
+Given development evidence is produced
 
-**When** documentation is updated
+When project documentation is updated
 
-**Then** project records must remain organized
+Then records must remain organized
 
-**And** accessible for evaluation.
+And available for academic evaluation.
 
-#### AC-03
+**AC-03**
 
-**Given** the first partial period concludes
+Given the first academic term concludes
 
-**When** project documentation is reviewed
+When project documentation is reviewed
 
-**Then** all relevant evidence must be available
+Then all relevant evidence must be available
 
-**And** support the progress achieved during the sprint.
+And support the progress achieved during the sprint.
 
-### Estimated Effort
+#### Estimated Effort
 
 **20 Hours**
 
 ---
 
-<div align="center">
+# Core Academic Operations
 
-# CORE ACADEMIC OPERATIONS
-
-</div>
-
-|   ID   | Actividad Académica                                                 |
-| :----: | ------------------------------------------------------------------- |
-| CAO-01 | Creación y configuración del repositorio GitHub                     |
-| CAO-02 | Organización de la estructura inicial del proyecto                  |
-| CAO-03 | Creación de la carpeta Devices                                      |
-| CAO-04 | Elaboración del diagrama de flujo inicial                           |
-| CAO-05 | Diseño de la primera pantalla de la aplicación Smart Home           |
-| CAO-06 | Creación de cuenta MongoDB Atlas                                    |
-| CAO-07 | Configuración inicial del entorno MongoDB                           |
-| CAO-08 | Planeación de la conexión entre aplicación y base de datos          |
-| CAO-09 | Desarrollo de más de 100 semillas de aprendizaje durante el parcial |
-| CAO-10 | Recolección y organización de evidencias                            |
-| CAO-11 | Actualización de documentación técnica                              |
-| CAO-12 | Preparación de entregables académicos                               |
+|   ID   | Academic Activity                                               |
+| :----: | --------------------------------------------------------------- |
+| CAO-01 | GitHub repository creation and configuration                    |
+| CAO-02 | Initial project structure organization                          |
+| CAO-03 | Devices folder creation                                         |
+| CAO-04 | Initial flowchart development                                   |
+| CAO-05 | Smart Home application screen design                            |
+| CAO-06 | MongoDB Atlas account creation                                  |
+| CAO-07 | MongoDB environment configuration                               |
+| CAO-08 | Database connection planning                                    |
+| CAO-09 | Development of 100+ learning seeds throughout the academic term |
+| CAO-10 | Collection and organization of project evidence                 |
+| CAO-11 | Technical documentation updates                                 |
+| CAO-12 | Preparation of academic deliverables                            |
 
 ---
 
-<div align="center">
+# Definition of Done (DoD)
 
-# DEFINITION OF DONE (DoD)
+A User Story will only be considered completed when all of the following criteria have been satisfied:
 
-</div>
-
-Una Historia de Usuario será considerada terminada únicamente cuando todos los criterios siguientes hayan sido cumplidos:
-
-☐ Cumple completamente con todos los criterios de aceptación establecidos.
-
-☐ La documentación correspondiente fue actualizada.
-
-☐ Los artefactos generados fueron almacenados en el repositorio GitHub.
-
-☐ Las evidencias académicas fueron registradas y organizadas.
-
-☐ El trabajo fue revisado por los integrantes del equipo.
-
-☐ No existen errores críticos o inconsistencias documentadas.
-
-☐ Los entregables cumplen con los requisitos establecidos por el docente.
-
-☐ El resultado aporta valor directo al Sprint Goal.
-
-☐ La información generada puede ser utilizada en el siguiente sprint.
-
-☐ El equipo valida colectivamente que la historia está lista para considerarse terminada.
+* [ ] All Acceptance Criteria have been successfully fulfilled.
+* [ ] Documentation has been updated and reviewed.
+* [ ] All generated artifacts have been uploaded to the GitHub repository.
+* [ ] Academic evidence has been properly recorded.
+* [ ] The implementation has been reviewed by the development team.
+* [ ] No critical issues remain unresolved.
+* [ ] Deliverables meet the instructor's requirements.
+* [ ] The completed work contributes directly to the Sprint Goal.
+* [ ] The output can be used as input for future sprints.
+* [ ] The team collectively agrees that the User Story is complete.
 
 ---
 
-## RESUMEN DE CAPACIDAD
+# Sprint Summary
 
-| Concepto                           | Valor                               |
-| ---------------------------------- | ----------------------------------- |
-| Número de Integrantes              | 4                                   |
-| Horas por Integrante               | 40 h                                |
-| Capacidad Total del Sprint         | 160 h                               |
-| User Stories Seleccionadas         | 4                                   |
-| Operaciones Académicas Principales | 12                                  |
-| Sprint Goal                        | Fundamentos del Proyecto Smart Home |
+| Metric                   | Value                                                         |
+| ------------------------ | ------------------------------------------------------------- |
+| Development Team Members | 4                                                             |
+| Hours per Member         | 40 h                                                          |
+| Total Sprint Capacity    | 160 h                                                         |
+| Selected Epics           | 4                                                             |
+| User Stories             | 4                                                             |
+| Core Academic Operations | 12                                                            |
+| Main Objective           | Establish the foundations of the Smart Home Management System |
