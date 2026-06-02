@@ -1,369 +1,188 @@
 # SMART HOME MANAGEMENT SYSTEM
 
-## Product Backlog, SRS y Sprint Backlog
+## PLANIFICACIÓN DE SPRINTS
+
+# SPRINT GOAL GENERAL DEL PROYECTO
+
+Desarrollar una plataforma integral de gestión para hogares inteligentes capaz de registrar usuarios, administrar dispositivos IoT, almacenar eventos generados por sensores, monitorear el estado de los dispositivos en tiempo real y proporcionar información histórica para mejorar la seguridad, el control y la eficiencia energética del hogar.
 
 ---
 
-# 1. PRODUCT VISION
+# HISTORIA DE USUARIO 1
 
-El Smart Home Management System es una plataforma diseñada para centralizar el monitoreo, control y automatización de dispositivos inteligentes dentro de una vivienda. El sistema permitirá a los usuarios gestionar iluminación, sensores ambientales, dispositivos conectados y sistemas de seguridad desde una única interfaz, garantizando comodidad, eficiencia energética y protección del hogar.
-
----
-
-# 2. PRODUCT GOAL
-
-Desarrollar una aplicación de gestión de hogares inteligentes que permita a los usuarios supervisar, controlar y automatizar dispositivos domésticos mediante una interfaz intuitiva, proporcionando seguridad, ahorro energético y monitoreo en tiempo real.
-
----
-
-# 3. EPICS
-
-### EPIC 1 – Gestión de Usuarios
-
-Administración de cuentas, autenticación y configuración de perfiles.
-
-### EPIC 2 – Gestión de Dispositivos
-
-Control y administración de dispositivos inteligentes conectados.
-
-### EPIC 3 – Seguridad del Hogar
-
-Monitoreo de eventos de seguridad y gestión de alertas.
-
-### EPIC 4 – Monitoreo Ambiental
-
-Seguimiento de variables ambientales mediante sensores.
-
-### EPIC 5 – Automatización Inteligente
-
-Creación de reglas y automatizaciones para el hogar.
-
-### EPIC 6 – Reportes y Estadísticas
-
-Generación de información histórica y análisis de consumo.
-
----
-
-# 4. USER STORIES
-
-## US-01 Registro de Usuario
+## US-01 Registro y Gestión de Dispositivos
 
 As a user
 
-I want to create an account
+I want to register and manage smart devices
 
-So that I can access my smart home system
-
-### Acceptance Criteria
-
-Given the user is on the registration page
-
-When the user enters valid information
-
-Then the account should be created successfully
-
-And a confirmation message should be displayed
-
----
-
-## US-02 Inicio de Sesión
-
-As a user
-
-I want to log in
-
-So that I can access my smart home dashboard
-
-### Acceptance Criteria
-
-Given the user has a registered account
-
-When the user enters valid credentials
-
-Then the system should grant access
-
-And display the main dashboard
-
----
-
-## US-03 Gestión de Perfil
-
-As a user
-
-I want to update my profile information
-
-So that my account information remains current
+So that I can monitor and control all devices connected to my home.
 
 ### Acceptance Criteria
 
 Given the user is authenticated
 
-When profile information is modified
+When the user registers a new device
 
-Then the changes should be stored successfully
+Then the system should store the device information successfully
 
-And confirmation should be displayed
+And display it in the device dashboard
 
 ---
 
-## US-04 Control de Luces
+Given a device exists
+
+When the user updates its information
+
+Then the changes should be saved
+
+And reflected immediately in the system
+
+---
+
+# Subtasks
+
+| ID    | Subtarea                      | Tiempo Estimado |
+| ----- | ----------------------------- | --------------- |
+| ST-01 | Diseño de tabla Dispositivos  | 1 h             |
+| ST-02 | Creación de tabla SQLite      | 1 h             |
+| ST-03 | Formulario de registro        | 2 h             |
+| ST-04 | Validaciones de datos         | 1 h             |
+| ST-05 | Actualización de dispositivos | 1 h             |
+| ST-06 | Pruebas funcionales           | 1 h             |
+
+Total: 7 horas
+
+---
+
+# HISTORIA DE USUARIO 2
+
+## US-02 Registro y Consulta de Eventos
 
 As a user
 
-I want to turn lights on and off remotely
+I want to view historical device events
 
-So that I can manage household lighting
-
-### Acceptance Criteria
-
-Given the light device is connected
-
-When the user changes its state
-
-Then the device should respond immediately
-
-And the new status should be reflected on screen
-
----
-
-## US-05 Control de Enchufes Inteligentes
-
-As a user
-
-I want to control smart plugs
-
-So that I can manage connected appliances
+So that I can analyze the behavior of my smart home.
 
 ### Acceptance Criteria
 
-Given a smart plug is available
+Given events are stored
 
-When the user activates or deactivates it
+When the user accesses the history section
 
-Then the action should be executed successfully
+Then the system should display recorded events
 
-And the system should update its status
-
----
-
-## US-06 Monitoreo de Sensores
-
-As a user
-
-I want to view sensor information
-
-So that I can monitor home conditions
-
-### Acceptance Criteria
-
-Given sensors are operational
-
-When the user opens the monitoring section
-
-Then current readings should be displayed
-
-And values should update automatically
+And allow filtering by device and date
 
 ---
 
-## US-07 Alertas de Seguridad
+Given event information exists
 
-As a user
+When the user performs a search
 
-I want to receive security alerts
+Then matching records should be displayed
 
-So that I can react to suspicious situations
-
-### Acceptance Criteria
-
-Given a security event is detected
-
-When the alert is generated
-
-Then the user should receive a notification
-
-And the event should be stored in the system
+And ordered chronologically
 
 ---
 
-## US-08 Monitoreo de Cámaras
+# Subtasks
 
-As a user
+| ID    | Subtarea                       | Tiempo Estimado |
+| ----- | ------------------------------ | --------------- |
+| ST-07 | Diseño tabla Eventos           | 1 h             |
+| ST-08 | Registro automático de eventos | 2 h             |
+| ST-09 | Consulta de historial          | 2 h             |
+| ST-10 | Filtros de búsqueda            | 1 h             |
+| ST-11 | Pruebas del módulo             | 1 h             |
 
-I want to view security cameras
-
-So that I can supervise my home remotely
-
-### Acceptance Criteria
-
-Given cameras are connected
-
-When the user accesses the monitoring section
-
-Then live video should be displayed
-
-And camera switching should be available
+Total: 7 horas
 
 ---
 
-## US-09 Automatización de Dispositivos
-
-As a user
-
-I want to create automation rules
-
-So that devices can operate automatically
-
-### Acceptance Criteria
-
-Given the user configures a rule
-
-When the specified condition occurs
-
-Then the configured action should execute automatically
-
-And the event should be logged
-
----
-
-## US-10 Consulta de Historial
-
-As a user
-
-I want to view historical records
-
-So that I can analyze device activity
-
-### Acceptance Criteria
-
-Given historical information exists
-
-When the user requests a report
-
-Then the system should display stored records
-
-And allow filtering by date
-
----
-
-# 5. FUNCTIONAL REQUIREMENTS
-
-RF-01 El sistema permitirá registrar usuarios.
-
-RF-02 El sistema permitirá iniciar sesión.
-
-RF-03 El sistema permitirá recuperar contraseñas.
-
-RF-04 El sistema permitirá administrar perfiles.
-
-RF-05 El sistema permitirá registrar dispositivos.
-
-RF-06 El sistema permitirá modificar dispositivos.
-
-RF-07 El sistema permitirá eliminar dispositivos.
-
-RF-08 El usuario podrá controlar luces inteligentes.
-
-RF-09 El usuario podrá controlar enchufes inteligentes.
-
-RF-10 El sistema mostrará el estado de dispositivos en tiempo real.
-
-RF-11 El sistema registrará información de sensores.
-
-RF-12 El sistema enviará alertas de seguridad.
-
-RF-13 El sistema permitirá monitorear cámaras.
-
-RF-14 El sistema almacenará historial de eventos.
-
-RF-15 El sistema permitirá configurar automatizaciones.
-
-RF-16 El sistema generará reportes de actividad.
-
-RF-17 El sistema almacenará configuraciones personalizadas.
-
-RF-18 El sistema registrará auditoría de acciones.
-
----
-
-# 6. NON-FUNCTIONAL REQUIREMENTS
-
-RNF-01 El sistema deberá tener una interfaz intuitiva.
-
-RNF-02 El tiempo de respuesta no deberá exceder 3 segundos.
-
-RNF-03 La disponibilidad mínima deberá ser del 99%.
-
-RNF-04 La información deberá almacenarse de forma segura.
-
-RNF-05 El sistema deberá utilizar autenticación de usuarios.
-
-RNF-06 El sistema deberá ser compatible con Windows.
-
-RNF-07 El sistema deberá soportar múltiples dispositivos conectados.
-
-RNF-08 La aplicación deberá ser escalable.
-
-RNF-09 El sistema deberá mantener integridad de datos.
-
-RNF-10 El sistema deberá actualizar información en tiempo real.
-
----
-
-# 7. STACK TECNOLÓGICO
-
-Lenguaje de Programación: Java
-
-Framework de Interfaz: Swing
-
-Base de Datos: SQLite
-
-IDE: NetBeans
-
-Control de Versiones: Git
-
-Repositorio Remoto: GitHub
-
-Metodología: Scrum
-
-Arquitectura: Cliente – Base de Datos
-
----
-
-# 8. SPRINT BACKLOG – SPRINT 1
+# SPRINT 1
 
 ## Sprint Goal
 
-Construir la infraestructura inicial del sistema Smart Home, incluyendo autenticación, estructura de base de datos, dashboard principal y gestión básica de dispositivos.
+Diseñar e implementar la infraestructura inicial del sistema Smart Home, incluyendo el modelo de datos, la creación de la base de datos SQLite, el registro de usuarios y la administración básica de dispositivos para establecer una base sólida para el desarrollo de funcionalidades futuras.
 
-| ID    | Tarea                     | Descripción                                      | Responsable    |
-| ----- | ------------------------- | ------------------------------------------------ | -------------- |
-| SB-01 | Análisis de requisitos    | Identificación y documentación de requerimientos | Todo el equipo |
-| SB-02 | Diseño ERD                | Diseño del modelo entidad-relación               | Data           |
-| SB-03 | Diseño de Base de Datos   | Definición de tablas y relaciones                | Data           |
-| SB-04 | Implementación SQLite     | Creación física de la base de datos              | Data           |
-| SB-05 | Desarrollo Login          | Programación del módulo de acceso                | Backend        |
-| SB-06 | Desarrollo Registro       | Programación del módulo de registro              | Backend        |
-| SB-07 | Diseño UI Login           | Diseño visual de acceso                          | Frontend       |
-| SB-08 | Diseño UI Registro        | Diseño visual de registro                        | Frontend       |
-| SB-09 | Dashboard Principal       | Creación de panel principal                      | Frontend       |
-| SB-10 | Gestión de Luces          | Desarrollo del control de iluminación            | Backend        |
-| SB-11 | Integración Base de Datos | Conectar módulos con SQLite                      | Backend/Data   |
-| SB-12 | Pruebas Funcionales       | Validación de funcionalidades                    | QA             |
-| SB-13 | Corrección de Errores     | Resolución de incidencias                        | Todo el equipo |
-| SB-14 | Documentación Técnica     | Actualización de documentación                   | Scrum Master   |
-| SB-15 | Preparación de Entrega    | Organización de evidencias y entregables         | Todo el equipo |
+| ID     | Tarea                      | Horas | Estado     |
+| ------ | -------------------------- | ----- | ---------- |
+| SP1-01 | Análisis de requerimientos | 1 h   | Completado |
+| SP1-02 | Diseño del modelo de datos | 2 h   | Completado |
+| SP1-03 | Creación de tablas SQLite  | 2 h   | Completado |
+| SP1-04 | Registro de usuarios       | 1 h   | Completado |
+| SP1-05 | Login de usuarios          | 1 h   | Completado |
+| SP1-06 | Documentación inicial      | 1 h   | Completado |
+
+### Horas Totales Sprint 1
+
+8 horas
 
 ---
 
-# 9. DEFINITION OF DONE
+# SPRINT 2
 
-Una tarea será considerada completada cuando:
+## Sprint Goal
 
-* El desarrollo haya sido implementado.
-* El código compile sin errores.
-* Las pruebas hayan sido aprobadas.
-* Los criterios de aceptación hayan sido cumplidos.
-* La documentación se encuentre actualizada.
-* El cambio haya sido subido al repositorio GitHub.
-* El Product Owner valide el resultado.
+Desarrollar el módulo de administración de dispositivos inteligentes permitiendo registrar, actualizar, consultar y almacenar información de los dispositivos conectados al sistema.
+
+| ID     | Tarea                         | Horas | Estado     |
+| ------ | ----------------------------- | ----- | ---------- |
+| SP2-01 | Diseño entidad Dispositivos   | 1 h   | Completado |
+| SP2-02 | Desarrollo CRUD Dispositivos  | 2 h   | Completado |
+| SP2-03 | Validaciones de información   | 1 h   | Completado |
+| SP2-04 | Integración con base de datos | 2 h   | Completado |
+| SP2-05 | Pruebas funcionales           | 1 h   | Completado |
+| SP2-06 | Actualización documentación   | 1 h   | Completado |
+
+### Horas Totales Sprint 2
+
+8 horas
+
+---
+
+# SPRINT 3
+
+## Sprint Goal
+
+Implementar el sistema de monitoreo y registro histórico de eventos generados por dispositivos inteligentes, permitiendo la consulta, filtrado y análisis de información para mejorar la supervisión del hogar.
+
+| ID     | Tarea                           | Horas | Estado     |
+| ------ | ------------------------------- | ----- | ---------- |
+| SP3-01 | Diseño entidad Eventos          | 1 h   | Completado |
+| SP3-02 | Registro automático de eventos  | 2 h   | Completado |
+| SP3-03 | Consulta de historial           | 2 h   | Completado |
+| SP3-04 | Filtros por dispositivo y fecha | 1 h   | Completado |
+| SP3-05 | Pruebas integrales              | 1 h   | Completado |
+| SP3-06 | Documentación final             | 1 h   | Completado |
+
+### Horas Totales Sprint 3
+
+8 horas
+
+---
+
+# RESUMEN DE SPRINTS
+
+| Sprint   | Objetivo Alcanzado                                | Horas |
+| -------- | ------------------------------------------------- | ----- |
+| Sprint 1 | Infraestructura inicial, usuarios y base de datos | 8 h   |
+| Sprint 2 | Gestión completa de dispositivos inteligentes     | 8 h   |
+| Sprint 3 | Registro y monitoreo de eventos históricos        | 8 h   |
+
+## Total de Horas del Proyecto
+
+24 horas
+
+## Resultado Final
+
+Al finalizar los tres sprints se obtuvo una plataforma Smart Home funcional capaz de:
+
+* Gestionar usuarios.
+* Administrar dispositivos inteligentes.
+* Registrar eventos generados por dispositivos.
+* Consultar historial de actividad.
+* Almacenar información en SQLite.
+* Mantener documentación técnica y evidencias de desarrollo.
