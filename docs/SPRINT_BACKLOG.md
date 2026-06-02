@@ -5,8 +5,14 @@
 # SPRINT GOAL GENERAL DEL PROYECTO
 
 Desarrollar una plataforma integral de gestión para hogares inteligentes capaz de registrar usuarios, administrar dispositivos IoT, almacenar eventos generados por sensores, monitorear el estado de los dispositivos en tiempo real y proporcionar información histórica para mejorar la seguridad, el control y la eficiencia energética del hogar.
+---
+
+1. PRODUCT VISION
+
+El Smart Home Management System es una plataforma diseñada para centralizar el monitoreo, control y automatización de dispositivos inteligentes dentro de una vivienda. El sistema permitirá a los usuarios gestionar iluminación, sensores ambientales, dispositivos conectados y sistemas de seguridad desde una única interfaz, garantizando comodidad, eficiencia energética y protección del hogar.
 
 ---
+
 
 # HISTORIA DE USUARIO 1
 
@@ -175,6 +181,19 @@ Implementar el sistema de monitoreo y registro histórico de eventos generados p
 ## Total de Horas del Proyecto
 
 24 horas
+
+
+ ##DEFINITION OF DONE
+
+Una tarea será considerada completada cuando:
+
+El desarrollo haya sido implementado.
+El código compile sin errores.
+Las pruebas hayan sido aprobadas.
+Los criterios de aceptación hayan sido cumplidos.
+La documentación se encuentre actualizada.
+El cambio haya sido subido al repositorio GitHub.
+El Product Owner valide el resultado.
 
 ## Resultado Final
 
