@@ -1,231 +1,369 @@
-Sprint 1 Backlog
+# SMART HOME MANAGEMENT SYSTEM
 
-Project
-
-CBTis47 Smart Home Management System
+## Product Backlog, SRS y Sprint Backlog
 
 ---
 
-Sprint Goal
+# 1. PRODUCT VISION
 
-Develop the core functionality of the Smart Home Management System, including user authentication, smart device registration, device monitoring, and MongoDB Atlas integration to ensure a scalable and secure smart home infrastructure.
-
----
-
-Sprint Parameters and Capacity Plan
-
-Parameter| Value
-Sprint Number| Sprint 1
-Sprint Duration| 2 Weeks
-Team Members| 5
-Working Days| 10
-Hours per Day| 4
-Total Capacity| 200 Hours
-
-Team Members
-
-- Samantha Michelle Garcia Pulido
-- Fatima Yocelin Ramírez López
-- Jacqueline Montalvo Cano
-- Juan Irving De La Cruz Zayas
-- Axel Ivan Carrera Quezada
+El Smart Home Management System es una plataforma diseñada para centralizar el monitoreo, control y automatización de dispositivos inteligentes dentro de una vivienda. El sistema permitirá a los usuarios gestionar iluminación, sensores ambientales, dispositivos conectados y sistemas de seguridad desde una única interfaz, garantizando comodidad, eficiencia energética y protección del hogar.
 
 ---
 
-Selected Epics and User Stories
+# 2. PRODUCT GOAL
 
-Epic 1: User Authentication and Access Control
-
-US-SH-01 User Registration
-
-Story Points: 3
-
-User Story
-
-As a new user, I want to create an account so that I can access the smart home management platform.
-
-Acceptance Criteria
-
-- User can register using username and password.
-- User information is stored in MongoDB Atlas.
-- Duplicate usernames are rejected.
-- Registration confirmation is displayed.
+Desarrollar una aplicación de gestión de hogares inteligentes que permita a los usuarios supervisar, controlar y automatizar dispositivos domésticos mediante una interfaz intuitiva, proporcionando seguridad, ahorro energético y monitoreo en tiempo real.
 
 ---
 
-US-SH-02 User Login
+# 3. EPICS
 
-Story Points: 3
+### EPIC 1 – Gestión de Usuarios
 
-User Story
+Administración de cuentas, autenticación y configuración de perfiles.
 
-As a registered user, I want to log into the system so that I can manage and monitor my smart devices.
+### EPIC 2 – Gestión de Dispositivos
 
-Acceptance Criteria
+Control y administración de dispositivos inteligentes conectados.
 
-- User enters valid credentials.
-- Authentication is verified successfully.
-- Access is granted to the platform.
-- Invalid credentials display an error message.
+### EPIC 3 – Seguridad del Hogar
 
----
+Monitoreo de eventos de seguridad y gestión de alertas.
 
-Epic 2: Smart Device Management
+### EPIC 4 – Monitoreo Ambiental
 
-US-SH-03 Register Smart Devices
+Seguimiento de variables ambientales mediante sensores.
 
-Story Points: 5
+### EPIC 5 – Automatización Inteligente
 
-User Story
+Creación de reglas y automatizaciones para el hogar.
 
-As a homeowner, I want to register smart devices so that they can be monitored and managed through the platform.
+### EPIC 6 – Reportes y Estadísticas
 
-Acceptance Criteria
-
-- Device name can be entered.
-- Device type can be selected.
-- Device location can be assigned.
-- Device information is stored in MongoDB Atlas.
+Generación de información histórica y análisis de consumo.
 
 ---
 
-US-SH-04 Edit Device Information
+# 4. USER STORIES
 
-Story Points: 3
+## US-01 Registro de Usuario
 
-User Story
+As a user
 
-As a homeowner, I want to update device information so that the system always reflects the current device configuration.
+I want to create an account
 
-Acceptance Criteria
+So that I can access my smart home system
 
-- Device information can be modified.
-- Changes are saved correctly.
-- Updated information is displayed immediately.
-- Database records are updated successfully.
+### Acceptance Criteria
 
----
+Given the user is on the registration page
 
-Epic 3: Device Monitoring
+When the user enters valid information
 
-US-SH-05 Monitor Device Status
+Then the account should be created successfully
 
-Story Points: 5
-
-User Story
-
-As a homeowner, I want to view the current status of all registered devices so that I can monitor my smart home environment.
-
-Acceptance Criteria
-
-- Device status is displayed.
-- ON and OFF states are visible.
-- Status updates are reflected in the database.
-- Users can identify active devices.
+And a confirmation message should be displayed
 
 ---
 
-US-SH-06 View Device Details
+## US-02 Inicio de Sesión
 
-Story Points: 3
+As a user
 
-User Story
+I want to log in
 
-As a homeowner, I want to access detailed information about each device so that I can verify its configuration and settings.
+So that I can access my smart home dashboard
 
-Acceptance Criteria
+### Acceptance Criteria
 
-- Device configuration is displayed.
-- Location information is available.
-- Device-specific attributes are shown.
-- Data is retrieved from MongoDB Atlas.
+Given the user has a registered account
 
----
+When the user enters valid credentials
 
-Epic 4: MongoDB Atlas Integration
+Then the system should grant access
 
-US-SH-07 Store BSON Documents
-
-Story Points: 5
-
-User Story
-
-As a system administrator, I want smart device information stored as BSON documents so that the database remains scalable and flexible.
-
-Acceptance Criteria
-
-- BSON documents are created correctly.
-- Embedded documents are supported.
-- Device configurations are stored successfully.
-- MongoDB Atlas connection works properly.
+And display the main dashboard
 
 ---
 
-US-SH-08 Execute Device Queries
+## US-03 Gestión de Perfil
 
-Story Points: 5
+As a user
 
-User Story
+I want to update my profile information
 
-As a system administrator, I want to execute device queries so that I can analyze smart home activity and device usage.
+So that my account information remains current
 
-Acceptance Criteria
+### Acceptance Criteria
 
-- Active devices can be retrieved.
-- Device categories can be counted.
-- Aggregation queries work correctly.
-- Results are accurate and complete.
+Given the user is authenticated
 
----
+When profile information is modified
 
-Sprint Backlog Tasks
+Then the changes should be stored successfully
 
-Task ID| Task Description| Related User Story
-T-01| Create users collection schema| US-SH-01
-T-02| Develop user registration module| US-SH-01
-T-03| Develop authentication and login module| US-SH-02
-T-04| Create devices collection structure| US-SH-03
-T-05| Implement smart device registration| US-SH-03
-T-06| Implement device update functionality| US-SH-04
-T-07| Develop device monitoring dashboard| US-SH-05
-T-08| Implement device detail visualization| US-SH-06
-T-09| Configure MongoDB Atlas connection| US-SH-07
-T-10| Create BSON document structures| US-SH-07
-T-11| Develop aggregation queries| US-SH-08
-T-12| Test authentication features| US-SH-01, US-SH-02
-T-13| Test device management features| US-SH-03, US-SH-04
-T-14| Test monitoring and query functionality| US-SH-05, US-SH-08
-T-15| Review documentation and repository structure| All Stories
+And confirmation should be displayed
 
 ---
 
-Sprint Deliverables
+## US-04 Control de Luces
 
-- User registration system.
-- User authentication system.
-- Smart device registration functionality.
-- Device monitoring capabilities.
-- MongoDB Atlas integration.
-- BSON document implementation.
-- Aggregation query examples.
-- Updated GitHub repository documentation.
+As a user
 
----
+I want to turn lights on and off remotely
 
-Definition of Done (DoD)
+So that I can manage household lighting
 
-A user story will be considered completed when:
+### Acceptance Criteria
 
-- Functionality is implemented.
-- Code is uploaded to GitHub.
-- MongoDB Atlas integration works correctly.
-- Acceptance criteria are fulfilled.
-- Documentation is updated.
-- Team review has been completed.
-- No critical errors remain unresolved.
+Given the light device is connected
+
+When the user changes its state
+
+Then the device should respond immediately
+
+And the new status should be reflected on screen
 
 ---
 
-Prepared by Team CBTis47 Smart Home Management System
+## US-05 Control de Enchufes Inteligentes
 
-Sprint 1 - MongoDB Smart Home Infrastructure Project
+As a user
+
+I want to control smart plugs
+
+So that I can manage connected appliances
+
+### Acceptance Criteria
+
+Given a smart plug is available
+
+When the user activates or deactivates it
+
+Then the action should be executed successfully
+
+And the system should update its status
+
+---
+
+## US-06 Monitoreo de Sensores
+
+As a user
+
+I want to view sensor information
+
+So that I can monitor home conditions
+
+### Acceptance Criteria
+
+Given sensors are operational
+
+When the user opens the monitoring section
+
+Then current readings should be displayed
+
+And values should update automatically
+
+---
+
+## US-07 Alertas de Seguridad
+
+As a user
+
+I want to receive security alerts
+
+So that I can react to suspicious situations
+
+### Acceptance Criteria
+
+Given a security event is detected
+
+When the alert is generated
+
+Then the user should receive a notification
+
+And the event should be stored in the system
+
+---
+
+## US-08 Monitoreo de Cámaras
+
+As a user
+
+I want to view security cameras
+
+So that I can supervise my home remotely
+
+### Acceptance Criteria
+
+Given cameras are connected
+
+When the user accesses the monitoring section
+
+Then live video should be displayed
+
+And camera switching should be available
+
+---
+
+## US-09 Automatización de Dispositivos
+
+As a user
+
+I want to create automation rules
+
+So that devices can operate automatically
+
+### Acceptance Criteria
+
+Given the user configures a rule
+
+When the specified condition occurs
+
+Then the configured action should execute automatically
+
+And the event should be logged
+
+---
+
+## US-10 Consulta de Historial
+
+As a user
+
+I want to view historical records
+
+So that I can analyze device activity
+
+### Acceptance Criteria
+
+Given historical information exists
+
+When the user requests a report
+
+Then the system should display stored records
+
+And allow filtering by date
+
+---
+
+# 5. FUNCTIONAL REQUIREMENTS
+
+RF-01 El sistema permitirá registrar usuarios.
+
+RF-02 El sistema permitirá iniciar sesión.
+
+RF-03 El sistema permitirá recuperar contraseñas.
+
+RF-04 El sistema permitirá administrar perfiles.
+
+RF-05 El sistema permitirá registrar dispositivos.
+
+RF-06 El sistema permitirá modificar dispositivos.
+
+RF-07 El sistema permitirá eliminar dispositivos.
+
+RF-08 El usuario podrá controlar luces inteligentes.
+
+RF-09 El usuario podrá controlar enchufes inteligentes.
+
+RF-10 El sistema mostrará el estado de dispositivos en tiempo real.
+
+RF-11 El sistema registrará información de sensores.
+
+RF-12 El sistema enviará alertas de seguridad.
+
+RF-13 El sistema permitirá monitorear cámaras.
+
+RF-14 El sistema almacenará historial de eventos.
+
+RF-15 El sistema permitirá configurar automatizaciones.
+
+RF-16 El sistema generará reportes de actividad.
+
+RF-17 El sistema almacenará configuraciones personalizadas.
+
+RF-18 El sistema registrará auditoría de acciones.
+
+---
+
+# 6. NON-FUNCTIONAL REQUIREMENTS
+
+RNF-01 El sistema deberá tener una interfaz intuitiva.
+
+RNF-02 El tiempo de respuesta no deberá exceder 3 segundos.
+
+RNF-03 La disponibilidad mínima deberá ser del 99%.
+
+RNF-04 La información deberá almacenarse de forma segura.
+
+RNF-05 El sistema deberá utilizar autenticación de usuarios.
+
+RNF-06 El sistema deberá ser compatible con Windows.
+
+RNF-07 El sistema deberá soportar múltiples dispositivos conectados.
+
+RNF-08 La aplicación deberá ser escalable.
+
+RNF-09 El sistema deberá mantener integridad de datos.
+
+RNF-10 El sistema deberá actualizar información en tiempo real.
+
+---
+
+# 7. STACK TECNOLÓGICO
+
+Lenguaje de Programación: Java
+
+Framework de Interfaz: Swing
+
+Base de Datos: SQLite
+
+IDE: NetBeans
+
+Control de Versiones: Git
+
+Repositorio Remoto: GitHub
+
+Metodología: Scrum
+
+Arquitectura: Cliente – Base de Datos
+
+---
+
+# 8. SPRINT BACKLOG – SPRINT 1
+
+## Sprint Goal
+
+Construir la infraestructura inicial del sistema Smart Home, incluyendo autenticación, estructura de base de datos, dashboard principal y gestión básica de dispositivos.
+
+| ID    | Tarea                     | Descripción                                      | Responsable    |
+| ----- | ------------------------- | ------------------------------------------------ | -------------- |
+| SB-01 | Análisis de requisitos    | Identificación y documentación de requerimientos | Todo el equipo |
+| SB-02 | Diseño ERD                | Diseño del modelo entidad-relación               | Data           |
+| SB-03 | Diseño de Base de Datos   | Definición de tablas y relaciones                | Data           |
+| SB-04 | Implementación SQLite     | Creación física de la base de datos              | Data           |
+| SB-05 | Desarrollo Login          | Programación del módulo de acceso                | Backend        |
+| SB-06 | Desarrollo Registro       | Programación del módulo de registro              | Backend        |
+| SB-07 | Diseño UI Login           | Diseño visual de acceso                          | Frontend       |
+| SB-08 | Diseño UI Registro        | Diseño visual de registro                        | Frontend       |
+| SB-09 | Dashboard Principal       | Creación de panel principal                      | Frontend       |
+| SB-10 | Gestión de Luces          | Desarrollo del control de iluminación            | Backend        |
+| SB-11 | Integración Base de Datos | Conectar módulos con SQLite                      | Backend/Data   |
+| SB-12 | Pruebas Funcionales       | Validación de funcionalidades                    | QA             |
+| SB-13 | Corrección de Errores     | Resolución de incidencias                        | Todo el equipo |
+| SB-14 | Documentación Técnica     | Actualización de documentación                   | Scrum Master   |
+| SB-15 | Preparación de Entrega    | Organización de evidencias y entregables         | Todo el equipo |
+
+---
+
+# 9. DEFINITION OF DONE
+
+Una tarea será considerada completada cuando:
+
+* El desarrollo haya sido implementado.
+* El código compile sin errores.
+* Las pruebas hayan sido aprobadas.
+* Los criterios de aceptación hayan sido cumplidos.
+* La documentación se encuentre actualizada.
+* El cambio haya sido subido al repositorio GitHub.
+* El Product Owner valide el resultado.
