@@ -1,22 +1,61 @@
 # SMART HOME MANAGEMENT SYSTEM
 
-## SPRINT 1 BACKLOG
+# SPRINT 1 PLANNING
 
 ---
 
 <div align="center">
 
-### SPRINT GOAL
+# SPRINT GOAL
 
 </div>
 
-Establecer las bases técnicas y organizacionales del proyecto Smart Home Management System mediante la creación del entorno de desarrollo, la planificación inicial, la configuración de herramientas colaborativas, la documentación del flujo de trabajo y el diseño preliminar de la interfaz de usuario. Al finalizar el sprint, el equipo deberá contar con una estructura de proyecto funcional, una base documental sólida, una cuenta configurada en MongoDB Atlas y un prototipo visual de la aplicación, dejando preparada la integración de la base de datos para futuros sprints.
+Establecer las bases técnicas, organizacionales y académicas del proyecto Smart Home Management System mediante la creación de la infraestructura inicial del proyecto, la configuración de herramientas colaborativas, la documentación de procesos, el diseño preliminar de la aplicación y la preparación del entorno de base de datos. Al finalizar este sprint, el equipo deberá contar con un repositorio funcional, una estructura organizada para el desarrollo, documentación técnica inicial, un prototipo visual de la aplicación Smart Home y un entorno MongoDB Atlas preparado para futuras integraciones.
 
 ---
 
 <div align="center">
 
-# HISTORIAS DE USUARIO
+# SPRINT PARAMETERS
+
+</div>
+
+| Parámetro            | Valor                           |
+| -------------------- | ------------------------------- |
+| Sprint               | Sprint 1                        |
+| Duración             | Primer Parcial                  |
+| Equipo de Desarrollo | 4 Integrantes                   |
+| Product Owner        | Definido por el equipo          |
+| Scrum Master         | No asignado durante este sprint |
+| Proyecto             | Smart Home Management System    |
+| Tecnología Principal | Java                            |
+| Base de Datos        | MongoDB Atlas                   |
+| Repositorio          | GitHub                          |
+
+---
+
+<div align="center">
+
+# CAPACITY PLAN
+
+</div>
+
+| Integrante | Horas Disponibles |
+| ---------- | ----------------- |
+| Miembro 1  | 40 h              |
+| Miembro 2  | 40 h              |
+| Miembro 3  | 40 h              |
+| Miembro 4  | 40 h              |
+
+### Capacidad Total del Sprint
+
+**160 Horas Disponibles**
+
+---
+
+<div align="center">
+
+# SELECTED USER STORIES
 
 </div>
 
@@ -24,187 +63,256 @@ Establecer las bases técnicas y organizacionales del proyecto Smart Home Manage
 
 ## US-01 | Configuración Inicial del Proyecto
 
+### User Story
+
 **As a developer**
 
-I want to configure the project environment and repository
+**I want to establish the project's development environment and collaborative infrastructure**
 
-So that the team can work collaboratively and efficiently.
+**So that the team can work efficiently throughout the project lifecycle.**
 
 ### Acceptance Criteria
+
+#### AC-01
 
 **Given** the project has been approved
 
-**When** the repository and folders are created
+**When** the GitHub repository is created
 
-**Then** all team members should be able to access the project
+**Then** all team members must have access permissions
 
-**And** the structure should be ready for development.
+**And** version control must be available for collaborative development.
 
-### Subtareas
+#### AC-02
 
-|   ID  | Actividad                             | Horas |
-| :---: | ------------------------------------- | :---: |
-| ST-01 | Creación del repositorio GitHub       |  1 h  |
-| ST-02 | Configuración inicial del proyecto    |  1 h  |
-| ST-03 | Organización de carpetas principales  |  1 h  |
-| ST-04 | Creación de la carpeta Devices        |  1 h  |
-| ST-05 | Configuración de control de versiones |  1 h  |
+**Given** the repository structure exists
 
-**Tiempo Total:** 5 horas
+**When** the initial project folders are created
+
+**Then** the directory organization must be standardized
+
+**And** the project must be ready to receive future modules.
+
+#### AC-03
+
+**Given** the development environment is configured
+
+**When** a team member clones the repository
+
+**Then** the project structure must be accessible
+
+**And** development activities can begin without additional setup.
+
+### Estimated Effort
+
+**60 Hours**
 
 ---
 
-## US-02 | Diseño y Planeación de la Aplicación
+## US-02 | Diseño Inicial de la Plataforma Smart Home
+
+### User Story
 
 **As a user**
 
-I want to visualize the application's workflow and interface
+**I want to visualize the operation and appearance of the Smart Home platform**
 
-So that I can understand how the Smart Home system will operate.
+**So that I can understand how devices and information will be managed within the system.**
 
 ### Acceptance Criteria
 
-**Given** the project is in the planning phase
+#### AC-01
 
-**When** the flow diagram and prototype are completed
+**Given** the project requirements have been identified
 
-**Then** the workflow should be documented
+**When** the initial flow diagram is created
 
-**And** a visual proposal of the application should be available.
+**Then** all major processes must be represented
 
-### Subtareas
+**And** system interactions must be documented.
 
-|   ID  | Actividad                                  | Horas |
-| :---: | ------------------------------------------ | :---: |
-| ST-06 | Elaboración del diagrama de flujo inicial  |  2 h  |
-| ST-07 | Diseño de la pantalla principal Smart Home |  2 h  |
-| ST-08 | Correcciones y validación del diseño       |  1 h  |
+#### AC-02
 
-**Tiempo Total:** 5 horas
+**Given** the interface design phase begins
+
+**When** the first Smart Home screen is developed
+
+**Then** it must represent the project's visual identity
+
+**And** include the primary navigation elements.
+
+#### AC-03
+
+**Given** the prototype has been reviewed
+
+**When** observations or improvements are identified
+
+**Then** the design must be updated
+
+**And** the modifications must be documented.
+
+### Estimated Effort
+
+**45 Hours**
 
 ---
 
-## US-03 | Preparación del Entorno de Base de Datos
+## US-03 | Preparación de la Infraestructura de Datos
+
+### User Story
 
 **As a developer**
 
-I want to configure the database environment
+**I want to prepare the MongoDB Atlas environment**
 
-So that the application can store and manage information in future iterations.
+**So that the project has a database platform ready for future integration.**
 
 ### Acceptance Criteria
 
-**Given** MongoDB Atlas is available
+#### AC-01
 
-**When** the account and environment are configured
+**Given** MongoDB Atlas services are available
 
-**Then** the platform should be prepared for integration
+**When** an account is created and configured
 
-**And** the connection process should be documented.
+**Then** database resources must be accessible
 
-### Subtareas
+**And** project credentials must be documented.
 
-|   ID  | Actividad                                | Horas |
-| :---: | ---------------------------------------- | :---: |
-| ST-09 | Creación de cuenta MongoDB Atlas         |  1 h  |
-| ST-10 | Configuración inicial del clúster        |  1 h  |
-| ST-11 | Intento de conexión con la aplicación    |  2 h  |
-| ST-12 | Documentación de incidencias encontradas |  1 h  |
+#### AC-02
 
-**Tiempo Total:** 5 horas
+**Given** the cluster configuration process begins
+
+**When** the environment is configured
+
+**Then** the database platform must be operational
+
+**And** support future application connections.
+
+#### AC-03
+
+**Given** the integration phase has not yet been completed
+
+**When** connection requirements are analyzed
+
+**Then** the connection procedure must be documented
+
+**And** identified technical limitations must be recorded for future resolution.
+
+### Estimated Effort
+
+**35 Hours**
 
 ---
 
-## US-04 | Investigación y Evidencias del Proyecto
+## US-04 | Investigación y Documentación Académica
+
+### User Story
 
 **As a team member**
 
-I want to document learning activities and project evidence
+**I want to document learning activities, evidence and project progress**
 
-So that project progress can be monitored and justified.
+**So that development can be justified and tracked throughout the academic period.**
 
 ### Acceptance Criteria
 
-**Given** development activities are performed
+#### AC-01
 
-**When** evidence is generated
+**Given** research and learning activities are performed
 
-**Then** records should be stored
+**When** seeds are generated
 
-**And** project progress should be documented.
+**Then** they must be documented appropriately
 
-### Subtareas
+**And** stored as project evidence.
 
-|   ID  | Actividad                              | Horas |
-| :---: | -------------------------------------- | :---: |
-| ST-13 | Elaboración de semillas de aprendizaje |  4 h  |
-| ST-14 | Organización de evidencias             |  2 h  |
-| ST-15 | Actualización de documentación         |  1 h  |
+#### AC-02
 
-**Tiempo Total:** 7 horas
+**Given** evidence is generated during development
 
----
+**When** documentation is updated
 
-<div align="center">
+**Then** project records must remain organized
 
-# SPRINT BACKLOG
+**And** accessible for evaluation.
 
-</div>
+#### AC-03
 
-|   ID   | Actividad                          | Responsable  | Horas |   Estado   |
-| :----: | ---------------------------------- | ------------ | :---: | :--------: |
-| SP1-01 | Creación del repositorio GitHub    | Equipo       |  1 h  | Completado |
-| SP1-02 | Configuración inicial del proyecto | Equipo       |  1 h  | Completado |
-| SP1-03 | Organización de carpetas           | Equipo       |  1 h  | Completado |
-| SP1-04 | Creación carpeta Devices           | Backend      |  1 h  | Completado |
-| SP1-05 | Control de versiones               | Equipo       |  1 h  | Completado |
-| SP1-06 | Diagrama de flujo inicial          | Scrum Master |  2 h  | Completado |
-| SP1-07 | Diseño de interfaz principal       | Frontend     |  2 h  | Completado |
-| SP1-08 | Ajustes de diseño                  | Frontend     |  1 h  | Completado |
-| SP1-09 | Creación de cuenta MongoDB Atlas   | Data         |  1 h  | Completado |
-| SP1-10 | Configuración de MongoDB Atlas     | Data         |  1 h  | Completado |
-| SP1-11 | Conexión MongoDB ↔ Aplicación      | Data         |  2 h  |  Pendiente |
-| SP1-12 | Registro de incidencias técnicas   | Data         |  1 h  | Completado |
-| SP1-13 | Elaboración de semillas            | Equipo       |  4 h  | Completado |
-| SP1-14 | Organización de evidencias         | Scrum Master |  2 h  | Completado |
-| SP1-15 | Actualización documental           | Scrum Master |  1 h  | Completado |
+**Given** the first partial period concludes
+
+**When** project documentation is reviewed
+
+**Then** all relevant evidence must be available
+
+**And** support the progress achieved during the sprint.
+
+### Estimated Effort
+
+**20 Hours**
 
 ---
 
 <div align="center">
 
-# RESUMEN DEL SPRINT
+# CORE ACADEMIC OPERATIONS
 
 </div>
 
-| Indicador               | Resultado |
-| ----------------------- | --------- |
-| Historias de Usuario    | 4         |
-| Subtareas Totales       | 15        |
-| Actividades Completadas | 14        |
-| Actividades Pendientes  | 1         |
-| Horas Planeadas         | 22 h      |
-| Horas Ejecutadas        | 20 h      |
-| Porcentaje de Avance    | 91 %      |
+|   ID   | Actividad Académica                                                 |
+| :----: | ------------------------------------------------------------------- |
+| CAO-01 | Creación y configuración del repositorio GitHub                     |
+| CAO-02 | Organización de la estructura inicial del proyecto                  |
+| CAO-03 | Creación de la carpeta Devices                                      |
+| CAO-04 | Elaboración del diagrama de flujo inicial                           |
+| CAO-05 | Diseño de la primera pantalla de la aplicación Smart Home           |
+| CAO-06 | Creación de cuenta MongoDB Atlas                                    |
+| CAO-07 | Configuración inicial del entorno MongoDB                           |
+| CAO-08 | Planeación de la conexión entre aplicación y base de datos          |
+| CAO-09 | Desarrollo de más de 100 semillas de aprendizaje durante el parcial |
+| CAO-10 | Recolección y organización de evidencias                            |
+| CAO-11 | Actualización de documentación técnica                              |
+| CAO-12 | Preparación de entregables académicos                               |
 
 ---
 
-### Entregables Completados
+<div align="center">
 
-* Repositorio GitHub configurado.
-* Estructura inicial del proyecto creada.
-* Carpeta **Devices** implementada.
-* Diagrama de flujo inicial documentado.
-* Diseño preliminar de la aplicación Smart Home.
-* Cuenta MongoDB Atlas creada y configurada.
-* Más de 100 semillas de aprendizaje registradas.
-* Evidencias y documentación organizadas.
+# DEFINITION OF DONE (DoD)
 
-### Actividades Pendientes
+</div>
 
-* Finalizar la conexión entre MongoDB Atlas y la aplicación.
-* Realizar pruebas de almacenamiento y consulta de datos.
+Una Historia de Usuario será considerada terminada únicamente cuando todos los criterios siguientes hayan sido cumplidos:
 
-### Conclusión del Sprint
+☐ Cumple completamente con todos los criterios de aceptación establecidos.
 
-El Sprint 1 permitió establecer los fundamentos técnicos y organizacionales del proyecto Smart Home Management System. Se completó la planificación inicial, la estructura del repositorio, la documentación base y el diseño preliminar de la aplicación. Aunque la configuración de MongoDB Atlas fue realizada exitosamente, la integración completa con la aplicación quedó pendiente y será abordada en el siguiente sprint.
+☐ La documentación correspondiente fue actualizada.
+
+☐ Los artefactos generados fueron almacenados en el repositorio GitHub.
+
+☐ Las evidencias académicas fueron registradas y organizadas.
+
+☐ El trabajo fue revisado por los integrantes del equipo.
+
+☐ No existen errores críticos o inconsistencias documentadas.
+
+☐ Los entregables cumplen con los requisitos establecidos por el docente.
+
+☐ El resultado aporta valor directo al Sprint Goal.
+
+☐ La información generada puede ser utilizada en el siguiente sprint.
+
+☐ El equipo valida colectivamente que la historia está lista para considerarse terminada.
+
+---
+
+## RESUMEN DE CAPACIDAD
+
+| Concepto                           | Valor                               |
+| ---------------------------------- | ----------------------------------- |
+| Número de Integrantes              | 4                                   |
+| Horas por Integrante               | 40 h                                |
+| Capacidad Total del Sprint         | 160 h                               |
+| User Stories Seleccionadas         | 4                                   |
+| Operaciones Académicas Principales | 12                                  |
+| Sprint Goal                        | Fundamentos del Proyecto Smart Home |
