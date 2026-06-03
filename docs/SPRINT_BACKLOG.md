@@ -245,20 +245,20 @@ And support the progress achieved during the sprint.
 
 # Core Academic Operations
 
-| ID     | Academic Activity                                               | Responsible Role       | Team Member                     | Hours |
-| ------ | --------------------------------------------------------------- | ---------------------- | ------------------------------- | ----- |
-| CAO-01 | GitHub repository creation and configuration                    | Repository Manager     | Juan Irving De La Cruz Zayas    | 10 h  |
-| CAO-02 | Initial project structure organization                          | Repository Manager     | Juan Irving De La Cruz Zayas    | 8 h   |
-| CAO-03 | Devices folder creation                                         | Backend Support        | Juan Irving De La Cruz Zayas    | 5 h   |
-| CAO-04 | Initial flowchart development                                   | System Designer        | Fatima Yocelin Ramírez López    | 8 h   |
-| CAO-05 | Smart Home application screen design                            | UI Designer            | Fatima Yocelin Ramírez López    | 12 h  |
-| CAO-06 | MongoDB Atlas account creation                                  | Database Administrator | Jacqueline Montalvo Cano        | 6 h   |
-| CAO-07 | MongoDB environment configuration                               | Database Administrator | Jacqueline Montalvo Cano        | 12 h  |
-| CAO-08 | Database connection planning                                    | Database Administrator | Jacqueline Montalvo Cano        | 10 h  |
-| CAO-09 | Development of 100+ learning seeds throughout the academic term | Academic Research Team | All Team Members                | 30 h  |
-| CAO-10 | Collection and organization of project evidence                 | Documentation Manager  | Samantha Michelle Garcia Pulido | 8 h   |
-| CAO-11 | Technical documentation updates                                 | Documentation Manager  | Samantha Michelle Garcia Pulido | 10 h  |
-| CAO-12 | Preparation of academic deliverables                            | Documentation Manager  | Samantha Michelle Garcia Pulido | 8 h   |
+| ID     | Academic Activity                                               | Responsible Role       | Team Member                     | Difficulty | Hours |
+| ------ | --------------------------------------------------------------- | ---------------------- | ------------------------------- | ---------- | ----- |
+| CAO-01 | GitHub repository creation and configuration                    | Repository Manager     | Juan Irving De La Cruz Zayas    | Medium     | 10 h  |
+| CAO-02 | Initial project structure organization                          | Repository Manager     | Juan Irving De La Cruz Zayas    | Medium     | 8 h   |
+| CAO-03 | Devices folder creation                                         | Backend Support        | Juan Irving De La Cruz Zayas    | Low        | 5 h   |
+| CAO-04 | Initial flowchart development                                   | System Designer        | Fatima Yocelin Ramírez López    | Medium     | 8 h   |
+| CAO-05 | Smart Home application screen design                            | UI Designer            | Fatima Yocelin Ramírez López    | High       | 12 h  |
+| CAO-06 | MongoDB Atlas account creation                                  | Database Administrator | Jacqueline Montalvo Cano        | Medium     | 6 h   |
+| CAO-07 | MongoDB environment configuration                               | Database Administrator | Jacqueline Montalvo Cano        | High       | 12 h  |
+| CAO-08 | Database connection planning                                    | Database Administrator | Jacqueline Montalvo Cano        | High       | 10 h  |
+| CAO-09 | Development of 100+ learning seeds throughout the academic term | Academic Research Team | All Team Members                | Very High  | 30 h  |
+| CAO-10 | Collection and organization of project evidence                 | Documentation Manager  | Samantha Michelle Garcia Pulido | Medium     | 8 h   |
+| CAO-11 | Technical documentation updates                                 | Documentation Manager  | Samantha Michelle Garcia Pulido | High       | 10 h  |
+| CAO-12 | Preparation of academic deliverables                            | Documentation Manager  | Samantha Michelle Garcia Pulido | Medium     | 8 h   |
 
 ---
 
