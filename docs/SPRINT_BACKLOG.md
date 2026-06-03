@@ -2,9 +2,9 @@
 
 **Project:** Smart Home Management System
 **Sprint:** Sprint 1
-**Duration:** First Academic Term
+**Duration:** First Academic Term (4 Weeks)
 **Development Team:** 4 Members
-**Total Capacity:** 160 Hours
+**Total Capacity:** 128 Hours
 
 ---
 
@@ -34,16 +34,18 @@ At the end of this sprint, the team should have a functional repository structur
 
 # Capacity Plan
 
-| Team Member | Available Hours |
-| ----------- | --------------- |
-| Member 1    | 40 h            |
-| Member 2    | 40 h            |
-| Member 3    | 40 h            |
-| Member 4    | 40 h            |
+| Team Member                     | Available Hours |
+| ------------------------------- | --------------- |
+| Samantha Michelle Garcia Pulido | 26 h            |
+| Fatima Yocelin Ramírez López    | 28 h            |
+| Jacqueline Montalvo Cano        | 37 h            |
+| Juan Irving De La Cruz Zayas    | 37 h            |
 
 ### Total Sprint Capacity
 
-**160 Available Hours**
+**128 Available Hours**
+
+**Note:** Capacity was affected by academic activities, class suspensions, institutional events, and schedule adjustments during the first academic term.
 
 ---
 
@@ -243,20 +245,31 @@ And support the progress achieved during the sprint.
 
 # Core Academic Operations
 
-|   ID   | Academic Activity                                               |
-| :----: | --------------------------------------------------------------- |
-| CAO-01 | GitHub repository creation and configuration                    |
-| CAO-02 | Initial project structure organization                          |
-| CAO-03 | Devices folder creation                                         |
-| CAO-04 | Initial flowchart development                                   |
-| CAO-05 | Smart Home application screen design                            |
-| CAO-06 | MongoDB Atlas account creation                                  |
-| CAO-07 | MongoDB environment configuration                               |
-| CAO-08 | Database connection planning                                    |
-| CAO-09 | Development of 100+ learning seeds throughout the academic term |
-| CAO-10 | Collection and organization of project evidence                 |
-| CAO-11 | Technical documentation updates                                 |
-| CAO-12 | Preparation of academic deliverables                            |
+| ID     | Academic Activity                                               | Responsible Role       | Team Member                     | Hours |
+| ------ | --------------------------------------------------------------- | ---------------------- | ------------------------------- | ----- |
+| CAO-01 | GitHub repository creation and configuration                    | Repository Manager     | Juan Irving De La Cruz Zayas    | 10 h  |
+| CAO-02 | Initial project structure organization                          | Repository Manager     | Juan Irving De La Cruz Zayas    | 8 h   |
+| CAO-03 | Devices folder creation                                         | Backend Support        | Juan Irving De La Cruz Zayas    | 5 h   |
+| CAO-04 | Initial flowchart development                                   | System Designer        | Fatima Yocelin Ramírez López    | 8 h   |
+| CAO-05 | Smart Home application screen design                            | UI Designer            | Fatima Yocelin Ramírez López    | 12 h  |
+| CAO-06 | MongoDB Atlas account creation                                  | Database Administrator | Jacqueline Montalvo Cano        | 6 h   |
+| CAO-07 | MongoDB environment configuration                               | Database Administrator | Jacqueline Montalvo Cano        | 12 h  |
+| CAO-08 | Database connection planning                                    | Database Administrator | Jacqueline Montalvo Cano        | 10 h  |
+| CAO-09 | Development of 100+ learning seeds throughout the academic term | Academic Research Team | All Team Members                | 30 h  |
+| CAO-10 | Collection and organization of project evidence                 | Documentation Manager  | Samantha Michelle Garcia Pulido | 8 h   |
+| CAO-11 | Technical documentation updates                                 | Documentation Manager  | Samantha Michelle Garcia Pulido | 10 h  |
+| CAO-12 | Preparation of academic deliverables                            | Documentation Manager  | Samantha Michelle Garcia Pulido | 8 h   |
+
+---
+
+## Team Roles
+
+| Team Member                     | Assigned Role                        |
+| ------------------------------- | ------------------------------------ |
+| Samantha Michelle Garcia Pulido | Documentation Manager                |
+| Fatima Yocelin Ramírez López    | System Designer / UI Designer        |
+| Jacqueline Montalvo Cano        | Database Administrator               |
+| Juan Irving De La Cruz Zayas    | Repository Manager / Backend Support |
 
 ---
 
@@ -282,8 +295,8 @@ A User Story will only be considered completed when all of the following criteri
 | Metric                   | Value                                                         |
 | ------------------------ | ------------------------------------------------------------- |
 | Development Team Members | 4                                                             |
-| Hours per Member         | 40 h                                                          |
-| Total Sprint Capacity    | 160 h                                                         |
+| Average Hours per Member | 32 h                                                          |
+| Total Sprint Capacity    | 128 h                                                         |
 | Selected Epics           | 4                                                             |
 | User Stories             | 4                                                             |
 | Core Academic Operations | 12                                                            |
