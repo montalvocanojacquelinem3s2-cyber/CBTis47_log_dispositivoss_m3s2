@@ -163,6 +163,15 @@ app.post("/login", async (req, res) => {
 
     email = email.toLowerCase().trim();
 
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if (!emailRegex.test(email)) {
+  return res.status(400).json({
+    success: false,
+    message: "Correo electrónico inválido"
+  });
+}
+
     // REGISTER
     if (mode === "register") {
       const existingUser = await User.findOne({ email });
