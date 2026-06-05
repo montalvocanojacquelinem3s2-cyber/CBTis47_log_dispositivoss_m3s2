@@ -52,6 +52,31 @@ app.post("/devices", async (req, res) => {
   try {
     const { _id, ...deviceData } = req.body;
 
+
+    // VALIDACIÓN
+    const forbiddenWords = [
+      "horrible",
+      "puto",
+      "pendejo",
+      "idiota",
+      "estupido",
+      "cabron"
+    ];
+
+    const deviceName = (deviceData.deviceName || "").toLowerCase();
+    const location = (deviceData.location || "").toLowerCase();
+
+    const hasBadWord =
+      forbiddenWords.some(word => deviceName.includes(word)) ||
+      forbiddenWords.some(word => location.includes(word));
+
+    if (hasBadWord) {
+      return res.status(400).json({
+        success: false,
+        message: "Se detectaron palabras no permitidas"
+      });
+    }
+
     // UPDATE
     if (_id) {
       const updatedDevice = await Device.findByIdAndUpdate(
