@@ -163,14 +163,15 @@ app.post("/login", async (req, res) => {
 
     email = email.toLowerCase().trim();
 
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const emailRegex = /^[^\s@]+@[^\s@]+\.com$/;
 
 if (!emailRegex.test(email)) {
   return res.status(400).json({
     success: false,
-    message: "Correo electrónico inválido"
+    message: "El correo debe tener formato válido y terminar en .com"
   });
 }
+
 
     // REGISTER
     if (mode === "register") {
