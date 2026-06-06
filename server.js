@@ -188,12 +188,38 @@ app.post("/login", async (req, res) => {
 
     email = email.toLowerCase().trim();
 
+// Validar correo
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if (!emailRegex.test(email)) {
+  return res.status(400).json({
+    success: false,
+    message: "Correo electrónico inválido"
+  });
+}
+
+// Validar contraseña vacía
+if (!password || password.trim() === "") {
+  return res.status(400).json({
+    success: false,
+    message: "Debes ingresar una contraseña"
+  });
+}
+
+// Validar longitud mínima
+if (password.length < 6) {
+  return res.status(400).json({
+    success: false,
+    message: "La contraseña debe tener al menos 6 caracteres"
+  });
+}
+
 const emailRegex = /^[^\s@]+@[^\s@]+\.com$/;
 
 if (!emailRegex.test(email)) {
   return res.status(400).json({
     success: false,
-    message: "El correo debe tener formato válido y terminar en .com"
+    message: "El correo debe tener formato válido"
   });
 }
 
