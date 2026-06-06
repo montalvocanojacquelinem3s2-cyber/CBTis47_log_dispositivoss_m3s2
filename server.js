@@ -32,8 +32,8 @@ const Device = mongoose.model("Device", {
   status: String,
   battery: String,
   online: Boolean,
-  installation: String,
-  lastUp: String
+  installation: Date,
+  lastUp: Date
 });
 
 const User = mongoose.model("User", {
@@ -77,6 +77,9 @@ app.post("/devices", async (req, res) => {
       });
     }
 
+// Fecha actual
+const now = new Date();
+
     // UPDATE
     if (_id) {
       const updatedDevice = await Device.findByIdAndUpdate(
@@ -93,7 +96,11 @@ app.post("/devices", async (req, res) => {
     }
 
     // CREATE
-    const newDevice = new Device(deviceData);
+    const newDevice = new Device({
+  ...deviceData,
+  installation: now,
+  lastUp: now
+});
     await newDevice.save();
 
     return res.json({
@@ -133,11 +140,14 @@ app.get("/devices", async (req, res) => {
 // UPDATE BY ID
 app.put("/devices/:id", async (req, res) => {
   try {
-    const updated = await Device.findByIdAndUpdate(
-      req.params.id,
-      req.body,
-      { new: true }
-    );
+    const updatedDevice = await Device.findByIdAndUpdate(
+  _id,
+  {
+    ...deviceData,
+    lastUp: now
+  },
+  { new: true }
+);
 
     return res.json({
       success: true,
