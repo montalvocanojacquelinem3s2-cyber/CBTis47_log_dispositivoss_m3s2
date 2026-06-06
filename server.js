@@ -188,7 +188,7 @@ app.post("/login", async (req, res) => {
 
     email = email.toLowerCase().trim();
 
-// Validar correo
+// Validar correo electrónico
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 if (!emailRegex.test(email)) {
@@ -206,23 +206,24 @@ if (!password || password.trim() === "") {
   });
 }
 
-// Validar longitud mínima
-if (password.length < 6) {
+// Mínimo 8 caracteres
+if (password.length < 8) {
   return res.status(400).json({
     success: false,
-    message: "La contraseña debe tener al menos 6 caracteres"
+    message: "La contraseña debe tener al menos 8 caracteres"
   });
 }
 
-const emailRegex = /^[^\s@]+@[^\s@]+\.com$/;
+// Debe contener al menos una letra y un número
+const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d).+$/;
 
-if (!emailRegex.test(email)) {
+if (!passwordRegex.test(password)) {
   return res.status(400).json({
     success: false,
-    message: "El correo debe tener formato válido"
+    message: "La contraseña debe contener al menos una letra y un número"
   });
 }
-
+  
 
     // REGISTER
     if (mode === "register") {
