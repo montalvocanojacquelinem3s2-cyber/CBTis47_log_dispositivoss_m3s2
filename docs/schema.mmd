@@ -86,7 +86,7 @@ erDiagram
         string connectivity
     }
     DEVICES ||--o{ user_registration : es
-    user_registration||--o{ notuser_registration: es
+    DEVICES ||--o{ notuser_registration: es
     DEVICES ||--o{ LIGHT : es
     DEVICES ||--o{ THERMOSTAT : es
     DEVICES ||--o{ LOCK : es
