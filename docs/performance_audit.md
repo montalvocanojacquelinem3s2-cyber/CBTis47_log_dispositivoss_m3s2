@@ -1,65 +1,77 @@
-# Performance Audit
+# performance_test.js
 
-## Objective
+```js
+// =====================================
+// SMART HOME MANAGEMENT SYSTEM
+// PERFORMANCE OPTIMIZATION TEST
+// =====================================
 
-Evaluate the impact of MongoDB indexes on query performance.
+use SmartHomeDB
 
----
+// Crear colección de ejemplo
 
-## Query Tested
+db.devices.insertMany([
+    {
+        name: "Smart Light",
+        room: "Living Room",
+        status: "ON",
+        energyConsumption: 12
+    },
+    {
+        name: "Smart Thermostat",
+        room: "Bedroom",
+        status: "OFF",
+        energyConsumption: 45
+    },
+    {
+        name: "Smart Camera",
+        room: "Garage",
+        status: "ON",
+        energyConsumption: 20
+    }
+])
 
-```javascript
+// =====================================
+// QUERY BEFORE INDEX
+// =====================================
+
 db.devices.find({
-  device_id: "D001"
-})
-```
+    room: "Living Room"
+}).explain("executionStats")
 
----
+// =====================================
+// CREATE INDEX
+// =====================================
 
-## Before Index
-
-| Metric | Value |
-|----------|----------|
-| Stage | COLLSCAN |
-| Documents Examined | 1000 |
-| Execution Time | 15 ms |
-
-MongoDB scanned the entire collection to locate the document.
-
----
-
-## Index Created
-
-```javascript
 db.devices.createIndex({
-  device_id: 1
+    room: 1
 })
+
+// Verify Index
+
+db.devices.getIndexes()
+
+// =====================================
+// QUERY AFTER INDEX
+// =====================================
+
+db.devices.find({
+    room: "Living Room"
+}).explain("executionStats")
+
+// =====================================
+// COMPOUND INDEX
+// =====================================
+
+db.devices.createIndex({
+    room: 1,
+    status: 1
+})
+
+// Compound Query
+
+db.devices.find({
+    room: "Living Room",
+    status: "ON"
+}).explain("executionStats")
 ```
-
----
-
-## After Index
-
-| Metric | Value |
-|----------|----------|
-| Stage | IXSCAN |
-| Documents Examined | 1 |
-| Execution Time | 1 ms |
-
-MongoDB used the index and avoided scanning the entire collection.
-
----
-
-## Results
-
-| Metric | Before | After |
-|----------|----------|----------|
-| Stage | COLLSCAN | IXSCAN |
-| Documents Examined | 1000 | 1 |
-| Execution Time | 15 ms | 1 ms |
-
----
-
-## Conclusion
-
-The index significantly improved query performance by reducing the number of examined documents and execution time.
