@@ -188,6 +188,10 @@ app.delete("/devices/:id", async (req, res) => {
 app.post("/login", async (req, res) => {
   try {
     let { email, password, mode } = req.body;
+console.log("BODY RECIBIDO:", req.body);
+console.log("EMAIL:", email);
+console.log("PASSWORD:", password);
+console.log("MODE:", mode);
 
     if (!email || !password) {
       return res.status(400).json({
