@@ -1,6 +1,5 @@
-# performance_test.js
+performance_test.js
 
-```js
 // =====================================
 // SMART HOME MANAGEMENT SYSTEM
 // PERFORMANCE OPTIMIZATION TEST
@@ -74,4 +73,3 @@ db.devices.find({
     room: "Living Room",
     status: "ON"
 }).explain("executionStats")
-```
